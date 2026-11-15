@@ -7,7 +7,7 @@
 <p align="center">A spacecraft fire research workspace connecting NASA combustion evidence,<br/>partial-gravity material screens, historical incidents, and cited engineering answers.</p>
 
 <p align="center">
-  <a href="https://pyrozero-zentrix-labs.urbanbay8.chatgpt.site">Live workspace</a> ·
+  <a href="https://pyrozero-zentrix.vercel.app">Live workspace</a> ·
   <a href="#get-started">Run locally</a> ·
   <a href="#deepseek-generated-answers">DeepSeek setup</a> ·
   <a href="docs/release-verification-material-flow.md">QA evidence</a>
@@ -31,6 +31,15 @@ PyroZero makes those relationships inspectable. Start with a mission environment
 The goal is to make a complex research landscape navigable for challenge judges, students, researchers, and curious engineers—not to turn a model prediction into flight approval.
 
 ![PyroZero Mission Explorer in dark mode](docs/screenshots/material-beta-dark-1440-PSI.png)
+
+<details>
+<summary>See the Flammability Lab and Copilot</summary>
+
+![Partial-g Flammability Lab](docs/screenshots/material-beta-dark-1440-Flammability.png)
+
+![Hybrid GraphRAG Copilot](docs/screenshots/material-beta-dark-1440-Hybrid.png)
+
+</details>
 
 ## One workspace, four ways to investigate
 
