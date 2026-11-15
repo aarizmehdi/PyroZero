@@ -2,7 +2,7 @@
   <img src="public/pyrozero-wordmark.svg" width="540" alt="PyroZero — by Zentrix Labs" />
 </p>
 
-
+<h1 align="center">PyroZero v2.6</h1>
 
 <p align="center"><strong>Super-Intelligent Microgravity Combustion Telemetry,<br/>Partial-Gravity Surrogate Modeling &amp; Hybrid GraphRAG Platform</strong></p>
 
