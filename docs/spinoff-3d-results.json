@@ -1,0 +1,113 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1430,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "light",
+      "width": 1354,
+      "scroll": 1344,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "light",
+      "width": 1100,
+      "scroll": 1090,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1014,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "scroll": 380,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "scroll": 415,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1430,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "dark",
+      "width": 1354,
+      "scroll": 1344,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "dark",
+      "width": 1100,
+      "scroll": 1090,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1014,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "scroll": 380,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "scroll": 415,
+      "dt": 13,
+      "dd": 16,
+      "canvas": 3
+    }
+  ],
+  "functional": [
+    "actual WebGL initialization",
+    "droplet control and equation",
+    "interpolated particle changes",
+    "capacity changes model and readings",
+    "pause",
+    "drag and reset each equipment view",
+    "reduced motion",
+    "context-loss fallback",
+    "unmount/remount"
+  ],
+  "browserErrors": []
+}

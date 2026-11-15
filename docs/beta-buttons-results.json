@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": [
+    "empty and selected material export payloads",
+    "investigation expansion",
+    "campaign filters",
+    "empty search and clear",
+    "knowledge library and search",
+    "scope and Escape",
+    "lab CTA and home navigation",
+    "all incident anchor sliders",
+    "all 67 graph-node options",
+    "source expansion",
+    "safe internal/external link formats"
+  ],
+  "browserErrors": []
+}

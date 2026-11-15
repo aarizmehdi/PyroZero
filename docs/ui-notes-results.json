@@ -1,0 +1,128 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "light",
+      "width": 360,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "dark",
+      "width": 360,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "pillarCount": 4,
+      "fullOntologyNodes": 67,
+      "selectorContained": true,
+      "noteExpandable": true
+    }
+  ],
+  "functional": [
+    "pillar filters and All reset",
+    "full-width mobile All control",
+    "collapsed and expanded model notes",
+    "full ontology 67 nodes",
+    "active query switch",
+    "node selection",
+    "graph zoom",
+    "control and page bounds"
+  ],
+  "browserErrors": []
+}

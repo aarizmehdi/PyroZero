@@ -1,0 +1,24 @@
+{
+  "status": "PASS",
+  "checks": [
+    "empty initial state",
+    "blank submit disabled",
+    "saved key survives reload",
+    "settings confirmation",
+    "skeletons replace results",
+    "input and settings locked",
+    "duplicate send blocked",
+    "answer auto-scroll and focus",
+    "plain labels",
+    "clear resets results",
+    "error clears result data",
+    "key retained after error",
+    "retry",
+    "stop and stale-response rejection",
+    "truncated stream rejected",
+    "actual endpoint reference response",
+    "desktop/mobile overflow"
+  ],
+  "providerFixtures": true,
+  "liveProviderVerified": false
+}

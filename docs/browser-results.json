@@ -1,0 +1,106 @@
+{
+  "origin": "http://127.0.0.1:4173",
+  "checks": [
+    {
+      "width": 1440,
+      "module": "Orbital explorer",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "module": "Flammability lab",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "module": "Fire forensics",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "module": "GraphRAG copilot",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "module": "Orbital explorer",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "module": "Flammability lab",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "module": "Fire forensics",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "module": "GraphRAG copilot",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "Orbital explorer",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "Flammability lab",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "Fire forensics",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "GraphRAG copilot",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "Orbital explorer",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "Flammability lab",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "Fire forensics",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "GraphRAG copilot",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "Orbital explorer",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "Flammability lab",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "Fire forensics",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "GraphRAG copilot",
+      "overflow": false
+    }
+  ],
+  "status": "PASS"
+}

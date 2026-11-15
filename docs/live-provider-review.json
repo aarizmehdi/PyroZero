@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "provider": "DeepSeek",
+  "credentialStoredInSource": false,
+  "manualReview": [
+    "Correct PMMA FAIL and Nomex PASS reasons; both oxygen levels above LOC; NOMS identified as 1g LOC minus mission LOC.",
+    "SIBAL 2.030 mm/s, 0.3147 calibration, FAIL due to burn length, and 1.31 vs 2.99 percentage-point margins are distinct.",
+    "Evidence-only answer contains no material-specific prediction and keeps source-evidence qualifications."
+  ],
+  "transientProviderFailuresObserved": true,
+  "cases": [
+    {
+      "index": 0,
+      "query": "Compare PMMA and Nomex on the Moon at 34% O2, 56.5 kPa and 5 cm/s. Explain the model verdicts and limits.",
+      "status": "PASS",
+      "mode": "deepseek",
+      "materialContext": "question",
+      "simulations": [
+        {
+          "materialId": "MAT-PMMA-CAST",
+          "status": "FAIL",
+          "loc": 16.68,
+          "spread": 1.194
+        },
+        {
+          "materialId": "MAT-NOMEX-HT90",
+          "status": "PASS",
+          "loc": 33.08,
+          "spread": 0.18
+        }
+      ],
+      "citationMarkers": [
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "PSI-FM2-LUCI",
+        "kc-partial-g-gap",
+        "SAFFIRE-IV-VI",
+        "kc-saffire-matrix"
+      ],
+      "unknownMarkers": [],
+      "narrative": "## Model verdicts at 34% O₂, 56.5 kPa, 5 cm/s, Moon gravity\n\n- **Cast PMMA — FAIL.** The model verdict is driven by predicted burn length exceeding the 15 cm model criterion [MODEL]. Computed mission LOC is 16.68% O₂, spread 1.194 mm/s, burn length 30 cm [MODEL]. Ambient oxygen (34%) is above the modeled LOC [MODEL]. The prescription flags melting/dripping and potential flaming-debris transfer risk [MODEL].\n- **Nomex HT90-40 — PASS.** The verdict is within the model burn-length and debris criteria [MODEL]. Computed mission LOC is 33.08% O₂, spread 0.18 mm/s, burn length 1.6 cm [MODEL]. Ambient oxygen (34%) is also above its modeled LOC [MODEL]; PASS does not mean no flame or that oxygen is below LOC [MODEL].\n\n## Limits and margins\n\n- NOMS (1g LOC minus mission LOC) is 1.77 percentage points for PMMA and 1.59 for Nomex [MODEL]; it is not the cabin-to-LOC margin [MODEL].\n- These are virtual research-model screens, not NASA-STD-6001 qualification; representative physical testing and configuration review remain required [MODEL].\n- Partial-gravity combustion data remain a gap; FM2/LUCI lunar-gravity work is planned, not completed [PSI-FM2-LUCI][kc-partial-g-gap].\n- Saffire IV–VI reported Nomex non-ignition at 54.1 kPa/31.9% O₂, consistent with the low-hazard screen but under different conditions [SAFFIRE-IV-VI][kc-saffire-matrix]."
+    },
+    {
+      "index": 1,
+      "query": "What is the modeled SIBAL spread at 0g, 100 kPa, 21% O2 and 20 cm/s? Explain what this single benchmark establishes.",
+      "status": "PASS",
+      "mode": "deepseek",
+      "materialContext": "question",
+      "simulations": [
+        {
+          "materialId": "MAT-SIBAL",
+          "status": "FAIL",
+          "loc": 18.01,
+          "spread": 2.03
+        }
+      ],
+      "citationMarkers": [
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "MODEL",
+        "PSI-98",
+        "PSI-98",
+        "MODEL",
+        "MODEL"
+      ],
+      "unknownMarkers": [],
+      "narrative": "## Modeled SIBAL Spread at the Requested Condition\n\nAt 0g, 100 kPa, 21% O₂, and 20 cm/s forced flow, the model gives a SIBAL fabric spread rate of 2.03 mm/s and a predicted burn length of 18.3 cm [MODEL]. The screen verdict is FAIL because the burn length exceeds the 15 cm model criterion [MODEL]. Ambient oxygen (21%) is above the modeled mission LOC of 18.01% O₂, with an ambient-minus-LOC difference of 2.99 percentage points [MODEL]. NOMS is 1.31 percentage points, defined as the 1g LOC (19.32% O₂) minus mission LOC, not ambient oxygen minus LOC [MODEL].\n\n## What This Single Benchmark Establishes\n\n- It anchors the spread coefficient (0.3147) to a 2.03 mm/s point at this one condition; one-point calibration is not independent validation [MODEL].\n- The 2.03 mm/s value is consistent with the Saffire observation that meter-scale thin SIBAL fires reach a steady spread rate rather than accelerating as in 1g upward fires [PSI-98]. The exact benchmark remains brief-supplied, while the DOI, SIBAL composition, dimensions, and 20 cm/s condition are verified [PSI-98].\n- It does not establish NASA-STD-6001 qualification; this is a virtual research-model result requiring representative physical testing and configuration review [MODEL].\n\n## Limits\n\nA single point does not validate the model across gravity, pressure, oxygen, or flow, and the supplied coefficients are user-supplied with independent verification tracked separately [MODEL]."
+    },
+    {
+      "index": 2,
+      "query": "Explain the evidence connecting ACME E-FIELD and lunar gravity. I have not chosen a material.",
+      "status": "PASS",
+      "mode": "deepseek",
+      "materialContext": "unselected",
+      "simulations": [],
+      "citationMarkers": [
+        "ACME-E-FIELD",
+        "ACME-E-FIELD",
+        "kc-partial-g-gap",
+        "PSI-FM2-LUCI",
+        "kc-fm2-prelim",
+        "ACME-E-FIELD",
+        "kc-partial-g-gap"
+      ],
+      "unknownMarkers": [],
+      "narrative": "## What the evidence actually connects\n\n- ACME E-FIELD demonstrated a Chattock ion-driven wind body force (F_e = j/K) that can mimic partial-gravity convection, including Moon 0.165g, and 1g buoyancy in 0g, while suppressing soot within 300 ms [ACME-E-FIELD]. Its stated limits are 10 kV maximum voltage and 2.2 kV/cm maximum electric field, with ion wind initiating at 10 ms [ACME-E-FIELD].\n- That is an **electrohydrodynamic analogy**, not lunar-gravity combustion data. The partial-gravity record states that no direct lunar or Martian surface combustion data is in PSI yet, and that ACME E-FIELD ion-wind equivalence is used to bracket the gap alongside 0g/1g bounds and centrifuge scaling [kc-partial-g-gap].\n- The lunar-gravity evidence itself is preliminary and planned: FM2/LUCI target 0.165g at 21% O₂/14.7 psia and 34% O₂/8.2 psia, and preliminary centrifuge and drop-tower tests indicate lower oxygen flammability limits at 0.165g than at 1g [PSI-FM2-LUCI]. The primary poster describes test atmospheres, lunar centrifuge evidence, and planned lunar hardware, but does not establish completed lunar-surface tests [kc-fm2-prelim].\n\n## Status and limits\n\n- ACME E-FIELD numerical claims are brief-supplied and not independently audited [ACME-E-FIELD]; the partial-gravity gap record is qualified [kc-partial-g-gap].\n- No material was selected, so no screen, flame prediction, or PASS/FAIL verdict applies here. These are research findings, not NASA-STD-6001 qualification."
+    }
+  ]
+}

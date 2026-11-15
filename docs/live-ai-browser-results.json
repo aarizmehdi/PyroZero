@@ -1,0 +1,10 @@
+{
+  "status": "PASS",
+  "liveProvider": true,
+  "mode": "generated",
+  "benchmarkRateMms": 2.03,
+  "calculationAnchor": true,
+  "keyStoredInBrowser": false,
+  "narrativeCharacters": 1706,
+  "browserErrors": []
+}

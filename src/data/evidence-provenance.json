@@ -1,0 +1,5476 @@
+{
+  "schema_version": "1.0.0",
+  "canonical_payload": "Exact fenced JSON from user supplemental directive of 2026-11-14; supplied values are not independently validated merely by inclusion.",
+  "supplemental_discrepancies": [
+    {
+      "topic": "Saffire carbon dioxide mass",
+      "canonical_value": "130.3 g",
+      "narrative_value": "128.1 g",
+      "resolution": "Canonical JSON retained verbatim. The supplied narrative and JSON disagree; independent source audit is required."
+    },
+    {
+      "topic": "Apollo 13 event duration",
+      "canonical_value": "Combustion duration 69 s; fan start 55:53:20 GET; rupture 55:54:53.555 GET",
+      "resolution": "The fan-to-rupture interval is 93.555 s and differs from the stated combustion duration. Do not equate the 69-s simplified reconstruction with the complete event timeline."
+    },
+    {
+      "topic": "Apollo 1 gas temperature",
+      "canonical_value": "peak_gas_temp_k = 644",
+      "resolution": "Supplied peak label retained verbatim; the historical reconstruction source treats this temperature as an estimate, not fully measured peak-gas telemetry."
+    },
+    {
+      "topic": "Mir fire duration and date",
+      "canonical_value": "1997-02-23; actual_burn_duration_min = 14; official_initial_reported_duration_s = 90",
+      "resolution": "Historical NASA accounts differ in date and duration. Preserve supplied values and present the different reported durations explicitly; no continuous measured series is available in this catalogue."
+    }
+  ],
+  "provenance": {
+    "scope": "All 12 consolidated investigation groups requested in the supplied project brief; not a complete export of NASA PSI.",
+    "citation_markers": "The brief's [cite: 6] source document was not supplied. Its numeric claims are retained with explicit evidence status.",
+    "model_status": "Engineering research surrogate, not NASA qualification or a material certification.",
+    "diagnostic_scores": "Project-authored ordinal MCDA inputs, not NASA ratings.",
+    "telemetry_status": "Incident arrays are one-second educational reconstructions interpolated between stated anchors, not recovered flight or accident telemetry."
+  },
+  "investigation_annotations": [
+    {
+      "id": "PSI-159",
+      "sourceIds": [
+        "PUB-CFI"
+      ],
+      "evidence_status": "brief-supplied; DOI linked, numerical claims not independently audited"
+    },
+    {
+      "id": "ACME-E-FIELD",
+      "sourceIds": [
+        "PUB-EFIELD"
+      ],
+      "evidence_status": "brief-supplied; DOI linked, numerical claims not independently audited"
+    },
+    {
+      "id": "ACME-BRE",
+      "sourceIds": [
+        "PUB-BRE"
+      ],
+      "evidence_status": "brief-supplied; DOI linked, numerical claims not independently audited"
+    },
+    {
+      "id": "PSI-10",
+      "sourceIds": [
+        "PUB-DESIGN"
+      ],
+      "evidence_status": "brief-supplied; DOI linked, numerical claims not independently audited"
+    },
+    {
+      "id": "PSI-60",
+      "sourceIds": [
+        "PUB-CLD"
+      ],
+      "evidence_status": "brief-supplied; DOI linked, numerical claims not independently audited",
+      "related_psi_ids": [
+        "PSI-107"
+      ]
+    },
+    {
+      "id": "PSI-25",
+      "sourceIds": [
+        "PUB-BASS"
+      ],
+      "evidence_status": "brief-supplied; DOI linked, numerical claims not independently audited",
+      "material_ids": [
+        "MAT-PMMA-CAST",
+        "MAT-SIBAL",
+        "MAT-NOMEX-HT90"
+      ],
+      "related_psi_ids": [
+        "PSI-26",
+        "PSI-62"
+      ]
+    },
+    {
+      "id": "PSI-98",
+      "sourceIds": [
+        "PUB-SAFFIRE",
+        "NASA-PSI98"
+      ],
+      "evidence_status": "NASA PSI-98 verifies dataset DOI, SIBAL composition, dimensions and 20 cm/s condition; exact 2.03 mm/s benchmark remains brief supplied",
+      "material_ids": [
+        "MAT-PMMA-CAST",
+        "MAT-SIBAL",
+        "MAT-NOMEX-HT90"
+      ],
+      "related_psi_ids": [
+        "PSI-99",
+        "PSI-100"
+      ]
+    },
+    {
+      "id": "SAFFIRE-IV-VI",
+      "sourceIds": [
+        "PUB-SAFFIRE-EXPLORATION",
+        "NASA-SAFFIRE-VI"
+      ],
+      "evidence_status": "partially verified: NASA Saffire VI event table; other supplied numeric claims unverified",
+      "material_ids": [
+        "MAT-PMMA-CAST",
+        "MAT-SIBAL",
+        "MAT-NOMEX-HT90"
+      ]
+    },
+    {
+      "id": "SOFIE-RTDFS-NCA",
+      "sourceIds": [
+        "PUB-RTDFS"
+      ],
+      "evidence_status": "brief-supplied grouped ISS/ground literature; DOI and exact attribution not independently audited",
+      "material_ids": [
+        "MAT-PMMA-CAST"
+      ]
+    },
+    {
+      "id": "SOFIE-SMURF-MIST-GEL",
+      "sourceIds": [
+        "PUB-SMURF"
+      ],
+      "evidence_status": "brief-supplied; grouped campaign findings and DOI attribution not independently audited",
+      "material_ids": [
+        "MAT-PMMA-CAST",
+        "MAT-SIBAL"
+      ]
+    },
+    {
+      "id": "PSI-69",
+      "sourceIds": [
+        "PUB-FLEX"
+      ],
+      "evidence_status": "brief-supplied; DOI linked, individual run values not independently audited",
+      "related_psi_ids": [
+        "PSI-68",
+        "PSI-117",
+        "PSI-142"
+      ]
+    },
+    {
+      "id": "PSI-102",
+      "sourceIds": [
+        "PUB-SAME",
+        "NASA-SMOKE"
+      ],
+      "evidence_status": "brief-supplied; DOI linked, miss percentages not independently audited",
+      "material_ids": [
+        "MAT-PTFE-TEFLON"
+      ],
+      "related_psi_ids": [
+        "PSI-101",
+        "PSI-115"
+      ]
+    }
+  ],
+  "material_annotations": [
+    {
+      "id": "MAT-PMMA-CAST",
+      "name": "Cast Polymethyl Methacrylate / Acrylic Window & Reference Fuel",
+      "shortName": "Cast PMMA",
+      "composition": "Cast polymethyl methacrylate",
+      "thermal_regime": "thick",
+      "application": "Acrylic windows and reference combustion specimens",
+      "investigation_ids": [
+        "PSI-25",
+        "PSI-98",
+        "SAFFIRE-IV-VI",
+        "SOFIE-RTDFS-NCA",
+        "SOFIE-SMURF-MIST-GEL"
+      ],
+      "evidence_status": "Material identity supplied; model coefficients are engineering assumptions",
+      "sourceIds": [
+        "PUB-BASS",
+        "NASA-SAFFIRE-VI"
+      ]
+    },
+    {
+      "id": "MAT-SIBAL",
+      "name": "SIBAL Composite Fabric — 75% Cotton / 25% Fiberglass",
+      "shortName": "SIBAL Fabric",
+      "composition": "75% cotton / 25% fiberglass",
+      "thermal_regime": "thin",
+      "application": "Reference composite fabric for large-scale flame spread",
+      "investigation_ids": [
+        "PSI-25",
+        "PSI-98",
+        "SAFFIRE-IV-VI",
+        "SOFIE-SMURF-MIST-GEL"
+      ],
+      "evidence_status": "Composition and 2.03 mm/s reference supplied in brief",
+      "sourceIds": [
+        "PUB-SAFFIRE",
+        "NASA-SAFFIRE-VI"
+      ]
+    },
+    {
+      "id": "MAT-NOMEX-HT90",
+      "name": "Nomex HT90-40 Meta-Aramid Fire-Resistant Partition Fabric",
+      "shortName": "Nomex HT90-40",
+      "composition": "Meta-aramid fabric",
+      "thermal_regime": "thin",
+      "application": "Fire-resistant partition fabric",
+      "investigation_ids": [
+        "PSI-25",
+        "PSI-98",
+        "SAFFIRE-IV-VI"
+      ],
+      "evidence_status": "NASA confirms non-ignition in Saffire VI Event 4; not a universal oxygen-limit certification",
+      "sourceIds": [
+        "NASA-SAFFIRE-VI"
+      ]
+    },
+    {
+      "id": "MAT-VELCRO-NYLON",
+      "name": "Nylon Hook-and-Loop Fastener / Velcro",
+      "shortName": "Velcro Nylon",
+      "composition": "Nylon hook-and-loop fastener",
+      "thermal_regime": "thin",
+      "application": "Cabin attachment systems",
+      "investigation_ids": [],
+      "evidence_status": "No matched investigation in supplied catalogue; model coefficients are assumptions",
+      "sourceIds": [
+        "NASA-APOLLO1"
+      ]
+    },
+    {
+      "id": "MAT-PTFE-TEFLON",
+      "name": "Polytetrafluoroethylene / PTFE Wire Insulation & Sheet",
+      "shortName": "PTFE Teflon",
+      "composition": "Polytetrafluoroethylene",
+      "thermal_regime": "thick",
+      "application": "Wire insulation and sheet material",
+      "investigation_ids": [
+        "PSI-102"
+      ],
+      "evidence_status": "NASA Apollo 13 account confirms heat-damaged Teflon; SAME numeric claims supplied in brief",
+      "sourceIds": [
+        "PUB-SAME",
+        "NASA-APOLLO13"
+      ]
+    },
+    {
+      "id": "MAT-BETA-PBI",
+      "name": "Beta Cloth PTFE-Coated Fiberglass & Black PBI Max Spacesuit Outer Layer",
+      "shortName": "Beta Cloth / PBI",
+      "composition": "Grouped comparison of PTFE-coated fiberglass and PBI textiles; distinct materials",
+      "thermal_regime": "thin",
+      "application": "Protective outer fabrics and spacesuit technology comparison",
+      "investigation_ids": [],
+      "evidence_status": "Grouped project proxy, not a single tested material; coefficients supplied in brief",
+      "sourceIds": [
+        "NASA-PBI"
+      ]
+    }
+  ],
+  "historical_reconstructions": [
+    {
+      "id": "INC-APOLLO-1",
+      "title": "Apollo 1",
+      "date": "1967-01-27",
+      "summary": "A cabin fire during a ground rehearsal propagated rapidly through a pressurized pure-oxygen atmosphere. Three astronauts died.",
+      "durationS": 17.7,
+      "atmosphere": {
+        "gravityG": 1,
+        "pressureKpa": 115.147,
+        "oxygenPct": 100,
+        "forcedFlowCms": 0
+      },
+      "telemetry": [
+        {
+          "timeS": 0,
+          "pressureKpa": 115.147,
+          "temperatureK": 298.15,
+          "event": "Initial pure-oxygen ground-test atmosphere"
+        },
+        {
+          "timeS": 1,
+          "pressureKpa": 115.789,
+          "temperatureK": 318.46
+        },
+        {
+          "timeS": 2,
+          "pressureKpa": 116.431,
+          "temperatureK": 338.77
+        },
+        {
+          "timeS": 3,
+          "pressureKpa": 117.073,
+          "temperatureK": 359.07
+        },
+        {
+          "timeS": 4,
+          "pressureKpa": 117.716,
+          "temperatureK": 379.38
+        },
+        {
+          "timeS": 5,
+          "pressureKpa": 118.358,
+          "temperatureK": 399.69
+        },
+        {
+          "timeS": 6,
+          "pressureKpa": 119,
+          "temperatureK": 420,
+          "event": "Illustrative early fire growth"
+        },
+        {
+          "timeS": 7,
+          "pressureKpa": 123.333,
+          "temperatureK": 458.33
+        },
+        {
+          "timeS": 8,
+          "pressureKpa": 127.667,
+          "temperatureK": 496.67
+        },
+        {
+          "timeS": 9,
+          "pressureKpa": 132,
+          "temperatureK": 535
+        },
+        {
+          "timeS": 10,
+          "pressureKpa": 136.333,
+          "temperatureK": 573.33
+        },
+        {
+          "timeS": 11,
+          "pressureKpa": 140.667,
+          "temperatureK": 611.67
+        },
+        {
+          "timeS": 12,
+          "pressureKpa": 145,
+          "temperatureK": 650,
+          "event": "Illustrative accelerating pressure rise"
+        },
+        {
+          "timeS": 13,
+          "pressureKpa": 154.64,
+          "temperatureK": 676.32
+        },
+        {
+          "timeS": 14,
+          "pressureKpa": 164.28,
+          "temperatureK": 702.63
+        },
+        {
+          "timeS": 15,
+          "pressureKpa": 173.92,
+          "temperatureK": 728.95
+        },
+        {
+          "timeS": 16,
+          "pressureKpa": 183.56,
+          "temperatureK": 755.26
+        },
+        {
+          "timeS": 17,
+          "pressureKpa": 193.2,
+          "temperatureK": 781.58
+        },
+        {
+          "timeS": 17.7,
+          "pressureKpa": 199.948,
+          "temperatureK": 800,
+          "event": "Rupture illustration; estimated historical range 29–37.7 psia"
+        }
+      ],
+      "telemetry_status": "Illustrative one-second reconstruction, not measured telemetry; initial and rupture pressures from historical accounts. 800 K is the brief's illustrative surface-temperature anchor.",
+      "anchor_points": [
+        {
+          "timeS": 0,
+          "pressureKpa": 115.147,
+          "temperatureK": 298.15,
+          "event": "Initial pure-oxygen ground-test atmosphere"
+        },
+        {
+          "timeS": 6,
+          "pressureKpa": 119,
+          "temperatureK": 420,
+          "event": "Illustrative early fire growth"
+        },
+        {
+          "timeS": 12,
+          "pressureKpa": 145,
+          "temperatureK": 650,
+          "event": "Illustrative accelerating pressure rise"
+        },
+        {
+          "timeS": 17.7,
+          "pressureKpa": 199.948,
+          "temperatureK": 800,
+          "event": "Rupture illustration; estimated historical range 29–37.7 psia"
+        }
+      ],
+      "engineering_reforms": [
+        "Reduce combustible cabin materials and rigorously review oxygen compatibility.",
+        "Improve wire protection and control ignition sources.",
+        "Adopt a rapidly operable outward-opening hatch and revise ground-test atmosphere procedures."
+      ],
+      "sourceIds": [
+        "NASA-APOLLO1",
+        "NASA-APOLLO1-PRESSURE"
+      ],
+      "evidence_status": "Historical mechanism verified; curve and timing are educational reconstructions; burst-pressure range is estimated, not fully recorded"
+    },
+    {
+      "id": "INC-APOLLO-13",
+      "title": "Apollo 13",
+      "date": "1970-04-13",
+      "summary": "Ground heaters powered at 65 V damaged thermostat contacts designed for 28 V. Prolonged heating damaged oxygen-tank wire insulation before flight; later electrical operation initiated the tank failure.",
+      "durationS": 69,
+      "atmosphere": {
+        "gravityG": 0,
+        "pressureKpa": 6952,
+        "oxygenPct": 100,
+        "forcedFlowCms": 0
+      },
+      "telemetry": [
+        {
+          "timeS": 0,
+          "pressureKpa": 5964.53,
+          "temperatureK": 90,
+          "event": "Illustrative oxygen tank initial state"
+        },
+        {
+          "timeS": 1,
+          "pressureKpa": 5967.115,
+          "temperatureK": 91.25
+        },
+        {
+          "timeS": 2,
+          "pressureKpa": 5969.701,
+          "temperatureK": 92.5
+        },
+        {
+          "timeS": 3,
+          "pressureKpa": 5972.287,
+          "temperatureK": 93.75
+        },
+        {
+          "timeS": 4,
+          "pressureKpa": 5974.872,
+          "temperatureK": 95
+        },
+        {
+          "timeS": 5,
+          "pressureKpa": 5977.457,
+          "temperatureK": 96.25
+        },
+        {
+          "timeS": 6,
+          "pressureKpa": 5980.043,
+          "temperatureK": 97.5
+        },
+        {
+          "timeS": 7,
+          "pressureKpa": 5982.628,
+          "temperatureK": 98.75
+        },
+        {
+          "timeS": 8,
+          "pressureKpa": 5985.214,
+          "temperatureK": 100
+        },
+        {
+          "timeS": 9,
+          "pressureKpa": 5987.8,
+          "temperatureK": 101.25
+        },
+        {
+          "timeS": 10,
+          "pressureKpa": 5990.385,
+          "temperatureK": 102.5
+        },
+        {
+          "timeS": 11,
+          "pressureKpa": 5992.97,
+          "temperatureK": 103.75
+        },
+        {
+          "timeS": 12,
+          "pressureKpa": 5995.556,
+          "temperatureK": 105
+        },
+        {
+          "timeS": 13,
+          "pressureKpa": 5998.141,
+          "temperatureK": 106.25
+        },
+        {
+          "timeS": 14,
+          "pressureKpa": 6000.727,
+          "temperatureK": 107.5
+        },
+        {
+          "timeS": 15,
+          "pressureKpa": 6003.313,
+          "temperatureK": 108.75
+        },
+        {
+          "timeS": 16,
+          "pressureKpa": 6005.898,
+          "temperatureK": 110
+        },
+        {
+          "timeS": 17,
+          "pressureKpa": 6008.483,
+          "temperatureK": 111.25
+        },
+        {
+          "timeS": 18,
+          "pressureKpa": 6011.069,
+          "temperatureK": 112.5
+        },
+        {
+          "timeS": 19,
+          "pressureKpa": 6013.654,
+          "temperatureK": 113.75
+        },
+        {
+          "timeS": 20,
+          "pressureKpa": 6016.24,
+          "temperatureK": 115
+        },
+        {
+          "timeS": 21,
+          "pressureKpa": 6018.825,
+          "temperatureK": 116.25
+        },
+        {
+          "timeS": 22,
+          "pressureKpa": 6021.411,
+          "temperatureK": 117.5
+        },
+        {
+          "timeS": 23,
+          "pressureKpa": 6023.997,
+          "temperatureK": 118.75
+        },
+        {
+          "timeS": 24,
+          "pressureKpa": 6026.582,
+          "temperatureK": 120
+        },
+        {
+          "timeS": 25,
+          "pressureKpa": 6029.167,
+          "temperatureK": 121.25
+        },
+        {
+          "timeS": 26,
+          "pressureKpa": 6031.753,
+          "temperatureK": 122.5
+        },
+        {
+          "timeS": 27,
+          "pressureKpa": 6034.338,
+          "temperatureK": 123.75
+        },
+        {
+          "timeS": 28,
+          "pressureKpa": 6036.924,
+          "temperatureK": 125
+        },
+        {
+          "timeS": 29,
+          "pressureKpa": 6039.51,
+          "temperatureK": 126.25
+        },
+        {
+          "timeS": 30,
+          "pressureKpa": 6042.095,
+          "temperatureK": 127.5
+        },
+        {
+          "timeS": 31,
+          "pressureKpa": 6044.68,
+          "temperatureK": 128.75
+        },
+        {
+          "timeS": 32,
+          "pressureKpa": 6047.266,
+          "temperatureK": 130
+        },
+        {
+          "timeS": 33,
+          "pressureKpa": 6049.851,
+          "temperatureK": 131.25
+        },
+        {
+          "timeS": 34,
+          "pressureKpa": 6052.437,
+          "temperatureK": 132.5
+        },
+        {
+          "timeS": 35,
+          "pressureKpa": 6055.023,
+          "temperatureK": 133.75
+        },
+        {
+          "timeS": 36,
+          "pressureKpa": 6057.608,
+          "temperatureK": 135
+        },
+        {
+          "timeS": 37,
+          "pressureKpa": 6060.193,
+          "temperatureK": 136.25
+        },
+        {
+          "timeS": 38,
+          "pressureKpa": 6062.779,
+          "temperatureK": 137.5
+        },
+        {
+          "timeS": 39,
+          "pressureKpa": 6065.364,
+          "temperatureK": 138.75
+        },
+        {
+          "timeS": 40,
+          "pressureKpa": 6067.95,
+          "temperatureK": 140,
+          "event": "Illustrative internal heating"
+        },
+        {
+          "timeS": 41,
+          "pressureKpa": 6085.187,
+          "temperatureK": 153
+        },
+        {
+          "timeS": 42,
+          "pressureKpa": 6102.424,
+          "temperatureK": 166
+        },
+        {
+          "timeS": 43,
+          "pressureKpa": 6119.661,
+          "temperatureK": 179
+        },
+        {
+          "timeS": 44,
+          "pressureKpa": 6136.898,
+          "temperatureK": 192
+        },
+        {
+          "timeS": 45,
+          "pressureKpa": 6154.135,
+          "temperatureK": 205
+        },
+        {
+          "timeS": 46,
+          "pressureKpa": 6171.372,
+          "temperatureK": 218
+        },
+        {
+          "timeS": 47,
+          "pressureKpa": 6188.609,
+          "temperatureK": 231
+        },
+        {
+          "timeS": 48,
+          "pressureKpa": 6205.846,
+          "temperatureK": 244
+        },
+        {
+          "timeS": 49,
+          "pressureKpa": 6223.083,
+          "temperatureK": 257
+        },
+        {
+          "timeS": 50,
+          "pressureKpa": 6240.32,
+          "temperatureK": 270
+        },
+        {
+          "timeS": 51,
+          "pressureKpa": 6257.557,
+          "temperatureK": 283
+        },
+        {
+          "timeS": 52,
+          "pressureKpa": 6274.794,
+          "temperatureK": 296
+        },
+        {
+          "timeS": 53,
+          "pressureKpa": 6292.031,
+          "temperatureK": 309
+        },
+        {
+          "timeS": 54,
+          "pressureKpa": 6309.268,
+          "temperatureK": 322
+        },
+        {
+          "timeS": 55,
+          "pressureKpa": 6326.505,
+          "temperatureK": 335
+        },
+        {
+          "timeS": 56,
+          "pressureKpa": 6343.742,
+          "temperatureK": 348
+        },
+        {
+          "timeS": 57,
+          "pressureKpa": 6360.979,
+          "temperatureK": 361
+        },
+        {
+          "timeS": 58,
+          "pressureKpa": 6378.216,
+          "temperatureK": 374
+        },
+        {
+          "timeS": 59,
+          "pressureKpa": 6395.453,
+          "temperatureK": 387
+        },
+        {
+          "timeS": 60,
+          "pressureKpa": 6412.69,
+          "temperatureK": 400,
+          "event": "Illustrative rapid tank pressure rise"
+        },
+        {
+          "timeS": 61,
+          "pressureKpa": 6472.613,
+          "temperatureK": 445.66
+        },
+        {
+          "timeS": 62,
+          "pressureKpa": 6532.537,
+          "temperatureK": 491.32
+        },
+        {
+          "timeS": 63,
+          "pressureKpa": 6592.46,
+          "temperatureK": 536.98
+        },
+        {
+          "timeS": 64,
+          "pressureKpa": 6652.383,
+          "temperatureK": 582.64
+        },
+        {
+          "timeS": 65,
+          "pressureKpa": 6712.307,
+          "temperatureK": 628.29
+        },
+        {
+          "timeS": 66,
+          "pressureKpa": 6772.23,
+          "temperatureK": 673.95
+        },
+        {
+          "timeS": 67,
+          "pressureKpa": 6832.153,
+          "temperatureK": 719.61
+        },
+        {
+          "timeS": 68,
+          "pressureKpa": 6892.077,
+          "temperatureK": 765.27
+        },
+        {
+          "timeS": 69,
+          "pressureKpa": 6952,
+          "temperatureK": 810.93,
+          "event": "Brief peak 1008.3 psia; illustrative insulation temperature"
+        }
+      ],
+      "telemetry_status": "Illustrative one-second oxygen-tank reconstruction, not cabin telemetry. The 69-s duration and 1008.3-psia peak are supplied brief anchors; no raw tank time series supplied.",
+      "anchor_points": [
+        {
+          "timeS": 0,
+          "pressureKpa": 5964.53,
+          "temperatureK": 90,
+          "event": "Illustrative oxygen tank initial state"
+        },
+        {
+          "timeS": 40,
+          "pressureKpa": 6067.95,
+          "temperatureK": 140,
+          "event": "Illustrative internal heating"
+        },
+        {
+          "timeS": 60,
+          "pressureKpa": 6412.69,
+          "temperatureK": 400,
+          "event": "Illustrative rapid tank pressure rise"
+        },
+        {
+          "timeS": 69,
+          "pressureKpa": 6952,
+          "temperatureK": 810.93,
+          "event": "Brief peak 1008.3 psia; illustrative insulation temperature"
+        }
+      ],
+      "engineering_reforms": [
+        "Qualify switches and protective devices at actual ground-support supply voltages.",
+        "Redesign oxygen-tank wiring, heaters and thermostatic protection.",
+        "Audit configuration changes across suppliers and ground-support equipment."
+      ],
+      "sourceIds": [
+        "NASA-APOLLO13"
+      ],
+      "evidence_status": "65-V thermostat and insulation failure mechanism verified; supplied peak/duration unverified; timeline is reconstructed"
+    },
+    {
+      "id": "INC-MIR-1997",
+      "title": "Mir Space Station",
+      "date": "1997-02-23",
+      "summary": "A solid-fuel oxygen generator fire produced a concentrated flame and distributed smoke through the station, obstructing access to an escape vehicle. Accounts disagree on duration.",
+      "durationS": 840,
+      "atmosphere": {
+        "gravityG": 0,
+        "pressureKpa": 101.3,
+        "oxygenPct": 21,
+        "forcedFlowCms": 10
+      },
+      "telemetry": [
+        {
+          "timeS": 0,
+          "pressureKpa": 101.3,
+          "temperatureK": 298.15,
+          "event": "Solid lithium perchlorate oxygen generator ignition"
+        },
+        {
+          "timeS": 1,
+          "pressureKpa": 101.3,
+          "temperatureK": 312.32
+        },
+        {
+          "timeS": 2,
+          "pressureKpa": 101.3,
+          "temperatureK": 326.48
+        },
+        {
+          "timeS": 3,
+          "pressureKpa": 101.3,
+          "temperatureK": 340.65
+        },
+        {
+          "timeS": 4,
+          "pressureKpa": 101.3,
+          "temperatureK": 354.82
+        },
+        {
+          "timeS": 5,
+          "pressureKpa": 101.3,
+          "temperatureK": 368.98
+        },
+        {
+          "timeS": 6,
+          "pressureKpa": 101.3,
+          "temperatureK": 383.15
+        },
+        {
+          "timeS": 7,
+          "pressureKpa": 101.3,
+          "temperatureK": 397.32
+        },
+        {
+          "timeS": 8,
+          "pressureKpa": 101.3,
+          "temperatureK": 411.48
+        },
+        {
+          "timeS": 9,
+          "pressureKpa": 101.3,
+          "temperatureK": 425.65
+        },
+        {
+          "timeS": 10,
+          "pressureKpa": 101.3,
+          "temperatureK": 439.82
+        },
+        {
+          "timeS": 11,
+          "pressureKpa": 101.3,
+          "temperatureK": 453.98
+        },
+        {
+          "timeS": 12,
+          "pressureKpa": 101.3,
+          "temperatureK": 468.15
+        },
+        {
+          "timeS": 13,
+          "pressureKpa": 101.3,
+          "temperatureK": 482.32
+        },
+        {
+          "timeS": 14,
+          "pressureKpa": 101.3,
+          "temperatureK": 496.48
+        },
+        {
+          "timeS": 15,
+          "pressureKpa": 101.3,
+          "temperatureK": 510.65
+        },
+        {
+          "timeS": 16,
+          "pressureKpa": 101.3,
+          "temperatureK": 524.82
+        },
+        {
+          "timeS": 17,
+          "pressureKpa": 101.3,
+          "temperatureK": 538.98
+        },
+        {
+          "timeS": 18,
+          "pressureKpa": 101.3,
+          "temperatureK": 553.15
+        },
+        {
+          "timeS": 19,
+          "pressureKpa": 101.3,
+          "temperatureK": 567.32
+        },
+        {
+          "timeS": 20,
+          "pressureKpa": 101.3,
+          "temperatureK": 581.48
+        },
+        {
+          "timeS": 21,
+          "pressureKpa": 101.3,
+          "temperatureK": 595.65
+        },
+        {
+          "timeS": 22,
+          "pressureKpa": 101.3,
+          "temperatureK": 609.82
+        },
+        {
+          "timeS": 23,
+          "pressureKpa": 101.3,
+          "temperatureK": 623.98
+        },
+        {
+          "timeS": 24,
+          "pressureKpa": 101.3,
+          "temperatureK": 638.15
+        },
+        {
+          "timeS": 25,
+          "pressureKpa": 101.3,
+          "temperatureK": 652.32
+        },
+        {
+          "timeS": 26,
+          "pressureKpa": 101.3,
+          "temperatureK": 666.48
+        },
+        {
+          "timeS": 27,
+          "pressureKpa": 101.3,
+          "temperatureK": 680.65
+        },
+        {
+          "timeS": 28,
+          "pressureKpa": 101.3,
+          "temperatureK": 694.82
+        },
+        {
+          "timeS": 29,
+          "pressureKpa": 101.3,
+          "temperatureK": 708.98
+        },
+        {
+          "timeS": 30,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.15,
+          "event": "Illustrative local oxygen-generator flame reaches 450 °C"
+        },
+        {
+          "timeS": 31,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.48
+        },
+        {
+          "timeS": 32,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.82
+        },
+        {
+          "timeS": 33,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.15
+        },
+        {
+          "timeS": 34,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.48
+        },
+        {
+          "timeS": 35,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.82
+        },
+        {
+          "timeS": 36,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.15
+        },
+        {
+          "timeS": 37,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.48
+        },
+        {
+          "timeS": 38,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.82
+        },
+        {
+          "timeS": 39,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.15
+        },
+        {
+          "timeS": 40,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.48
+        },
+        {
+          "timeS": 41,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.82
+        },
+        {
+          "timeS": 42,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.15
+        },
+        {
+          "timeS": 43,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.48
+        },
+        {
+          "timeS": 44,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.82
+        },
+        {
+          "timeS": 45,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.15
+        },
+        {
+          "timeS": 46,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.48
+        },
+        {
+          "timeS": 47,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.82
+        },
+        {
+          "timeS": 48,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.15
+        },
+        {
+          "timeS": 49,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.48
+        },
+        {
+          "timeS": 50,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.82
+        },
+        {
+          "timeS": 51,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.15
+        },
+        {
+          "timeS": 52,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.48
+        },
+        {
+          "timeS": 53,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.82
+        },
+        {
+          "timeS": 54,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.15
+        },
+        {
+          "timeS": 55,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.48
+        },
+        {
+          "timeS": 56,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.82
+        },
+        {
+          "timeS": 57,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.15
+        },
+        {
+          "timeS": 58,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.48
+        },
+        {
+          "timeS": 59,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.82
+        },
+        {
+          "timeS": 60,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.15
+        },
+        {
+          "timeS": 61,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.48
+        },
+        {
+          "timeS": 62,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.82
+        },
+        {
+          "timeS": 63,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.15
+        },
+        {
+          "timeS": 64,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.48
+        },
+        {
+          "timeS": 65,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.82
+        },
+        {
+          "timeS": 66,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.15
+        },
+        {
+          "timeS": 67,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.48
+        },
+        {
+          "timeS": 68,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.82
+        },
+        {
+          "timeS": 69,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.15
+        },
+        {
+          "timeS": 70,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.48
+        },
+        {
+          "timeS": 71,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.82
+        },
+        {
+          "timeS": 72,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.15
+        },
+        {
+          "timeS": 73,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.48
+        },
+        {
+          "timeS": 74,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.82
+        },
+        {
+          "timeS": 75,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.15
+        },
+        {
+          "timeS": 76,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.48
+        },
+        {
+          "timeS": 77,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.82
+        },
+        {
+          "timeS": 78,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.15
+        },
+        {
+          "timeS": 79,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.48
+        },
+        {
+          "timeS": 80,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.82
+        },
+        {
+          "timeS": 81,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.15
+        },
+        {
+          "timeS": 82,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.48
+        },
+        {
+          "timeS": 83,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.82
+        },
+        {
+          "timeS": 84,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.15
+        },
+        {
+          "timeS": 85,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.48
+        },
+        {
+          "timeS": 86,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.82
+        },
+        {
+          "timeS": 87,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.15
+        },
+        {
+          "timeS": 88,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.48
+        },
+        {
+          "timeS": 89,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.82
+        },
+        {
+          "timeS": 90,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.15
+        },
+        {
+          "timeS": 91,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.48
+        },
+        {
+          "timeS": 92,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.82
+        },
+        {
+          "timeS": 93,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.15
+        },
+        {
+          "timeS": 94,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.48
+        },
+        {
+          "timeS": 95,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.82
+        },
+        {
+          "timeS": 96,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.15
+        },
+        {
+          "timeS": 97,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.48
+        },
+        {
+          "timeS": 98,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.82
+        },
+        {
+          "timeS": 99,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.15
+        },
+        {
+          "timeS": 100,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.48
+        },
+        {
+          "timeS": 101,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.82
+        },
+        {
+          "timeS": 102,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.15
+        },
+        {
+          "timeS": 103,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.48
+        },
+        {
+          "timeS": 104,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.82
+        },
+        {
+          "timeS": 105,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.15
+        },
+        {
+          "timeS": 106,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.48
+        },
+        {
+          "timeS": 107,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.82
+        },
+        {
+          "timeS": 108,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.15
+        },
+        {
+          "timeS": 109,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.48
+        },
+        {
+          "timeS": 110,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.82
+        },
+        {
+          "timeS": 111,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.15
+        },
+        {
+          "timeS": 112,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.48
+        },
+        {
+          "timeS": 113,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.82
+        },
+        {
+          "timeS": 114,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.15
+        },
+        {
+          "timeS": 115,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.48
+        },
+        {
+          "timeS": 116,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.82
+        },
+        {
+          "timeS": 117,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.15
+        },
+        {
+          "timeS": 118,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.48
+        },
+        {
+          "timeS": 119,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.82
+        },
+        {
+          "timeS": 120,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.15
+        },
+        {
+          "timeS": 121,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.48
+        },
+        {
+          "timeS": 122,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.82
+        },
+        {
+          "timeS": 123,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.15
+        },
+        {
+          "timeS": 124,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.48
+        },
+        {
+          "timeS": 125,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.82
+        },
+        {
+          "timeS": 126,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.15
+        },
+        {
+          "timeS": 127,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.48
+        },
+        {
+          "timeS": 128,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.82
+        },
+        {
+          "timeS": 129,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.15
+        },
+        {
+          "timeS": 130,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.48
+        },
+        {
+          "timeS": 131,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.82
+        },
+        {
+          "timeS": 132,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.15
+        },
+        {
+          "timeS": 133,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.48
+        },
+        {
+          "timeS": 134,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.82
+        },
+        {
+          "timeS": 135,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.15
+        },
+        {
+          "timeS": 136,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.48
+        },
+        {
+          "timeS": 137,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.82
+        },
+        {
+          "timeS": 138,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.15
+        },
+        {
+          "timeS": 139,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.48
+        },
+        {
+          "timeS": 140,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.82
+        },
+        {
+          "timeS": 141,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.15
+        },
+        {
+          "timeS": 142,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.48
+        },
+        {
+          "timeS": 143,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.82
+        },
+        {
+          "timeS": 144,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.15
+        },
+        {
+          "timeS": 145,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.48
+        },
+        {
+          "timeS": 146,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.82
+        },
+        {
+          "timeS": 147,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.15
+        },
+        {
+          "timeS": 148,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.48
+        },
+        {
+          "timeS": 149,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.82
+        },
+        {
+          "timeS": 150,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.15
+        },
+        {
+          "timeS": 151,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.48
+        },
+        {
+          "timeS": 152,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.82
+        },
+        {
+          "timeS": 153,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.15
+        },
+        {
+          "timeS": 154,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.48
+        },
+        {
+          "timeS": 155,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.82
+        },
+        {
+          "timeS": 156,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.15
+        },
+        {
+          "timeS": 157,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.48
+        },
+        {
+          "timeS": 158,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.82
+        },
+        {
+          "timeS": 159,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.15
+        },
+        {
+          "timeS": 160,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.48
+        },
+        {
+          "timeS": 161,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.82
+        },
+        {
+          "timeS": 162,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.15
+        },
+        {
+          "timeS": 163,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.48
+        },
+        {
+          "timeS": 164,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.82
+        },
+        {
+          "timeS": 165,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.15
+        },
+        {
+          "timeS": 166,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.48
+        },
+        {
+          "timeS": 167,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.82
+        },
+        {
+          "timeS": 168,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.15
+        },
+        {
+          "timeS": 169,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.48
+        },
+        {
+          "timeS": 170,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.82
+        },
+        {
+          "timeS": 171,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.15
+        },
+        {
+          "timeS": 172,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.48
+        },
+        {
+          "timeS": 173,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.82
+        },
+        {
+          "timeS": 174,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.15
+        },
+        {
+          "timeS": 175,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.48
+        },
+        {
+          "timeS": 176,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.82
+        },
+        {
+          "timeS": 177,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.15
+        },
+        {
+          "timeS": 178,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.48
+        },
+        {
+          "timeS": 179,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.82
+        },
+        {
+          "timeS": 180,
+          "pressureKpa": 101.3,
+          "temperatureK": 773.15,
+          "event": "Illustrative 500 °C local source; smoke spreads without buoyant stratification"
+        },
+        {
+          "timeS": 181,
+          "pressureKpa": 101.3,
+          "temperatureK": 773.06
+        },
+        {
+          "timeS": 182,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.96
+        },
+        {
+          "timeS": 183,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.87
+        },
+        {
+          "timeS": 184,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.78
+        },
+        {
+          "timeS": 185,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.69
+        },
+        {
+          "timeS": 186,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.59
+        },
+        {
+          "timeS": 187,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.5
+        },
+        {
+          "timeS": 188,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.41
+        },
+        {
+          "timeS": 189,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.32
+        },
+        {
+          "timeS": 190,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.22
+        },
+        {
+          "timeS": 191,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.13
+        },
+        {
+          "timeS": 192,
+          "pressureKpa": 101.3,
+          "temperatureK": 772.04
+        },
+        {
+          "timeS": 193,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.95
+        },
+        {
+          "timeS": 194,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.85
+        },
+        {
+          "timeS": 195,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.76
+        },
+        {
+          "timeS": 196,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.67
+        },
+        {
+          "timeS": 197,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.58
+        },
+        {
+          "timeS": 198,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.48
+        },
+        {
+          "timeS": 199,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.39
+        },
+        {
+          "timeS": 200,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.3
+        },
+        {
+          "timeS": 201,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.21
+        },
+        {
+          "timeS": 202,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.11
+        },
+        {
+          "timeS": 203,
+          "pressureKpa": 101.3,
+          "temperatureK": 771.02
+        },
+        {
+          "timeS": 204,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.93
+        },
+        {
+          "timeS": 205,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.84
+        },
+        {
+          "timeS": 206,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.74
+        },
+        {
+          "timeS": 207,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.65
+        },
+        {
+          "timeS": 208,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.56
+        },
+        {
+          "timeS": 209,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.46
+        },
+        {
+          "timeS": 210,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.37
+        },
+        {
+          "timeS": 211,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.28
+        },
+        {
+          "timeS": 212,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.19
+        },
+        {
+          "timeS": 213,
+          "pressureKpa": 101.3,
+          "temperatureK": 770.09
+        },
+        {
+          "timeS": 214,
+          "pressureKpa": 101.3,
+          "temperatureK": 770
+        },
+        {
+          "timeS": 215,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.91
+        },
+        {
+          "timeS": 216,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.82
+        },
+        {
+          "timeS": 217,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.72
+        },
+        {
+          "timeS": 218,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.63
+        },
+        {
+          "timeS": 219,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.54
+        },
+        {
+          "timeS": 220,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.45
+        },
+        {
+          "timeS": 221,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.35
+        },
+        {
+          "timeS": 222,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.26
+        },
+        {
+          "timeS": 223,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.17
+        },
+        {
+          "timeS": 224,
+          "pressureKpa": 101.3,
+          "temperatureK": 769.08
+        },
+        {
+          "timeS": 225,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.98
+        },
+        {
+          "timeS": 226,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.89
+        },
+        {
+          "timeS": 227,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.8
+        },
+        {
+          "timeS": 228,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.71
+        },
+        {
+          "timeS": 229,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.61
+        },
+        {
+          "timeS": 230,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.52
+        },
+        {
+          "timeS": 231,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.43
+        },
+        {
+          "timeS": 232,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.34
+        },
+        {
+          "timeS": 233,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.24
+        },
+        {
+          "timeS": 234,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.15
+        },
+        {
+          "timeS": 235,
+          "pressureKpa": 101.3,
+          "temperatureK": 768.06
+        },
+        {
+          "timeS": 236,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.96
+        },
+        {
+          "timeS": 237,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.87
+        },
+        {
+          "timeS": 238,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.78
+        },
+        {
+          "timeS": 239,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.69
+        },
+        {
+          "timeS": 240,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.59
+        },
+        {
+          "timeS": 241,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.5
+        },
+        {
+          "timeS": 242,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.41
+        },
+        {
+          "timeS": 243,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.32
+        },
+        {
+          "timeS": 244,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.22
+        },
+        {
+          "timeS": 245,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.13
+        },
+        {
+          "timeS": 246,
+          "pressureKpa": 101.3,
+          "temperatureK": 767.04
+        },
+        {
+          "timeS": 247,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.95
+        },
+        {
+          "timeS": 248,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.85
+        },
+        {
+          "timeS": 249,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.76
+        },
+        {
+          "timeS": 250,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.67
+        },
+        {
+          "timeS": 251,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.58
+        },
+        {
+          "timeS": 252,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.48
+        },
+        {
+          "timeS": 253,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.39
+        },
+        {
+          "timeS": 254,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.3
+        },
+        {
+          "timeS": 255,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.21
+        },
+        {
+          "timeS": 256,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.11
+        },
+        {
+          "timeS": 257,
+          "pressureKpa": 101.3,
+          "temperatureK": 766.02
+        },
+        {
+          "timeS": 258,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.93
+        },
+        {
+          "timeS": 259,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.84
+        },
+        {
+          "timeS": 260,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.74
+        },
+        {
+          "timeS": 261,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.65
+        },
+        {
+          "timeS": 262,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.56
+        },
+        {
+          "timeS": 263,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.46
+        },
+        {
+          "timeS": 264,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.37
+        },
+        {
+          "timeS": 265,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.28
+        },
+        {
+          "timeS": 266,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.19
+        },
+        {
+          "timeS": 267,
+          "pressureKpa": 101.3,
+          "temperatureK": 765.09
+        },
+        {
+          "timeS": 268,
+          "pressureKpa": 101.3,
+          "temperatureK": 765
+        },
+        {
+          "timeS": 269,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.91
+        },
+        {
+          "timeS": 270,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.82
+        },
+        {
+          "timeS": 271,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.72
+        },
+        {
+          "timeS": 272,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.63
+        },
+        {
+          "timeS": 273,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.54
+        },
+        {
+          "timeS": 274,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.45
+        },
+        {
+          "timeS": 275,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.35
+        },
+        {
+          "timeS": 276,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.26
+        },
+        {
+          "timeS": 277,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.17
+        },
+        {
+          "timeS": 278,
+          "pressureKpa": 101.3,
+          "temperatureK": 764.08
+        },
+        {
+          "timeS": 279,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.98
+        },
+        {
+          "timeS": 280,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.89
+        },
+        {
+          "timeS": 281,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.8
+        },
+        {
+          "timeS": 282,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.71
+        },
+        {
+          "timeS": 283,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.61
+        },
+        {
+          "timeS": 284,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.52
+        },
+        {
+          "timeS": 285,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.43
+        },
+        {
+          "timeS": 286,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.34
+        },
+        {
+          "timeS": 287,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.24
+        },
+        {
+          "timeS": 288,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.15
+        },
+        {
+          "timeS": 289,
+          "pressureKpa": 101.3,
+          "temperatureK": 763.06
+        },
+        {
+          "timeS": 290,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.96
+        },
+        {
+          "timeS": 291,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.87
+        },
+        {
+          "timeS": 292,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.78
+        },
+        {
+          "timeS": 293,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.69
+        },
+        {
+          "timeS": 294,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.59
+        },
+        {
+          "timeS": 295,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.5
+        },
+        {
+          "timeS": 296,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.41
+        },
+        {
+          "timeS": 297,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.32
+        },
+        {
+          "timeS": 298,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.22
+        },
+        {
+          "timeS": 299,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.13
+        },
+        {
+          "timeS": 300,
+          "pressureKpa": 101.3,
+          "temperatureK": 762.04
+        },
+        {
+          "timeS": 301,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.95
+        },
+        {
+          "timeS": 302,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.85
+        },
+        {
+          "timeS": 303,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.76
+        },
+        {
+          "timeS": 304,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.67
+        },
+        {
+          "timeS": 305,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.58
+        },
+        {
+          "timeS": 306,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.48
+        },
+        {
+          "timeS": 307,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.39
+        },
+        {
+          "timeS": 308,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.3
+        },
+        {
+          "timeS": 309,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.21
+        },
+        {
+          "timeS": 310,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.11
+        },
+        {
+          "timeS": 311,
+          "pressureKpa": 101.3,
+          "temperatureK": 761.02
+        },
+        {
+          "timeS": 312,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.93
+        },
+        {
+          "timeS": 313,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.84
+        },
+        {
+          "timeS": 314,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.74
+        },
+        {
+          "timeS": 315,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.65
+        },
+        {
+          "timeS": 316,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.56
+        },
+        {
+          "timeS": 317,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.46
+        },
+        {
+          "timeS": 318,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.37
+        },
+        {
+          "timeS": 319,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.28
+        },
+        {
+          "timeS": 320,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.19
+        },
+        {
+          "timeS": 321,
+          "pressureKpa": 101.3,
+          "temperatureK": 760.09
+        },
+        {
+          "timeS": 322,
+          "pressureKpa": 101.3,
+          "temperatureK": 760
+        },
+        {
+          "timeS": 323,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.91
+        },
+        {
+          "timeS": 324,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.82
+        },
+        {
+          "timeS": 325,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.72
+        },
+        {
+          "timeS": 326,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.63
+        },
+        {
+          "timeS": 327,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.54
+        },
+        {
+          "timeS": 328,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.45
+        },
+        {
+          "timeS": 329,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.35
+        },
+        {
+          "timeS": 330,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.26
+        },
+        {
+          "timeS": 331,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.17
+        },
+        {
+          "timeS": 332,
+          "pressureKpa": 101.3,
+          "temperatureK": 759.08
+        },
+        {
+          "timeS": 333,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.98
+        },
+        {
+          "timeS": 334,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.89
+        },
+        {
+          "timeS": 335,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.8
+        },
+        {
+          "timeS": 336,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.71
+        },
+        {
+          "timeS": 337,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.61
+        },
+        {
+          "timeS": 338,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.52
+        },
+        {
+          "timeS": 339,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.43
+        },
+        {
+          "timeS": 340,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.34
+        },
+        {
+          "timeS": 341,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.24
+        },
+        {
+          "timeS": 342,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.15
+        },
+        {
+          "timeS": 343,
+          "pressureKpa": 101.3,
+          "temperatureK": 758.06
+        },
+        {
+          "timeS": 344,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.96
+        },
+        {
+          "timeS": 345,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.87
+        },
+        {
+          "timeS": 346,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.78
+        },
+        {
+          "timeS": 347,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.69
+        },
+        {
+          "timeS": 348,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.59
+        },
+        {
+          "timeS": 349,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.5
+        },
+        {
+          "timeS": 350,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.41
+        },
+        {
+          "timeS": 351,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.32
+        },
+        {
+          "timeS": 352,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.22
+        },
+        {
+          "timeS": 353,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.13
+        },
+        {
+          "timeS": 354,
+          "pressureKpa": 101.3,
+          "temperatureK": 757.04
+        },
+        {
+          "timeS": 355,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.95
+        },
+        {
+          "timeS": 356,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.85
+        },
+        {
+          "timeS": 357,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.76
+        },
+        {
+          "timeS": 358,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.67
+        },
+        {
+          "timeS": 359,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.58
+        },
+        {
+          "timeS": 360,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.48
+        },
+        {
+          "timeS": 361,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.39
+        },
+        {
+          "timeS": 362,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.3
+        },
+        {
+          "timeS": 363,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.21
+        },
+        {
+          "timeS": 364,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.11
+        },
+        {
+          "timeS": 365,
+          "pressureKpa": 101.3,
+          "temperatureK": 756.02
+        },
+        {
+          "timeS": 366,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.93
+        },
+        {
+          "timeS": 367,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.84
+        },
+        {
+          "timeS": 368,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.74
+        },
+        {
+          "timeS": 369,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.65
+        },
+        {
+          "timeS": 370,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.56
+        },
+        {
+          "timeS": 371,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.46
+        },
+        {
+          "timeS": 372,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.37
+        },
+        {
+          "timeS": 373,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.28
+        },
+        {
+          "timeS": 374,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.19
+        },
+        {
+          "timeS": 375,
+          "pressureKpa": 101.3,
+          "temperatureK": 755.09
+        },
+        {
+          "timeS": 376,
+          "pressureKpa": 101.3,
+          "temperatureK": 755
+        },
+        {
+          "timeS": 377,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.91
+        },
+        {
+          "timeS": 378,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.82
+        },
+        {
+          "timeS": 379,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.72
+        },
+        {
+          "timeS": 380,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.63
+        },
+        {
+          "timeS": 381,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.54
+        },
+        {
+          "timeS": 382,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.45
+        },
+        {
+          "timeS": 383,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.35
+        },
+        {
+          "timeS": 384,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.26
+        },
+        {
+          "timeS": 385,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.17
+        },
+        {
+          "timeS": 386,
+          "pressureKpa": 101.3,
+          "temperatureK": 754.08
+        },
+        {
+          "timeS": 387,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.98
+        },
+        {
+          "timeS": 388,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.89
+        },
+        {
+          "timeS": 389,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.8
+        },
+        {
+          "timeS": 390,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.71
+        },
+        {
+          "timeS": 391,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.61
+        },
+        {
+          "timeS": 392,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.52
+        },
+        {
+          "timeS": 393,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.43
+        },
+        {
+          "timeS": 394,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.34
+        },
+        {
+          "timeS": 395,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.24
+        },
+        {
+          "timeS": 396,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.15
+        },
+        {
+          "timeS": 397,
+          "pressureKpa": 101.3,
+          "temperatureK": 753.06
+        },
+        {
+          "timeS": 398,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.96
+        },
+        {
+          "timeS": 399,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.87
+        },
+        {
+          "timeS": 400,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.78
+        },
+        {
+          "timeS": 401,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.69
+        },
+        {
+          "timeS": 402,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.59
+        },
+        {
+          "timeS": 403,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.5
+        },
+        {
+          "timeS": 404,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.41
+        },
+        {
+          "timeS": 405,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.32
+        },
+        {
+          "timeS": 406,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.22
+        },
+        {
+          "timeS": 407,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.13
+        },
+        {
+          "timeS": 408,
+          "pressureKpa": 101.3,
+          "temperatureK": 752.04
+        },
+        {
+          "timeS": 409,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.95
+        },
+        {
+          "timeS": 410,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.85
+        },
+        {
+          "timeS": 411,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.76
+        },
+        {
+          "timeS": 412,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.67
+        },
+        {
+          "timeS": 413,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.58
+        },
+        {
+          "timeS": 414,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.48
+        },
+        {
+          "timeS": 415,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.39
+        },
+        {
+          "timeS": 416,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.3
+        },
+        {
+          "timeS": 417,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.21
+        },
+        {
+          "timeS": 418,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.11
+        },
+        {
+          "timeS": 419,
+          "pressureKpa": 101.3,
+          "temperatureK": 751.02
+        },
+        {
+          "timeS": 420,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.93
+        },
+        {
+          "timeS": 421,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.84
+        },
+        {
+          "timeS": 422,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.74
+        },
+        {
+          "timeS": 423,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.65
+        },
+        {
+          "timeS": 424,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.56
+        },
+        {
+          "timeS": 425,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.46
+        },
+        {
+          "timeS": 426,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.37
+        },
+        {
+          "timeS": 427,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.28
+        },
+        {
+          "timeS": 428,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.19
+        },
+        {
+          "timeS": 429,
+          "pressureKpa": 101.3,
+          "temperatureK": 750.09
+        },
+        {
+          "timeS": 430,
+          "pressureKpa": 101.3,
+          "temperatureK": 750
+        },
+        {
+          "timeS": 431,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.91
+        },
+        {
+          "timeS": 432,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.82
+        },
+        {
+          "timeS": 433,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.72
+        },
+        {
+          "timeS": 434,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.63
+        },
+        {
+          "timeS": 435,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.54
+        },
+        {
+          "timeS": 436,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.45
+        },
+        {
+          "timeS": 437,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.35
+        },
+        {
+          "timeS": 438,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.26
+        },
+        {
+          "timeS": 439,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.17
+        },
+        {
+          "timeS": 440,
+          "pressureKpa": 101.3,
+          "temperatureK": 749.08
+        },
+        {
+          "timeS": 441,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.98
+        },
+        {
+          "timeS": 442,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.89
+        },
+        {
+          "timeS": 443,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.8
+        },
+        {
+          "timeS": 444,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.71
+        },
+        {
+          "timeS": 445,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.61
+        },
+        {
+          "timeS": 446,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.52
+        },
+        {
+          "timeS": 447,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.43
+        },
+        {
+          "timeS": 448,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.34
+        },
+        {
+          "timeS": 449,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.24
+        },
+        {
+          "timeS": 450,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.15
+        },
+        {
+          "timeS": 451,
+          "pressureKpa": 101.3,
+          "temperatureK": 748.06
+        },
+        {
+          "timeS": 452,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.96
+        },
+        {
+          "timeS": 453,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.87
+        },
+        {
+          "timeS": 454,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.78
+        },
+        {
+          "timeS": 455,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.69
+        },
+        {
+          "timeS": 456,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.59
+        },
+        {
+          "timeS": 457,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.5
+        },
+        {
+          "timeS": 458,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.41
+        },
+        {
+          "timeS": 459,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.32
+        },
+        {
+          "timeS": 460,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.22
+        },
+        {
+          "timeS": 461,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.13
+        },
+        {
+          "timeS": 462,
+          "pressureKpa": 101.3,
+          "temperatureK": 747.04
+        },
+        {
+          "timeS": 463,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.95
+        },
+        {
+          "timeS": 464,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.85
+        },
+        {
+          "timeS": 465,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.76
+        },
+        {
+          "timeS": 466,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.67
+        },
+        {
+          "timeS": 467,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.58
+        },
+        {
+          "timeS": 468,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.48
+        },
+        {
+          "timeS": 469,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.39
+        },
+        {
+          "timeS": 470,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.3
+        },
+        {
+          "timeS": 471,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.21
+        },
+        {
+          "timeS": 472,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.11
+        },
+        {
+          "timeS": 473,
+          "pressureKpa": 101.3,
+          "temperatureK": 746.02
+        },
+        {
+          "timeS": 474,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.93
+        },
+        {
+          "timeS": 475,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.84
+        },
+        {
+          "timeS": 476,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.74
+        },
+        {
+          "timeS": 477,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.65
+        },
+        {
+          "timeS": 478,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.56
+        },
+        {
+          "timeS": 479,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.46
+        },
+        {
+          "timeS": 480,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.37
+        },
+        {
+          "timeS": 481,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.28
+        },
+        {
+          "timeS": 482,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.19
+        },
+        {
+          "timeS": 483,
+          "pressureKpa": 101.3,
+          "temperatureK": 745.09
+        },
+        {
+          "timeS": 484,
+          "pressureKpa": 101.3,
+          "temperatureK": 745
+        },
+        {
+          "timeS": 485,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.91
+        },
+        {
+          "timeS": 486,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.82
+        },
+        {
+          "timeS": 487,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.72
+        },
+        {
+          "timeS": 488,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.63
+        },
+        {
+          "timeS": 489,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.54
+        },
+        {
+          "timeS": 490,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.45
+        },
+        {
+          "timeS": 491,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.35
+        },
+        {
+          "timeS": 492,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.26
+        },
+        {
+          "timeS": 493,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.17
+        },
+        {
+          "timeS": 494,
+          "pressureKpa": 101.3,
+          "temperatureK": 744.08
+        },
+        {
+          "timeS": 495,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.98
+        },
+        {
+          "timeS": 496,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.89
+        },
+        {
+          "timeS": 497,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.8
+        },
+        {
+          "timeS": 498,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.71
+        },
+        {
+          "timeS": 499,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.61
+        },
+        {
+          "timeS": 500,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.52
+        },
+        {
+          "timeS": 501,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.43
+        },
+        {
+          "timeS": 502,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.34
+        },
+        {
+          "timeS": 503,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.24
+        },
+        {
+          "timeS": 504,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.15
+        },
+        {
+          "timeS": 505,
+          "pressureKpa": 101.3,
+          "temperatureK": 743.06
+        },
+        {
+          "timeS": 506,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.96
+        },
+        {
+          "timeS": 507,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.87
+        },
+        {
+          "timeS": 508,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.78
+        },
+        {
+          "timeS": 509,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.69
+        },
+        {
+          "timeS": 510,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.59
+        },
+        {
+          "timeS": 511,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.5
+        },
+        {
+          "timeS": 512,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.41
+        },
+        {
+          "timeS": 513,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.32
+        },
+        {
+          "timeS": 514,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.22
+        },
+        {
+          "timeS": 515,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.13
+        },
+        {
+          "timeS": 516,
+          "pressureKpa": 101.3,
+          "temperatureK": 742.04
+        },
+        {
+          "timeS": 517,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.95
+        },
+        {
+          "timeS": 518,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.85
+        },
+        {
+          "timeS": 519,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.76
+        },
+        {
+          "timeS": 520,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.67
+        },
+        {
+          "timeS": 521,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.58
+        },
+        {
+          "timeS": 522,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.48
+        },
+        {
+          "timeS": 523,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.39
+        },
+        {
+          "timeS": 524,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.3
+        },
+        {
+          "timeS": 525,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.21
+        },
+        {
+          "timeS": 526,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.11
+        },
+        {
+          "timeS": 527,
+          "pressureKpa": 101.3,
+          "temperatureK": 741.02
+        },
+        {
+          "timeS": 528,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.93
+        },
+        {
+          "timeS": 529,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.84
+        },
+        {
+          "timeS": 530,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.74
+        },
+        {
+          "timeS": 531,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.65
+        },
+        {
+          "timeS": 532,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.56
+        },
+        {
+          "timeS": 533,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.46
+        },
+        {
+          "timeS": 534,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.37
+        },
+        {
+          "timeS": 535,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.28
+        },
+        {
+          "timeS": 536,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.19
+        },
+        {
+          "timeS": 537,
+          "pressureKpa": 101.3,
+          "temperatureK": 740.09
+        },
+        {
+          "timeS": 538,
+          "pressureKpa": 101.3,
+          "temperatureK": 740
+        },
+        {
+          "timeS": 539,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.91
+        },
+        {
+          "timeS": 540,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.82
+        },
+        {
+          "timeS": 541,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.72
+        },
+        {
+          "timeS": 542,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.63
+        },
+        {
+          "timeS": 543,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.54
+        },
+        {
+          "timeS": 544,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.45
+        },
+        {
+          "timeS": 545,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.35
+        },
+        {
+          "timeS": 546,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.26
+        },
+        {
+          "timeS": 547,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.17
+        },
+        {
+          "timeS": 548,
+          "pressureKpa": 101.3,
+          "temperatureK": 739.08
+        },
+        {
+          "timeS": 549,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.98
+        },
+        {
+          "timeS": 550,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.89
+        },
+        {
+          "timeS": 551,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.8
+        },
+        {
+          "timeS": 552,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.71
+        },
+        {
+          "timeS": 553,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.61
+        },
+        {
+          "timeS": 554,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.52
+        },
+        {
+          "timeS": 555,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.43
+        },
+        {
+          "timeS": 556,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.34
+        },
+        {
+          "timeS": 557,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.24
+        },
+        {
+          "timeS": 558,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.15
+        },
+        {
+          "timeS": 559,
+          "pressureKpa": 101.3,
+          "temperatureK": 738.06
+        },
+        {
+          "timeS": 560,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.96
+        },
+        {
+          "timeS": 561,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.87
+        },
+        {
+          "timeS": 562,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.78
+        },
+        {
+          "timeS": 563,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.69
+        },
+        {
+          "timeS": 564,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.59
+        },
+        {
+          "timeS": 565,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.5
+        },
+        {
+          "timeS": 566,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.41
+        },
+        {
+          "timeS": 567,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.32
+        },
+        {
+          "timeS": 568,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.22
+        },
+        {
+          "timeS": 569,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.13
+        },
+        {
+          "timeS": 570,
+          "pressureKpa": 101.3,
+          "temperatureK": 737.04
+        },
+        {
+          "timeS": 571,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.95
+        },
+        {
+          "timeS": 572,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.85
+        },
+        {
+          "timeS": 573,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.76
+        },
+        {
+          "timeS": 574,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.67
+        },
+        {
+          "timeS": 575,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.58
+        },
+        {
+          "timeS": 576,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.48
+        },
+        {
+          "timeS": 577,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.39
+        },
+        {
+          "timeS": 578,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.3
+        },
+        {
+          "timeS": 579,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.21
+        },
+        {
+          "timeS": 580,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.11
+        },
+        {
+          "timeS": 581,
+          "pressureKpa": 101.3,
+          "temperatureK": 736.02
+        },
+        {
+          "timeS": 582,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.93
+        },
+        {
+          "timeS": 583,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.84
+        },
+        {
+          "timeS": 584,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.74
+        },
+        {
+          "timeS": 585,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.65
+        },
+        {
+          "timeS": 586,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.56
+        },
+        {
+          "timeS": 587,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.46
+        },
+        {
+          "timeS": 588,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.37
+        },
+        {
+          "timeS": 589,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.28
+        },
+        {
+          "timeS": 590,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.19
+        },
+        {
+          "timeS": 591,
+          "pressureKpa": 101.3,
+          "temperatureK": 735.09
+        },
+        {
+          "timeS": 592,
+          "pressureKpa": 101.3,
+          "temperatureK": 735
+        },
+        {
+          "timeS": 593,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.91
+        },
+        {
+          "timeS": 594,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.82
+        },
+        {
+          "timeS": 595,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.72
+        },
+        {
+          "timeS": 596,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.63
+        },
+        {
+          "timeS": 597,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.54
+        },
+        {
+          "timeS": 598,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.45
+        },
+        {
+          "timeS": 599,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.35
+        },
+        {
+          "timeS": 600,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.26
+        },
+        {
+          "timeS": 601,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.17
+        },
+        {
+          "timeS": 602,
+          "pressureKpa": 101.3,
+          "temperatureK": 734.08
+        },
+        {
+          "timeS": 603,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.98
+        },
+        {
+          "timeS": 604,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.89
+        },
+        {
+          "timeS": 605,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.8
+        },
+        {
+          "timeS": 606,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.71
+        },
+        {
+          "timeS": 607,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.61
+        },
+        {
+          "timeS": 608,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.52
+        },
+        {
+          "timeS": 609,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.43
+        },
+        {
+          "timeS": 610,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.34
+        },
+        {
+          "timeS": 611,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.24
+        },
+        {
+          "timeS": 612,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.15
+        },
+        {
+          "timeS": 613,
+          "pressureKpa": 101.3,
+          "temperatureK": 733.06
+        },
+        {
+          "timeS": 614,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.96
+        },
+        {
+          "timeS": 615,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.87
+        },
+        {
+          "timeS": 616,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.78
+        },
+        {
+          "timeS": 617,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.69
+        },
+        {
+          "timeS": 618,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.59
+        },
+        {
+          "timeS": 619,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.5
+        },
+        {
+          "timeS": 620,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.41
+        },
+        {
+          "timeS": 621,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.32
+        },
+        {
+          "timeS": 622,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.22
+        },
+        {
+          "timeS": 623,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.13
+        },
+        {
+          "timeS": 624,
+          "pressureKpa": 101.3,
+          "temperatureK": 732.04
+        },
+        {
+          "timeS": 625,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.95
+        },
+        {
+          "timeS": 626,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.85
+        },
+        {
+          "timeS": 627,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.76
+        },
+        {
+          "timeS": 628,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.67
+        },
+        {
+          "timeS": 629,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.58
+        },
+        {
+          "timeS": 630,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.48
+        },
+        {
+          "timeS": 631,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.39
+        },
+        {
+          "timeS": 632,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.3
+        },
+        {
+          "timeS": 633,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.21
+        },
+        {
+          "timeS": 634,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.11
+        },
+        {
+          "timeS": 635,
+          "pressureKpa": 101.3,
+          "temperatureK": 731.02
+        },
+        {
+          "timeS": 636,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.93
+        },
+        {
+          "timeS": 637,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.84
+        },
+        {
+          "timeS": 638,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.74
+        },
+        {
+          "timeS": 639,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.65
+        },
+        {
+          "timeS": 640,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.56
+        },
+        {
+          "timeS": 641,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.46
+        },
+        {
+          "timeS": 642,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.37
+        },
+        {
+          "timeS": 643,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.28
+        },
+        {
+          "timeS": 644,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.19
+        },
+        {
+          "timeS": 645,
+          "pressureKpa": 101.3,
+          "temperatureK": 730.09
+        },
+        {
+          "timeS": 646,
+          "pressureKpa": 101.3,
+          "temperatureK": 730
+        },
+        {
+          "timeS": 647,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.91
+        },
+        {
+          "timeS": 648,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.82
+        },
+        {
+          "timeS": 649,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.72
+        },
+        {
+          "timeS": 650,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.63
+        },
+        {
+          "timeS": 651,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.54
+        },
+        {
+          "timeS": 652,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.45
+        },
+        {
+          "timeS": 653,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.35
+        },
+        {
+          "timeS": 654,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.26
+        },
+        {
+          "timeS": 655,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.17
+        },
+        {
+          "timeS": 656,
+          "pressureKpa": 101.3,
+          "temperatureK": 729.08
+        },
+        {
+          "timeS": 657,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.98
+        },
+        {
+          "timeS": 658,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.89
+        },
+        {
+          "timeS": 659,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.8
+        },
+        {
+          "timeS": 660,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.71
+        },
+        {
+          "timeS": 661,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.61
+        },
+        {
+          "timeS": 662,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.52
+        },
+        {
+          "timeS": 663,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.43
+        },
+        {
+          "timeS": 664,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.34
+        },
+        {
+          "timeS": 665,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.24
+        },
+        {
+          "timeS": 666,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.15
+        },
+        {
+          "timeS": 667,
+          "pressureKpa": 101.3,
+          "temperatureK": 728.06
+        },
+        {
+          "timeS": 668,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.96
+        },
+        {
+          "timeS": 669,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.87
+        },
+        {
+          "timeS": 670,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.78
+        },
+        {
+          "timeS": 671,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.69
+        },
+        {
+          "timeS": 672,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.59
+        },
+        {
+          "timeS": 673,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.5
+        },
+        {
+          "timeS": 674,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.41
+        },
+        {
+          "timeS": 675,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.32
+        },
+        {
+          "timeS": 676,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.22
+        },
+        {
+          "timeS": 677,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.13
+        },
+        {
+          "timeS": 678,
+          "pressureKpa": 101.3,
+          "temperatureK": 727.04
+        },
+        {
+          "timeS": 679,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.95
+        },
+        {
+          "timeS": 680,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.85
+        },
+        {
+          "timeS": 681,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.76
+        },
+        {
+          "timeS": 682,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.67
+        },
+        {
+          "timeS": 683,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.58
+        },
+        {
+          "timeS": 684,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.48
+        },
+        {
+          "timeS": 685,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.39
+        },
+        {
+          "timeS": 686,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.3
+        },
+        {
+          "timeS": 687,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.21
+        },
+        {
+          "timeS": 688,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.11
+        },
+        {
+          "timeS": 689,
+          "pressureKpa": 101.3,
+          "temperatureK": 726.02
+        },
+        {
+          "timeS": 690,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.93
+        },
+        {
+          "timeS": 691,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.84
+        },
+        {
+          "timeS": 692,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.74
+        },
+        {
+          "timeS": 693,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.65
+        },
+        {
+          "timeS": 694,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.56
+        },
+        {
+          "timeS": 695,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.46
+        },
+        {
+          "timeS": 696,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.37
+        },
+        {
+          "timeS": 697,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.28
+        },
+        {
+          "timeS": 698,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.19
+        },
+        {
+          "timeS": 699,
+          "pressureKpa": 101.3,
+          "temperatureK": 725.09
+        },
+        {
+          "timeS": 700,
+          "pressureKpa": 101.3,
+          "temperatureK": 725
+        },
+        {
+          "timeS": 701,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.91
+        },
+        {
+          "timeS": 702,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.82
+        },
+        {
+          "timeS": 703,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.72
+        },
+        {
+          "timeS": 704,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.63
+        },
+        {
+          "timeS": 705,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.54
+        },
+        {
+          "timeS": 706,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.45
+        },
+        {
+          "timeS": 707,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.35
+        },
+        {
+          "timeS": 708,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.26
+        },
+        {
+          "timeS": 709,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.17
+        },
+        {
+          "timeS": 710,
+          "pressureKpa": 101.3,
+          "temperatureK": 724.08
+        },
+        {
+          "timeS": 711,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.98
+        },
+        {
+          "timeS": 712,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.89
+        },
+        {
+          "timeS": 713,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.8
+        },
+        {
+          "timeS": 714,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.71
+        },
+        {
+          "timeS": 715,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.61
+        },
+        {
+          "timeS": 716,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.52
+        },
+        {
+          "timeS": 717,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.43
+        },
+        {
+          "timeS": 718,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.34
+        },
+        {
+          "timeS": 719,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.24
+        },
+        {
+          "timeS": 720,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.15,
+          "event": "Illustrative suppression phase"
+        },
+        {
+          "timeS": 721,
+          "pressureKpa": 101.3,
+          "temperatureK": 720.04
+        },
+        {
+          "timeS": 722,
+          "pressureKpa": 101.3,
+          "temperatureK": 716.93
+        },
+        {
+          "timeS": 723,
+          "pressureKpa": 101.3,
+          "temperatureK": 713.82
+        },
+        {
+          "timeS": 724,
+          "pressureKpa": 101.3,
+          "temperatureK": 710.71
+        },
+        {
+          "timeS": 725,
+          "pressureKpa": 101.3,
+          "temperatureK": 707.6
+        },
+        {
+          "timeS": 726,
+          "pressureKpa": 101.3,
+          "temperatureK": 704.49
+        },
+        {
+          "timeS": 727,
+          "pressureKpa": 101.3,
+          "temperatureK": 701.38
+        },
+        {
+          "timeS": 728,
+          "pressureKpa": 101.3,
+          "temperatureK": 698.27
+        },
+        {
+          "timeS": 729,
+          "pressureKpa": 101.3,
+          "temperatureK": 695.16
+        },
+        {
+          "timeS": 730,
+          "pressureKpa": 101.3,
+          "temperatureK": 692.05
+        },
+        {
+          "timeS": 731,
+          "pressureKpa": 101.3,
+          "temperatureK": 688.94
+        },
+        {
+          "timeS": 732,
+          "pressureKpa": 101.3,
+          "temperatureK": 685.84
+        },
+        {
+          "timeS": 733,
+          "pressureKpa": 101.3,
+          "temperatureK": 682.73
+        },
+        {
+          "timeS": 734,
+          "pressureKpa": 101.3,
+          "temperatureK": 679.62
+        },
+        {
+          "timeS": 735,
+          "pressureKpa": 101.3,
+          "temperatureK": 676.51
+        },
+        {
+          "timeS": 736,
+          "pressureKpa": 101.3,
+          "temperatureK": 673.4
+        },
+        {
+          "timeS": 737,
+          "pressureKpa": 101.3,
+          "temperatureK": 670.29
+        },
+        {
+          "timeS": 738,
+          "pressureKpa": 101.3,
+          "temperatureK": 667.18
+        },
+        {
+          "timeS": 739,
+          "pressureKpa": 101.3,
+          "temperatureK": 664.07
+        },
+        {
+          "timeS": 740,
+          "pressureKpa": 101.3,
+          "temperatureK": 660.96
+        },
+        {
+          "timeS": 741,
+          "pressureKpa": 101.3,
+          "temperatureK": 657.85
+        },
+        {
+          "timeS": 742,
+          "pressureKpa": 101.3,
+          "temperatureK": 654.74
+        },
+        {
+          "timeS": 743,
+          "pressureKpa": 101.3,
+          "temperatureK": 651.63
+        },
+        {
+          "timeS": 744,
+          "pressureKpa": 101.3,
+          "temperatureK": 648.52
+        },
+        {
+          "timeS": 745,
+          "pressureKpa": 101.3,
+          "temperatureK": 645.41
+        },
+        {
+          "timeS": 746,
+          "pressureKpa": 101.3,
+          "temperatureK": 642.3
+        },
+        {
+          "timeS": 747,
+          "pressureKpa": 101.3,
+          "temperatureK": 639.19
+        },
+        {
+          "timeS": 748,
+          "pressureKpa": 101.3,
+          "temperatureK": 636.08
+        },
+        {
+          "timeS": 749,
+          "pressureKpa": 101.3,
+          "temperatureK": 632.97
+        },
+        {
+          "timeS": 750,
+          "pressureKpa": 101.3,
+          "temperatureK": 629.86
+        },
+        {
+          "timeS": 751,
+          "pressureKpa": 101.3,
+          "temperatureK": 626.75
+        },
+        {
+          "timeS": 752,
+          "pressureKpa": 101.3,
+          "temperatureK": 623.64
+        },
+        {
+          "timeS": 753,
+          "pressureKpa": 101.3,
+          "temperatureK": 620.53
+        },
+        {
+          "timeS": 754,
+          "pressureKpa": 101.3,
+          "temperatureK": 617.42
+        },
+        {
+          "timeS": 755,
+          "pressureKpa": 101.3,
+          "temperatureK": 614.31
+        },
+        {
+          "timeS": 756,
+          "pressureKpa": 101.3,
+          "temperatureK": 611.2
+        },
+        {
+          "timeS": 757,
+          "pressureKpa": 101.3,
+          "temperatureK": 608.1
+        },
+        {
+          "timeS": 758,
+          "pressureKpa": 101.3,
+          "temperatureK": 604.99
+        },
+        {
+          "timeS": 759,
+          "pressureKpa": 101.3,
+          "temperatureK": 601.88
+        },
+        {
+          "timeS": 760,
+          "pressureKpa": 101.3,
+          "temperatureK": 598.77
+        },
+        {
+          "timeS": 761,
+          "pressureKpa": 101.3,
+          "temperatureK": 595.66
+        },
+        {
+          "timeS": 762,
+          "pressureKpa": 101.3,
+          "temperatureK": 592.55
+        },
+        {
+          "timeS": 763,
+          "pressureKpa": 101.3,
+          "temperatureK": 589.44
+        },
+        {
+          "timeS": 764,
+          "pressureKpa": 101.3,
+          "temperatureK": 586.33
+        },
+        {
+          "timeS": 765,
+          "pressureKpa": 101.3,
+          "temperatureK": 583.22
+        },
+        {
+          "timeS": 766,
+          "pressureKpa": 101.3,
+          "temperatureK": 580.11
+        },
+        {
+          "timeS": 767,
+          "pressureKpa": 101.3,
+          "temperatureK": 577
+        },
+        {
+          "timeS": 768,
+          "pressureKpa": 101.3,
+          "temperatureK": 573.89
+        },
+        {
+          "timeS": 769,
+          "pressureKpa": 101.3,
+          "temperatureK": 570.78
+        },
+        {
+          "timeS": 770,
+          "pressureKpa": 101.3,
+          "temperatureK": 567.67
+        },
+        {
+          "timeS": 771,
+          "pressureKpa": 101.3,
+          "temperatureK": 564.56
+        },
+        {
+          "timeS": 772,
+          "pressureKpa": 101.3,
+          "temperatureK": 561.45
+        },
+        {
+          "timeS": 773,
+          "pressureKpa": 101.3,
+          "temperatureK": 558.34
+        },
+        {
+          "timeS": 774,
+          "pressureKpa": 101.3,
+          "temperatureK": 555.23
+        },
+        {
+          "timeS": 775,
+          "pressureKpa": 101.3,
+          "temperatureK": 552.12
+        },
+        {
+          "timeS": 776,
+          "pressureKpa": 101.3,
+          "temperatureK": 549.01
+        },
+        {
+          "timeS": 777,
+          "pressureKpa": 101.3,
+          "temperatureK": 545.9
+        },
+        {
+          "timeS": 778,
+          "pressureKpa": 101.3,
+          "temperatureK": 542.79
+        },
+        {
+          "timeS": 779,
+          "pressureKpa": 101.3,
+          "temperatureK": 539.68
+        },
+        {
+          "timeS": 780,
+          "pressureKpa": 101.3,
+          "temperatureK": 536.58
+        },
+        {
+          "timeS": 781,
+          "pressureKpa": 101.3,
+          "temperatureK": 533.47
+        },
+        {
+          "timeS": 782,
+          "pressureKpa": 101.3,
+          "temperatureK": 530.36
+        },
+        {
+          "timeS": 783,
+          "pressureKpa": 101.3,
+          "temperatureK": 527.25
+        },
+        {
+          "timeS": 784,
+          "pressureKpa": 101.3,
+          "temperatureK": 524.14
+        },
+        {
+          "timeS": 785,
+          "pressureKpa": 101.3,
+          "temperatureK": 521.03
+        },
+        {
+          "timeS": 786,
+          "pressureKpa": 101.3,
+          "temperatureK": 517.92
+        },
+        {
+          "timeS": 787,
+          "pressureKpa": 101.3,
+          "temperatureK": 514.81
+        },
+        {
+          "timeS": 788,
+          "pressureKpa": 101.3,
+          "temperatureK": 511.7
+        },
+        {
+          "timeS": 789,
+          "pressureKpa": 101.3,
+          "temperatureK": 508.59
+        },
+        {
+          "timeS": 790,
+          "pressureKpa": 101.3,
+          "temperatureK": 505.48
+        },
+        {
+          "timeS": 791,
+          "pressureKpa": 101.3,
+          "temperatureK": 502.37
+        },
+        {
+          "timeS": 792,
+          "pressureKpa": 101.3,
+          "temperatureK": 499.26
+        },
+        {
+          "timeS": 793,
+          "pressureKpa": 101.3,
+          "temperatureK": 496.15
+        },
+        {
+          "timeS": 794,
+          "pressureKpa": 101.3,
+          "temperatureK": 493.04
+        },
+        {
+          "timeS": 795,
+          "pressureKpa": 101.3,
+          "temperatureK": 489.93
+        },
+        {
+          "timeS": 796,
+          "pressureKpa": 101.3,
+          "temperatureK": 486.82
+        },
+        {
+          "timeS": 797,
+          "pressureKpa": 101.3,
+          "temperatureK": 483.71
+        },
+        {
+          "timeS": 798,
+          "pressureKpa": 101.3,
+          "temperatureK": 480.6
+        },
+        {
+          "timeS": 799,
+          "pressureKpa": 101.3,
+          "temperatureK": 477.49
+        },
+        {
+          "timeS": 800,
+          "pressureKpa": 101.3,
+          "temperatureK": 474.38
+        },
+        {
+          "timeS": 801,
+          "pressureKpa": 101.3,
+          "temperatureK": 471.27
+        },
+        {
+          "timeS": 802,
+          "pressureKpa": 101.3,
+          "temperatureK": 468.16
+        },
+        {
+          "timeS": 803,
+          "pressureKpa": 101.3,
+          "temperatureK": 465.05
+        },
+        {
+          "timeS": 804,
+          "pressureKpa": 101.3,
+          "temperatureK": 461.94
+        },
+        {
+          "timeS": 805,
+          "pressureKpa": 101.3,
+          "temperatureK": 458.84
+        },
+        {
+          "timeS": 806,
+          "pressureKpa": 101.3,
+          "temperatureK": 455.73
+        },
+        {
+          "timeS": 807,
+          "pressureKpa": 101.3,
+          "temperatureK": 452.62
+        },
+        {
+          "timeS": 808,
+          "pressureKpa": 101.3,
+          "temperatureK": 449.51
+        },
+        {
+          "timeS": 809,
+          "pressureKpa": 101.3,
+          "temperatureK": 446.4
+        },
+        {
+          "timeS": 810,
+          "pressureKpa": 101.3,
+          "temperatureK": 443.29
+        },
+        {
+          "timeS": 811,
+          "pressureKpa": 101.3,
+          "temperatureK": 440.18
+        },
+        {
+          "timeS": 812,
+          "pressureKpa": 101.3,
+          "temperatureK": 437.07
+        },
+        {
+          "timeS": 813,
+          "pressureKpa": 101.3,
+          "temperatureK": 433.96
+        },
+        {
+          "timeS": 814,
+          "pressureKpa": 101.3,
+          "temperatureK": 430.85
+        },
+        {
+          "timeS": 815,
+          "pressureKpa": 101.3,
+          "temperatureK": 427.74
+        },
+        {
+          "timeS": 816,
+          "pressureKpa": 101.3,
+          "temperatureK": 424.63
+        },
+        {
+          "timeS": 817,
+          "pressureKpa": 101.3,
+          "temperatureK": 421.52
+        },
+        {
+          "timeS": 818,
+          "pressureKpa": 101.3,
+          "temperatureK": 418.41
+        },
+        {
+          "timeS": 819,
+          "pressureKpa": 101.3,
+          "temperatureK": 415.3
+        },
+        {
+          "timeS": 820,
+          "pressureKpa": 101.3,
+          "temperatureK": 412.19
+        },
+        {
+          "timeS": 821,
+          "pressureKpa": 101.3,
+          "temperatureK": 409.08
+        },
+        {
+          "timeS": 822,
+          "pressureKpa": 101.3,
+          "temperatureK": 405.97
+        },
+        {
+          "timeS": 823,
+          "pressureKpa": 101.3,
+          "temperatureK": 402.86
+        },
+        {
+          "timeS": 824,
+          "pressureKpa": 101.3,
+          "temperatureK": 399.75
+        },
+        {
+          "timeS": 825,
+          "pressureKpa": 101.3,
+          "temperatureK": 396.64
+        },
+        {
+          "timeS": 826,
+          "pressureKpa": 101.3,
+          "temperatureK": 393.53
+        },
+        {
+          "timeS": 827,
+          "pressureKpa": 101.3,
+          "temperatureK": 390.42
+        },
+        {
+          "timeS": 828,
+          "pressureKpa": 101.3,
+          "temperatureK": 387.31
+        },
+        {
+          "timeS": 829,
+          "pressureKpa": 101.3,
+          "temperatureK": 384.21
+        },
+        {
+          "timeS": 830,
+          "pressureKpa": 101.3,
+          "temperatureK": 381.1
+        },
+        {
+          "timeS": 831,
+          "pressureKpa": 101.3,
+          "temperatureK": 377.99
+        },
+        {
+          "timeS": 832,
+          "pressureKpa": 101.3,
+          "temperatureK": 374.88
+        },
+        {
+          "timeS": 833,
+          "pressureKpa": 101.3,
+          "temperatureK": 371.77
+        },
+        {
+          "timeS": 834,
+          "pressureKpa": 101.3,
+          "temperatureK": 368.66
+        },
+        {
+          "timeS": 835,
+          "pressureKpa": 101.3,
+          "temperatureK": 365.55
+        },
+        {
+          "timeS": 836,
+          "pressureKpa": 101.3,
+          "temperatureK": 362.44
+        },
+        {
+          "timeS": 837,
+          "pressureKpa": 101.3,
+          "temperatureK": 359.33
+        },
+        {
+          "timeS": 838,
+          "pressureKpa": 101.3,
+          "temperatureK": 356.22
+        },
+        {
+          "timeS": 839,
+          "pressureKpa": 101.3,
+          "temperatureK": 353.11
+        },
+        {
+          "timeS": 840,
+          "pressureKpa": 101.3,
+          "temperatureK": 350,
+          "event": "End of brief's 14-minute reconstruction"
+        }
+      ],
+      "telemetry_status": "Illustrative 14-minute sequence based on the brief; NASA narrative describes several minutes and historical accounts vary. Local 450–500 °C source temperature is not cabin temperature.",
+      "anchor_points": [
+        {
+          "timeS": 0,
+          "pressureKpa": 101.3,
+          "temperatureK": 298.15,
+          "event": "Solid lithium perchlorate oxygen generator ignition"
+        },
+        {
+          "timeS": 30,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.15,
+          "event": "Illustrative local oxygen-generator flame reaches 450 °C"
+        },
+        {
+          "timeS": 180,
+          "pressureKpa": 101.3,
+          "temperatureK": 773.15,
+          "event": "Illustrative 500 °C local source; smoke spreads without buoyant stratification"
+        },
+        {
+          "timeS": 720,
+          "pressureKpa": 101.3,
+          "temperatureK": 723.15,
+          "event": "Illustrative suppression phase"
+        },
+        {
+          "timeS": 840,
+          "pressureKpa": 101.3,
+          "temperatureK": 350,
+          "event": "End of brief's 14-minute reconstruction"
+        }
+      ],
+      "engineering_reforms": [
+        "Improve oxygen-generator contamination controls, containment and inspection.",
+        "Maintain accessible extinguishers, respirators and redundant escape routes.",
+        "Account for ventilation-driven smoke transport and verify post-fire atmosphere recovery."
+      ],
+      "sourceIds": [
+        "NASA-MIR",
+        "NASA-MIR-REPORT"
+      ],
+      "evidence_status": "Incident and smoke hazard verified; date/duration vary across accounts; temperatures and constant pressure are illustrative"
+    }
+  ],
+  "spinoff_annotations": [
+    {
+      "id": "SPIN-FWM-PFE",
+      "title": "Fine Water Mist PFE & Zero-Leak Valves",
+      "summary": "Spacecraft-compatible fine water mist and low-leak valve engineering offer lessons for compact terrestrial fire-suppression systems. Application suitability requires independent testing.",
+      "parameters": {
+        "d10_um": 28,
+        "d20_um": 32,
+        "d30_um": 36,
+        "d32_um": 46,
+        "valve_technology": "Doering zero-leak valves",
+        "distribution_note": "Diameter moments are supplied anchors; one lognormal distribution cannot exactly satisfy all four values."
+      },
+      "earth_applications": [
+        "Data-center suppression research",
+        "Lithium-ion hazard suppression research"
+      ],
+      "sourceIds": [
+        "NASA-WATER-MIST"
+      ],
+      "evidence_status": "Verified NASA Spinoff water-mist/Doering valve lineage; droplet moments supplied in brief and not independently verified"
+    },
+    {
+      "id": "SPIN-DUST-SMOKE",
+      "title": "Polarimetric Dust-Discriminating Smoke Detection",
+      "summary": "Polarization and multi-angle optical measurements can help distinguish particle populations. A simplified optical demonstrator compares dust, spherical smoke and mist; it is not a calibrated detector classifier.",
+      "parameters": {
+        "wavelength_nm": 650,
+        "cross_polarized_angle_deg": 90,
+        "mist_rejection_angle_deg": 145,
+        "dust_depolarization_ratio": 0.2,
+        "spherical_smoke_depolarization_ratio": 0,
+        "same_teflon_miss_pct": 66.7,
+        "same_kapton_miss_pct": 55
+      },
+      "earth_applications": [
+        "Underground coal mine smoke monitoring",
+        "Dusty industrial workplaces",
+        "Lunar habitat particle discrimination"
+      ],
+      "sourceIds": [
+        "PUB-SAME",
+        "NASA-SMOKE"
+      ],
+      "evidence_status": "NASA source verifies SAME methods and near-IR size sensitivity; miss percentages and proposed polarimetric parameters supplied in brief"
+    },
+    {
+      "id": "SPIN-SCBA-PBI",
+      "title": "PBI Protection & Composite SCBA Cylinders",
+      "summary": "NASA-linked materials and pressure-vessel development informed firefighter protection. Beta cloth and PBI are distinct protective fabric technologies; pressure alone does not determine cylinder mass or operating duration.",
+      "parameters": {
+        "legacy_steel_pressure_psi": 2216,
+        "composite_pressure_psi": 4500,
+        "fabric_comparison": [
+          "PBI Gold",
+          "Black PBI Max",
+          "PTFE-coated fiberglass Beta Cloth"
+        ]
+      },
+      "earth_applications": [
+        "Firefighter turnout protection",
+        "Self-contained breathing apparatus",
+        "High-pressure composite storage"
+      ],
+      "sourceIds": [
+        "NASA-PBI",
+        "NASA-SCBA"
+      ],
+      "evidence_status": "NASA sources verify PBI and lightweight composite breathing-system transfer; pressure comparison supplied in brief"
+    }
+  ],
+  "sources": [
+    {
+      "id": "NASA-PSI98",
+      "title": "NASA PSI-98: Saffire-I dataset and publications",
+      "url": "https://psi.nasa.gov/physci/repo/data/investigations/PSI-98",
+      "status": "Verified indexed NASA catalogue: DOI, SIBAL composition and 20 cm/s flow; quantitative spread benchmark not checked"
+    },
+    {
+      "id": "PUB-CFI",
+      "title": "CFI-G publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.proci.2022.07.015",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-EFIELD",
+      "title": "ACME E-FIELD publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.combustflame.2022.112443",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-BRE",
+      "title": "Burning Rate Emulator publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.combustflame.2018.02.003",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-DESIGN",
+      "title": "Flame Design publication supplied in brief",
+      "url": "https://doi.org/10.3390/fire6080285",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-CLD",
+      "title": "CLD/SPICE publication supplied in brief",
+      "url": "https://doi.org/10.1080/00102202.2022.2041621",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-BASS",
+      "title": "BASS publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.combustflame.2017.03.001",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-SAFFIRE",
+      "title": "Saffire I–III publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.combustflame.2018.10.012",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-SAFFIRE-EXPLORATION",
+      "title": "Exploration-atmosphere Saffire publication supplied in brief",
+      "url": "https://doi.org/10.2514/6.2021-0548",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-RTDFS",
+      "title": "RTDFS/NCA publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.proci.2016.06.025",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-SMURF",
+      "title": "Partial-gravity publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.firesaf.2024.104267",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-FLEX",
+      "title": "FLEX publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.combustflame.2015.01.012",
+      "status": "brief supplied"
+    },
+    {
+      "id": "PUB-SAME",
+      "title": "SAME publication supplied in brief",
+      "url": "https://doi.org/10.1016/j.firesaf.2018.04.004",
+      "status": "brief supplied"
+    },
+    {
+      "id": "NASA-SAFFIRE-VI",
+      "title": "NASA: Modeling the Large-scale Saffire VI Experiment; Table 1",
+      "url": "https://ntrs.nasa.gov/api/citations/20250002675/downloads/Vehicle%20Modeling_FINAL.pdf",
+      "status": "verified event-table excerpt; Nomex non-ignition and sample conditions"
+    },
+    {
+      "id": "NASA-APOLLO1",
+      "title": "NASA NSSDC: Apollo 1",
+      "url": "https://nssdc.gsfc.nasa.gov/planetary/lunar/apollo1info.html",
+      "status": "verified historical summary"
+    },
+    {
+      "id": "NASA-APOLLO1-PRESSURE",
+      "title": "Apollo accident hearing: estimated burst-pressure range",
+      "url": "https://sma.nasa.gov/SignificantIncidents/assets/apollo-1-hearing.pdf",
+      "status": "verified excerpt; transducer saturated before estimated rupture"
+    },
+    {
+      "id": "NASA-APOLLO13",
+      "title": "NASA: Apollo 13 mission details",
+      "url": "https://www.nasa.gov/missions/apollo/apollo-13-mission-details/",
+      "status": "verified 65-V thermostat and Teflon damage mechanism"
+    },
+    {
+      "id": "NASA-MIR",
+      "title": "NASA: 25 Years Ago, Fire Aboard Space Station Mir",
+      "url": "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/",
+      "status": "verified mechanism and smoke hazard; duration several minutes"
+    },
+    {
+      "id": "NASA-MIR-REPORT",
+      "title": "NASA-hosted Soyuz TM-25 historical mission report",
+      "url": "https://sma.nasa.gov/SignificantIncidents/assets/spaceflight-mission-report-soyuz-tm-25.pdf",
+      "status": "verified excerpt reporting 14 minutes; duration conflicts with other accounts"
+    },
+    {
+      "id": "NASA-WATER-MIST",
+      "title": "NASA Spinoff: Zero-Leak Valve Holds Tight in Demanding Environments",
+      "url": "https://spinoff.nasa.gov/Spinoff2020/ip_5.html",
+      "status": "verified water-mist extinguisher and Doering valve lineage; droplet moments remain brief supplied"
+    },
+    {
+      "id": "NASA-SMOKE",
+      "title": "NASA: Smoke Aerosol Measurement Experiment Reflight",
+      "url": "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf",
+      "status": "verified experiment methods and near-IR detector size sensitivity; supplied optical parameters unverified"
+    },
+    {
+      "id": "NASA-PBI",
+      "title": "NASA Spinoff: Fireblocking Fibers",
+      "url": "https://spinoff.nasa.gov/node/9266",
+      "status": "verified aerospace-to-Earth PBI lineage; grouped fabric proxy not validated"
+    },
+    {
+      "id": "NASA-SCBA",
+      "title": "NASA Spinoff: Space Technology for the Fire Department",
+      "url": "https://spinoff.nasa.gov/node/9518",
+      "status": "verified lightweight composite breathing-system lineage; 2216/4500-psi values remain brief supplied"
+    }
+  ],
+  "knowledge_card_annotations": [
+    {
+      "id": "kc-0g-flame-shape",
+      "checkedDate": "2026-11-14",
+      "status": "qualified",
+      "notes": "Diffusion-dominated spherical flames are a useful still-microgravity limit, not a universal shape or color under forced ventilation. Exact card source points to the general PSI portal.",
+      "sourceUrls": [
+        "https://psi.nasa.gov"
+      ]
+    },
+    {
+      "id": "kc-slow-flow",
+      "checkedDate": "2026-11-14",
+      "status": "partially_verified",
+      "notes": "Supplied 13.6% and 18% limits refer to different flow/orientation configurations; they should not be treated as a universal paired material limit. Primary PSI catalogue source remains linked.",
+      "sourceUrls": [
+        "https://psi.nasa.gov/physci/repo/data/investigations/PSI-25"
+      ]
+    },
+    {
+      "id": "kc-cool-flames",
+      "checkedDate": "2026-11-14",
+      "status": "partially_verified",
+      "notes": "NASA FLEX/CFI research supports low-temperature combustion after hot-flame extinction; the full stated temperature ranges and vapor-cloud sequence require run-specific verification.",
+      "sourceUrls": [
+        "https://psi.nasa.gov/physci/repo/data/investigations/PSI-159"
+      ]
+    },
+    {
+      "id": "kc-smoke-coagulation",
+      "checkedDate": "2026-11-14",
+      "status": "partially_verified",
+      "notes": "NASA SAME-R description confirms particle-size/moment diagnostics and near-IR size sensitivity. Exact 55%/66.7% test miss rates remain supplied report claims, not universal detector probabilities.",
+      "sourceUrls": [
+        "https://psi.nasa.gov/physci/repo/data/investigations/PSI-102",
+        "https://www.nasa.gov/wp-content/uploads/2025/07/smoke-aerosol-measurement-experiment-same.pdf"
+      ]
+    },
+    {
+      "id": "kc-dust-baseline",
+      "checkedDate": "2026-11-14",
+      "status": "qualified",
+      "notes": "NASA Expedition 11 press kit describes DAFT instruments arriving in 2004 as a risk-mitigation experiment in support of SAME. This chronology does not support a literal assertion that DAFT reused returned SAME hardware; dust/smoke discrimination is supported.",
+      "sourceUrls": [
+        "https://psi.nasa.gov",
+        "https://www.nasa.gov/wp-content/uploads/2024/04/exp11-presskit.pdf"
+      ]
+    },
+    {
+      "id": "kc-ea-atmospheres",
+      "checkedDate": "2026-11-14",
+      "status": "partially_verified",
+      "notes": "NTRS 20240005151 confirms exploration-atmosphere test presentation metadata; mission values remain research/test references and are not guaranteed operational mission requirements.",
+      "sourceUrls": [
+        "https://ntrs.nasa.gov/api/citations/20240005151/downloads/2024_05_06_Garbino_EA_final.pdf"
+      ]
+    },
+    {
+      "id": "kc-ppo2",
+      "checkedDate": "2026-11-14",
+      "status": "verified_calculation",
+      "notes": "Arithmetic partial pressures match the stated total-pressure/oxygen pairs. At the app EVA preset 85% and 29.6 kPa, pO2 is3.65 psia; 4.30 psia describes 100% O2 at4.3 psia. NASA NTRS 20160001047 notes concentration matters beyond equal oxygen partial pressure.",
+      "sourceUrls": [
+        "https://ntrs.nasa.gov/api/citations/20240005151/downloads/2024_05_06_Garbino_EA_final.pdf",
+        "https://ntrs.nasa.gov/citations/20160001047"
+      ]
+    },
+    {
+      "id": "kc-partial-g-gap",
+      "checkedDate": "2026-11-14",
+      "status": "qualified",
+      "notes": "NASA 2024 FM2 poster describes planned lunar-surface hardware and short-duration centrifuge/parabolic evidence, not completed long-duration lunar-surface telemetry. Current completeness of all PSI holdings has not been independently established.",
+      "sourceUrls": [
+        "https://ntrs.nasa.gov/api/citations/20240015307/downloads/Glenn_2024_ZayacPoster.pdf"
+      ]
+    },
+    {
+      "id": "kc-saffire-matrix",
+      "checkedDate": "2026-11-14",
+      "status": "partially_verified",
+      "notes": "NASA 2024 Saffire VI presentation and2025 vehicle-model event table support the cited material/atmosphere matrix and Nomex non-ignition. Conditions vary across events; not every point shares one universal flow history.",
+      "sourceUrls": [
+        "https://ntrs.nasa.gov/api/citations/20240007488/downloads/Saffire%20ICES%202024%20Saffire%20presentation072124small.pdf",
+        "https://ntrs.nasa.gov/api/citations/20250002675/downloads/Vehicle%20Modeling_FINAL.pdf"
+      ]
+    },
+    {
+      "id": "kc-fm2-prelim",
+      "checkedDate": "2026-11-14",
+      "status": "verified_primary_source",
+      "notes": "NASA NTRS 20240015307 poster describes21% O2/14.7 psia and34% O2/8.2 psia test atmospheres, lunar centrifuge evidence and planned lunar hardware. It does not establish completed lunar-surface tests.",
+      "sourceUrls": [
+        "https://ntrs.nasa.gov/api/citations/20240015307/downloads/Glenn_2024_ZayacPoster.pdf"
+      ]
+    },
+    {
+      "id": "kc-eclss-materials",
+      "checkedDate": "2026-11-14",
+      "status": "verified_primary_source",
+      "notes": "NASA NTRS 20260003925 (May 2026) abstract explicitly identifies material flammability as the critical 8.2 psia/34–40%O2 hurdle and 70% of the assessed subsystems needing material replacements. This is the assessed ECLSS set, not70% of all spacecraft hardware.",
+      "sourceUrls": [
+        "https://ntrs.nasa.gov/citations/20260003925"
+      ]
+    },
+    {
+      "id": "kc-ices2026-model",
+      "checkedDate": "2026-11-14",
+      "status": "verified_primary_source",
+      "notes": "NASA NTRS API 20260001600 returns curated conference paper Spacecraft Fire Safety Predictions using Verified Saffire Model, ICES-2026-092, July 2026. Its abstract describes FDS validation against Saffire remote sensors and subsequent hazard scenarios. This does not validate PyroZero surrogate equations.",
+      "sourceUrls": [
+        "https://ntrs.nasa.gov/citations/20260001600",
+        "https://ntrs.nasa.gov/api/citations/20260001600"
+      ]
+    },
+    {
+      "id": "kc-halon-mist",
+      "checkedDate": "2026-11-14",
+      "status": "qualified",
+      "notes": "NASA Spinoff 2020 confirms nine ISS fine-water-mist extinguishers replaced original CO2 devices. A blanket statement that ISS Halon units were replaced or that FLEX alone caused adoption is not established by that source.",
+      "sourceUrls": [
+        "https://arc.aiaa.org/doi/pdf/10.2514/6.2010-6242",
+        "https://spinoff.nasa.gov/Spinoff2020/ip_5.html"
+      ]
+    },
+    {
+      "id": "kc-artemis2-alarm",
+      "checkedDate": "2026-11-14",
+      "status": "partially_verified",
+      "notes": "AIAA Aerospace America reports the crew debrief directly and confirms a second-to-last-day smoke alarm around 80,000 miles from home. The alarm cause remains unconfirmed; bump/camera/lunar-dust explanations must not be presented as established causes.",
+      "sourceUrls": [
+        "https://aerospaceamerica.aiaa.org/artemis-ii-astronauts-praise-orion-capsule-reflect-on-mission-impact/"
+      ]
+    },
+    {
+      "id": "kc-history",
+      "checkedDate": "2026-11-14",
+      "status": "partially_verified",
+      "notes": "NASA incident sources confirm the three events and safety mechanisms. Apollo13 tank conditions must not be interpreted as cabin atmosphere, and Mir accounts disagree about fire duration.",
+      "sourceUrls": [
+        "https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/"
+      ]
+    },
+    {
+      "id": "kc-hardware-sharing",
+      "checkedDate": "2026-11-14",
+      "status": "partially_verified",
+      "notes": "NASA reduced-gravity combustion guide supports the CIR/MSG/Cygnus hardware families. Shared or related equipment does not prove identical experiment configurations or response envelopes.",
+      "sourceUrls": [
+        "https://www.nasa.gov/wp-content/uploads/2016/05/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf"
+      ]
+    },
+    {
+      "id": "kc-psi-access",
+      "checkedDate": "2026-11-14",
+      "status": "qualified",
+      "notes": "AWS Open Data registry confirms public nasa-psi S3resource, but its listed resource description names DSI/OASIS data. It does not prove a complete PSI combustion-catalogue mirror. PSI portal and AWS entry are valid distinct access routes.",
+      "sourceUrls": [
+        "https://psi.nasa.gov",
+        "https://registry.opendata.aws/nasa-psi"
+      ]
+    },
+    {
+      "id": "kc-scope",
+      "checkedDate": "2026-11-14",
+      "status": "scope_rule",
+      "notes": "Habitat-only coverage is a PyroZero product scope rule. The absolute statement that rocket propellant combustion is independent of gravity is not established by a general PSI portal link; high injection inertia can reduce buoyancy relevance without making gravity universally irrelevant.",
+      "sourceUrls": [
+        "https://psi.nasa.gov"
+      ]
+    }
+  ]
+}

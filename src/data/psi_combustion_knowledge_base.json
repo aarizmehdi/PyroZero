@@ -1,0 +1,988 @@
+{
+  "metadata": {
+    "platform": "PyroZero by Zentrix Labs",
+    "challenge": "2026 NASA International Space Apps Challenge - Flame in Freefall",
+    "schema_version": "3.0.0",
+    "last_updated": "2026-11-14",
+    "primary_sources": [
+      "NASA Physical Sciences Informatics (https://psi.nasa.gov)",
+      "AWS Open Data Registry NASA PSI Mirror (https://registry.opendata.aws/nasa-psi)",
+      "NP-2015-10-034-JSC: A Researcher's Guide to ISS Combustion Science",
+      "NASA-STD-6001B w/Change 2 & JSC 29353D"
+    ]
+  },
+  "psi_investigations": [
+    {
+      "id": "PSI-159",
+      "code": "ACME-CFI-G",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Advanced Combustion via Microgravity Experiments: Cool Flames Investigation with Gases",
+      "doi": "10.60555/cyt1-kh64",
+      "facility": "ISS Combustion Integrated Rack (CIR) - ACME Insert",
+      "sub_hardware": "ACME Modular Chamber & 6.35-mm Porous Spherical Burner",
+      "pi_lead": "Peter B. Sunderland (UMD), Richard L. Axelbaum (WUSTL), Forman A. Williams (UCSD), Dennis P. Stocker, Daniel L. Dietrich (NASA GRC)",
+      "fuel_phase": "Gaseous",
+      "safety_pillars": ["Prevention", "Suppression"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["n-Butane (30% in N2)", "Propane", "Ethane", "n-Pentane", "Methane"],
+      "sensors": ["UV/IR Intensified Imagers", "Digital Color Camera", "Wide/Narrow Band Radiometers", "Thermocouples"],
+      "burner_geometry": "6.35-mm diameter porous stainless-steel sphere (normal and inverse inside-out diffusion flames)",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 88,
+      "atmosphere": {
+        "pressure_min_kpa": 50.3,
+        "pressure_max_kpa": 202.6,
+        "o2_min_pct": 21.0,
+        "o2_max_pct": 85.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 15.0
+      },
+      "quantitative_findings": {
+        "cool_flame_temp_k": 800,
+        "cool_flame_o2_pct": 39.0,
+        "max_inverse_flame_o2_pct": 85.0,
+        "hot_to_cool_diameter_ratio": 2.6,
+        "rich_mixture_fraction_z": 0.53,
+        "dark_transition_period_s": 1.0,
+        "mass_flow_range_mgs": [0.75, 1.5],
+        "earth_spinoff": "Low-temperature combustion chemistry for high-efficiency, knock-free automotive and aviation engines.",
+        "summary": "First observation of quasi-steady gas-fueled spherical cool diffusion flames (~800 K) at 2 bar and 39% O2 without liquid droplets; inside-out burner tested up to 85% O2 setting high-O2 bounds for Lunar Base and spacesuit atmospheres."
+      },
+      "primary_publication_doi": "10.1016/j.proci.2022.07.015"
+    },
+    {
+      "id": "ACME-E-FIELD",
+      "code": "ACME-E-FIELD",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Advanced Combustion via Microgravity Experiments: Electric-Field Effects on Laminar Diffusion Flames",
+      "doi": "10.1016/j.combustflame.2022.112443",
+      "facility": "ISS Combustion Integrated Rack (CIR) - ACME Insert",
+      "sub_hardware": "ACME High-Voltage Electrode Mesh & Co-flow Burner",
+      "pi_lead": "Derek Dunn-Rankin (UC Irvine), Yu-Chien Chien (UC Irvine), Dennis P. Stocker, Uday G. Hegde (NASA GRC)",
+      "fuel_phase": "Gaseous",
+      "safety_pillars": ["Prevention", "Suppression"],
+      "simulates_partial_g": true,
+      "gravity_coverage": [0, 0.165, 0.38, 1.0],
+      "materials_tested": ["Methane (40%-100%)", "Ethylene (40%-100%)"],
+      "sensors": ["High-Speed Camera", "Ion Current Measurement Probes", "OH* Chemiluminescence Imager", "Radiometers"],
+      "burner_geometry": "2.2 mm ID fuel nozzle in 25 mm ID coflow tube with 8.4-8.9 cm copper mesh electrode at 27-40 mm gap",
+      "models_buoyancy_scaling": true,
+      "scale_and_diagnostic_score": 92,
+      "atmosphere": {
+        "pressure_min_kpa": 101.3,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 18.0,
+        "o2_max_pct": 30.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 40.0
+      },
+      "quantitative_findings": {
+        "voltage_max_kv": 10.0,
+        "electric_field_max_kv_cm": 2.2,
+        "ion_wind_initiation_ms": 10.0,
+        "soot_disappearance_ms": 300.0,
+        "earth_spinoff": "Electrically stabilized, ultra-low-soot industrial burners and plasma-assisted combustion control.",
+        "summary": "Demonstrated Chattock ion-driven wind body force (F_e = j/K) mimicking partial-gravity convection (Moon 0.165g and Mars 0.38g) and 1g buoyancy in 0g while suppressing soot within 300 ms."
+      },
+      "primary_publication_doi": "10.1016/j.combustflame.2022.112443"
+    },
+    {
+      "id": "ACME-BRE",
+      "code": "ACME-BRE",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Advanced Combustion via Microgravity Experiments: Burning Rate Emulator",
+      "doi": "10.1016/j.combustflame.2018.02.003",
+      "facility": "ISS Combustion Integrated Rack (CIR) - ACME Insert",
+      "sub_hardware": "ACME Flat Porous Copper/Brass Calorimeter Burners (25mm & 50mm)",
+      "pi_lead": "James G. Quintiere (UMD), Peter B. Sunderland (UMD), John L. de Ris (FM Global), Alexander Y. Snegirev, Ankit Markan",
+      "fuel_phase": "Gaseous (Condensed-Phase Emulator)",
+      "safety_pillars": ["Prevention"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["Ethylene/N2 (emulating PMMA plastic, paper, and heptane/methanol gasification)", "Methane/N2", "Propane/N2"],
+      "sensors": ["Digital Color Camera", "Radiometers", "Burner Heat Flux Sensor", "Thermocouples"],
+      "burner_geometry": "25-mm and 50-mm diameter circular porous copper calorimeter burner",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 90,
+      "atmosphere": {
+        "pressure_min_kpa": 48.3,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 15.0,
+        "o2_max_pct": 40.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 2.0
+      },
+      "quantitative_findings": {
+        "quiescent_extinction_o2_pct": 25.0,
+        "steady_burn_o2_threshold_pct": 26.0,
+        "max_burn_duration_s": 300.0,
+        "heat_of_combustion_kj_g": [23.6, 47.2],
+        "earth_spinoff": "Clean, repeatable flammability screening of synthetic polymers and building materials using a single gas burner.",
+        "summary": "Showed >50% of tests burned for 2 to 5 minutes in still 0g air; steady hemispherical blue flames require >=25-26% O2 in quiescent 0g and self-extinguish via radiative heat loss below 25% O2."
+      },
+      "primary_publication_doi": "10.1016/j.combustflame.2018.02.003"
+    },
+    {
+      "id": "PSI-10",
+      "code": "ACME-FLAME-DESIGN",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Advanced Combustion via Microgravity Experiments: Flame Design (Adamant)",
+      "doi": "10.3390/fire6080285",
+      "facility": "ISS Combustion Integrated Rack (CIR) - ACME Insert",
+      "sub_hardware": "ACME 6.4-mm Porous Spherical Burner",
+      "pi_lead": "Richard L. Axelbaum (WUSTL), Peter B. Sunderland (UMD), Sergei M. Frolov (RAS), David L. Urban, Dennis P. Stocker",
+      "fuel_phase": "Gaseous",
+      "safety_pillars": ["Prevention"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["Ethylene (Normal and Inverse Spherical Diffusion Flames)"],
+      "sensors": ["High-Resolution Color Camera", "Thin-Filament Pyrometry (14-um SiC)", "Radiometers"],
+      "burner_geometry": "6.4-mm diameter porous spherical burner (radius 3.2 mm)",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 86,
+      "atmosphere": {
+        "pressure_min_kpa": 50.7,
+        "pressure_max_kpa": 202.6,
+        "o2_min_pct": 15.0,
+        "o2_max_pct": 50.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 2.0
+      },
+      "quantitative_findings": {
+        "max_z_st": 0.411,
+        "radiative_extinction_temp_k": 1150,
+        "soot_inception_temp_k": 1300,
+        "soot_co_atomic_ratio_range": [0.32, 0.44],
+        "max_burn_duration_s": 336.0,
+        "earth_spinoff": "Clean, soot-free industrial oxy-fuel combustion and furnace burner design.",
+        "summary": "Demonstrated permanently blue soot-free flames at high stoichiometric mixture fraction (Z_st <= 0.411) at constant adiabatic flame temperature; mapped oscillatory radiative extinction at 1100-1200 K."
+      },
+      "primary_publication_doi": "10.3390/fire6080285"
+    },
+    {
+      "id": "ACME-S-FLAME",
+      "code": "ACME-S-FLAME",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Advanced Combustion via Microgravity Experiments: Structure & Response of Spherical Diffusion Flames (s-Flame)",
+      "doi": "https://ntrs.nasa.gov/citations/20220007191",
+      "facility": "ISS Combustion Integrated Rack (CIR) - ACME Insert",
+      "sub_hardware": "ACME Porous Spherical Burner",
+      "pi_lead": "Chung K. Law (Princeton Univ.), Stephen D. Tse (Rutgers Univ.), Kurt R. Sacksteder (NASA GRC)",
+      "fuel_phase": "Gaseous",
+      "safety_pillars": ["Prevention"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["Hydrogen (H2)", "Methane (CH4)", "Ethylene (C2H4)", "Propane (C3H8)"],
+      "sensors": ["Photomultiplier Tubes", "Radiometers", "Thermocouples", "HD Video"],
+      "burner_geometry": "6.4-mm porous spherical burner",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 85,
+      "atmosphere": {
+        "pressure_min_kpa": 101.3,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 15.0,
+        "o2_max_pct": 40.0,
+        "diluents": ["He", "N2"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 2.0
+      },
+      "quantitative_findings": {
+        "dual_extinction_branches": ["High-flow radiative extinction", "Low-flow kinetic/convective extinction"],
+        "earth_spinoff": "Fundamental chemical kinetic models for hydrogen and hydrocarbon turbulent combustion.",
+        "summary": "Demonstrated dual spherical extinction limits (radiative extinction at high flow rates as flame expands, and kinetic extinction at low flow rates near burner surface) plus diffusive-thermal pulsating instabilities above critical Lewis number."
+      },
+      "primary_publication_doi": "https://ntrs.nasa.gov/citations/20220007191"
+    },
+    {
+      "id": "PSI-60",
+      "code": "ACME-CLD-SPICE",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Coflow Laminar Diffusion Flame (CLD, PSI-60), SPICE (PSI-107), & SLICE",
+      "doi": "10.60555/mzjm-yv57",
+      "facility": "ISS CIR (ACME CLD) & ISS MSG 76x76 mm Duct (SPICE / SLICE)",
+      "sub_hardware": "SPICE Modular Fan-Driven Flow Duct & ACME Coflow Burner",
+      "pi_lead": "Mitchell D. Smooke (Yale), Marshall B. Long (Yale), David L. Urban (NASA GRC), Peter B. Sunderland (UMD)",
+      "fuel_phase": "Gaseous",
+      "safety_pillars": ["Detection", "Prevention"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["Ethylene", "Methane", "Propane", "Propylene (50%/75%/100% in N2)"],
+      "sensors": ["Digital Video Camera", "Two-Color HDR DSLR Soot Pyrometry", "Photomultiplier Tubes", "Thermocouples"],
+      "burner_geometry": "Coflow nozzles (0.41, 0.76, 1.6 mm up to 12.6 mm in SPICE; 2.2 mm in ACME CLD)",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 89,
+      "atmosphere": {
+        "pressure_min_kpa": 101.3,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 21.0,
+        "o2_max_pct": 21.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 5.4,
+        "flow_velocity_max_cms": 65.0
+      },
+      "quantitative_findings": {
+        "soot_volume_fraction_multiplier_0g": 6.5,
+        "slice_peak_soot_multiplier_0g": 15.0,
+        "spice_smoke_points_measured": 55,
+        "cld_coflow_velocities_cms": [10, 20, 30, 40],
+        "earth_spinoff": "Soot reduction in aviation gas turbines and industrial furnaces.",
+        "summary": "Established 55 microgravity laminar smoke points showing 1g Roper correlations break down in 0g; 0g coflow flames are taller, wider, cooler, and produce 5x to 15x higher soot concentrations than 1g flames."
+      },
+      "primary_publication_doi": "10.1080/00102202.2022.2041621"
+    },
+    {
+      "id": "PSI-25",
+      "code": "BASS-II",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Burning and Suppression of Solids I & II (BASS PSI-26 & BASS-II PSI-25 / PSI-62)",
+      "doi": "10.60555/4qc4-de67",
+      "facility": "ISS Microgravity Science Glovebox (MSG) 7.6x7.6 cm Wind Tunnel",
+      "sub_hardware": "SPICE Modular Fan-Driven Flow Duct",
+      "pi_lead": "Sandra L. Olson (NASA GRC), Paul V. Ferkul (USRA), James S. T'ien (CWRU), Subrata Bhattacharjee, Fletcher J. Miller (SDSU), Carlos Fernandez-Pello",
+      "fuel_phase": "Solid",
+      "safety_pillars": ["Prevention", "Suppression"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["Cast PMMA Rods (3.18-38.1 mm)", "2-cm PMMA Spheres", "Thin PMMA Film (100-400 um)", "SIBAL Fabric (75% Cotton/25% Fiberglass)", "Nomex", "Ultem", "Mylar"],
+      "sensors": ["High-Resolution Still Camera", "Color Video Camera", "Radiometer", "Hot-Wire Anemometer", "Thermocouples"],
+      "burner_geometry": "7.6 cm x 7.6 cm enclosed miniature wind tunnel duct (flat strips, thin films, rods, spheres)",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 95,
+      "atmosphere": {
+        "pressure_min_kpa": 70.3,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 13.6,
+        "o2_max_pct": 30.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 55.0
+      },
+      "quantitative_findings": {
+        "moc_concurrent_pmma_rod_pct": 13.6,
+        "moc_opposed_pmma_rod_0g_pct": 17.0,
+        "moc_opposed_pmma_rod_1g_pct": 18.0,
+        "co_yield_0g_g_per_g": [0.014, 0.14],
+        "co_yield_1g_g_per_g": [0.005, 0.013],
+        "earth_spinoff": "Improved flammability testing standards for aircraft cabins, submarines, and cleanrooms.",
+        "summary": "Mapped checkmark flammability boundary; proved solid materials burn at lower O2 in slow 0g ventilation (13.6%-17% O2 vs 18% in 1g) and generate up to 10x higher carbon monoxide (CO) yield."
+      },
+      "primary_publication_doi": "10.1016/j.combustflame.2017.03.001"
+    },
+    {
+      "id": "PSI-98",
+      "code": "SAFFIRE-I-III",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Spacecraft Fire Safety Experiments I (PSI-98), II (PSI-99), and III (PSI-100)",
+      "doi": "10.60555/0t15-1z43",
+      "facility": "Autonomous Cygnus Cargo Spacecraft - Saffire Flow Unit (46 cm wide duct)",
+      "sub_hardware": "Saffire Flow Duct & Avionics Bay",
+      "pi_lead": "David L. Urban (NASA GRC), Gary A. Ruff (NASA GRC), Paul V. Ferkul, Sandra L. Olson, James S. T'ien, Carlos Fernandez-Pello, Jose L. Torero",
+      "fuel_phase": "Solid",
+      "safety_pillars": ["Prevention", "Detection"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["SIBAL Fabric (0.4 m x 0.94 m and 5 cm x 29 cm)", "Thick PMMA Slab (10 mm)", "Structured Ribbed PMMA (4-10 mm)", "Silicone Composites", "Nomex HT90-40"],
+      "sensors": ["HD Video Cameras", "Radiometers", "Oxygen/CO2 Gas Sensors", "Thermocouple Arrays", "Pressure Transducers"],
+      "burner_geometry": "46 cm wide flow duct inside 17-19 m3 pressurized Cygnus spacecraft volume",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 98,
+      "atmosphere": {
+        "pressure_min_kpa": 100.0,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 21.0,
+        "o2_max_pct": 21.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 20.0,
+        "flow_velocity_max_cms": 30.0
+      },
+      "quantitative_findings": {
+        "sibal_spread_rate_mms": 2.03,
+        "pmma_slab_thickness_mm": 10.0,
+        "saffire_ii_doi": "10.60555/2chp-m469",
+        "earth_spinoff": "Enclosure fire dynamics modeling for mines, tunnels, submarines, and sealed industrial rooms.",
+        "summary": "Largest intentional space fires in history; showed meter-scale thin SIBAL fabric fires reach a steady flame size and steady spread rate (2.03 mm/s at 20 cm/s) rather than accelerating continuously as in 1g upward fires."
+      },
+      "primary_publication_doi": "10.1016/j.combustflame.2018.10.012"
+    },
+    {
+      "id": "SAFFIRE-IV-VI",
+      "code": "SAFFIRE-IV-VI",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Spacecraft Fire Safety Experiments IV, V, and VI (Exploration Atmospheres & Habitability)",
+      "doi": "10.2514/6.2021-0548",
+      "facility": "Autonomous Cygnus Cargo Spacecraft - SFU & Far-Field Diagnostics (FFD)",
+      "sub_hardware": "Saffire Flow Duct & Cabin-Wide Far-Field Diagnostic Suite",
+      "pi_lead": "David L. Urban (NASA GRC), Gary A. Ruff, Marit E. Meyer, Christian Eigenbrod (ZARM)",
+      "fuel_phase": "Solid",
+      "safety_pillars": ["Prevention", "Detection"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["SIBAL Fabric (40x50 cm)", "Cotton Jersey", "Two-Sided Thick PMMA (40x18x1.0 cm)", "One-Sided PMMA (40x18x0.5 cm)", "Ribbed PMMA (1-10 mm)", "PMMA Rods (5-25 mm)", "Nomex (40x7 cm)"],
+      "sensors": ["HD Video Cameras", "Far-Field CO/CO2/O2 Analyzer Suite", "Smoke Particle Counters", "Radiometers", "Pressure Transducers"],
+      "burner_geometry": "30-41 cm wide flow duct inside 17-19 m3 Cygnus cabin",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 100,
+      "atmosphere": {
+        "pressure_min_kpa": 54.1,
+        "pressure_max_kpa": 100.0,
+        "o2_min_pct": 22.0,
+        "o2_max_pct": 31.9,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 20.0
+      },
+      "quantitative_findings": {
+        "saffire_vi_pmma_heat_release_kj": 497.0,
+        "saffire_v_pmma_heat_release_kj": 233.0,
+        "saffire_vi_sibal_heat_release_kj": 124.0,
+        "co2_mass_generated_g": 128.1,
+        "co2_ppm_spike": 8164,
+        "quiescent_survival_interval_s": 15.0,
+        "nomex_no_ignition_o2_pct": 31.9,
+        "executed_test_matrix": [
+          "SIBAL at 100.0 kPa & 22.0% O2",
+          "Cotton jersey at 70.7 kPa & 26.2% O2",
+          "SIBAL at 54.1 kPa & 31.0% O2 (145s burn, 124 kJ)",
+          "Two-sided 10-mm PMMA at 54.6 kPa & 30.3% O2 (497 kJ)",
+          "One-sided 5-mm PMMA at 55.2 kPa & 28.8% O2",
+          "Nomex at 54.1 kPa & 31.9% O2 (Did not ignite)"
+        ],
+        "earth_spinoff": "Validated NIST Fire Dynamics Simulator (FDS) spacecraft enclosure fire models (ICES-2026-092).",
+        "summary": "Showed charring cotton survives 15s zero-flow intervals via smoldering and reignites when flow resumes; 30.3% O2 at 54.6 kPa more than doubled PMMA heat release (497 kJ vs 233 kJ) and drove CO above 24-hr SMAC (100 ppm)."
+      },
+      "primary_publication_doi": "https://ntrs.nasa.gov/api/citations/20240007488/downloads/Saffire%20ICES%202024%20Saffire%20presentation072124small.pdf"
+    },
+    {
+      "id": "SOFIE-RTDFS-NCA",
+      "code": "SOFIE-RTDFS-NCA",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Solid Fuel Ignition and Extinction: Residence Time Driven Flame Spread (RTDFS) & Narrow Channel Apparatus (NCA)",
+      "doi": "10.1016/j.proci.2016.06.025",
+      "facility": "ISS Combustion Integrated Rack (CIR) - SoFIE Insert",
+      "sub_hardware": "SoFIE Flow Duct & Narrow Channel Apparatus",
+      "pi_lead": "Subrata Bhattacharjee (SDSU) [RTDFS], Fletcher J. Miller (SDSU), Sandra L. Olson (NASA GRC), Indrek Wichman (MSU) [NCA]",
+      "fuel_phase": "Solid",
+      "safety_pillars": ["Prevention"],
+      "simulates_partial_g": true,
+      "gravity_coverage": [0, 1.0],
+      "materials_tested": ["Thin Planar PMMA Sheets (0.1 mm thick, 30x5 cm)", "Thick Planar PMMA Slabs (10x5x1 cm)"],
+      "sensors": ["High-Resolution Video", "IR Radiometers", "Thermocouples", "Flow Controllers"],
+      "burner_geometry": "SoFIE flow duct & buoyancy-suppressing Narrow Channel Apparatus",
+      "models_buoyancy_scaling": true,
+      "scale_and_diagnostic_score": 94,
+      "atmosphere": {
+        "pressure_min_kpa": 40.0,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 21.0,
+        "o2_max_pct": 85.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 1.0,
+        "flow_velocity_max_cms": 45.0
+      },
+      "quantitative_findings": {
+        "rtdfs_radiative_quenching_cms": 2.0,
+        "rtdfs_blowoff_cms": 40.0,
+        "nca_max_o2_pct": 85.0,
+        "earth_spinoff": "Ground-based Narrow Channel Apparatus (NCA) screening alternative to upward NASA-STD-6001B Test 1.",
+        "summary": "Quantifies radiative quenching below 2 cm/s and blowoff above 40 cm/s for thin PMMA, and maps opposed-flow spread across thick PMMA up to 85% O2 to validate ground-based NCA screening."
+      },
+      "primary_publication_doi": "10.1016/j.proci.2016.06.025"
+    },
+    {
+      "id": "SOFIE-SMURF-MIST-GEL",
+      "code": "SOFIE-SMURF-MIST-GEL",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Solid Fuel Ignition and Extinction: SMuRF, MIST, and Growth & Extinction Limit (GEL)",
+      "doi": "10.1016/j.firesaf.2024.104267",
+      "facility": "ISS Combustion Integrated Rack (CIR) - SoFIE Insert & NASA GRC ZGRF Centrifuge",
+      "sub_hardware": "SoFIE Chamber with 800W Ceramic Radiant Heaters",
+      "pi_lead": "Sandra L. Olson (NASA GRC) [SMuRF], Carlos Fernandez-Pello, Michael Gollner (UC Berkeley) [MIST], James S. T'ien (CWRU) [GEL]",
+      "fuel_phase": "Solid",
+      "safety_pillars": ["Prevention", "Suppression"],
+      "simulates_partial_g": true,
+      "gravity_coverage": [0, 0.165, 0.38, 1.0],
+      "materials_tested": ["Cast PMMA Rods (15 cm & 30 cm)", "PMMA Spheres (15 samples)", "Thin Engineering Sheets (30x5 cm, 33 samples)"],
+      "sensors": ["Radiometers", "Thermocouple Arrays", "High-Speed Cameras"],
+      "burner_geometry": "SoFIE axial stagnation/concurrent flow duct with 800W radiant preheaters",
+      "models_buoyancy_scaling": true,
+      "scale_and_diagnostic_score": 97,
+      "atmosphere": {
+        "pressure_min_kpa": 56.5,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 15.0,
+        "o2_max_pct": 34.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 1.0,
+        "flow_velocity_max_cms": 40.0
+      },
+      "quantitative_findings": {
+        "pmma_rod_noms_o2_pct": 1.4,
+        "exploration_pressure_psia": 8.2,
+        "exploration_o2_pct": 34.0,
+        "lunar_sibal_downward_spread_mms": 0.86,
+        "earth_spinoff": "De-rating safety margins for reduced-pressure/enriched-oxygen hyperbaric and aerospace chambers.",
+        "summary": "Establishes the Negative Oxygen Margin of Safety (NOMS = 1.4% O2 for PMMA rods) to de-rate 1g NASA-STD-6001B Test 1 blowoff limits for Lunar (0.165g) and microgravity habitats."
+      },
+      "primary_publication_doi": "10.1016/j.firesaf.2024.104267"
+    },
+    {
+      "id": "PSI-69",
+      "code": "FLEX-FLEX2",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Flame Extinguishment Experiment (FLEX PSI-69), FLEX-2 (PSI-68), & Cool Flame CFD (PSI-117, PSI-142)",
+      "doi": "10.60555/gz0q-b577",
+      "facility": "ISS Combustion Integrated Rack (CIR) - MDCA (95-L Chamber)",
+      "sub_hardware": "Multi-user Droplet Combustion Apparatus (MDCA)",
+      "pi_lead": "Forman A. Williams (UCSD), Frederick L. Dryer (Princeton), Daniel L. Dietrich (NASA GRC), Vedha Nayagam, Tanvir I. Farouk, Yiguang Ju",
+      "fuel_phase": "Liquid Droplet",
+      "safety_pillars": ["Suppression", "Prevention"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["n-Heptane", "Methanol", "n-Octane", "n-Decane", "n-Dodecane", "Heptane-Hexadecane", "Heptane-Iso-octane", "Biobutanol"],
+      "sensors": ["Backlit High-Speed Droplet Camera", "UV OH* & Formaldehyde Imagers", "Radiometers", "Gas Mass Flow Controllers"],
+      "burner_geometry": "Free-floating and fiber-supported spherical droplets (D0 = 1.0 to 5.0 mm)",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 91,
+      "atmosphere": {
+        "pressure_min_kpa": 50.7,
+        "pressure_max_kpa": 304.0,
+        "o2_min_pct": 10.0,
+        "o2_max_pct": 50.0,
+        "diluents": ["N2", "CO2 (5-75%)", "He (5-70%)", "Xe (60%)"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 10.0
+      },
+      "quantitative_findings": {
+        "loi_o2_pct": 12.5,
+        "flex_377_decane_05atm_d0_dhfe_dcfe_mm": [4.0, 3.3, 2.7],
+        "flex_1250_dodecane_1atm_khf_kcf_mm2s": [0.383, 0.387],
+        "flex_1250_dodecane_1atm_dehf_decf_mm": [3.55, 0.40],
+        "flex_1256_dodecane_3atm_khf_kwf_mm2s": [0.350, 0.491],
+        "earth_spinoff": "Informed ISS fine-water-mist portable fire extinguishers (replacing toxic Halon) and diesel/jet spray combustion models.",
+        "summary": "Discovered two-stage cool-flame (~500-800 K) and three-stage warm-flame droplet burning after visible radiative extinction (~1500 K); quantified CO2 and Helium suppression limits."
+      },
+      "primary_publication_doi": "10.1016/j.combustflame.2015.01.012"
+    },
+    {
+      "id": "PSI-102",
+      "code": "SAME-SAMER",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Smoke and Aerosol Measurement Experiment (SAME PSI-102) & Reflight (SAME-R PSI-101 / PSI-115)",
+      "doi": "10.60555/gd4k-8h62",
+      "facility": "ISS Microgravity Science Glovebox (MSG) - 6-L Aging Chamber",
+      "sub_hardware": "Aerosol Aging Chamber & Hot-Wire Pyrolyzer",
+      "pi_lead": "David L. Urban (NASA GRC), Marit E. Meyer (NASA GRC), George W. Mulholland, Thomas G. Cleary (NIST), Gary A. Ruff",
+      "fuel_phase": "Solid (Pyrolysis Aerosol)",
+      "safety_pillars": ["Detection"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["Kapton Wire Insulation", "Teflon (PTFE)", "Silicone Rubber", "Pyrell Polyurethane Foam", "PVC", "Cotton / Cellulose Lamp Wick", "Dibutyl Phthalate (DBP)"],
+      "sensors": ["ISS Near-IR Photoelectric Detector", "Shuttle Ionization Detector", "Orion Laser Photoelectric Detector", "P-Trak Condensation Nuclei Counter", "DustTrak Nephelometer", "Thermal Precipitator (TEM)"],
+      "burner_geometry": "Wire-wrapped cylindrical sample cartridges (0.5 cm dia x 1.3 cm long) heated for 60s",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 93,
+      "atmosphere": {
+        "pressure_min_kpa": 101.3,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 21.0,
+        "o2_max_pct": 21.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 1.0,
+        "flow_velocity_max_cms": 25.0
+      },
+      "quantitative_findings": {
+        "particle_diameter_nm_range": [100, 600],
+        "mass_concentration_mg_m3_range": [2.0, 15.0],
+        "iss_detector_kapton_miss_rate_pct": 55.0,
+        "iss_detector_teflon_miss_rate_pct": 66.7,
+        "samer_doi": "10.60555/2np7-jv14",
+        "earth_spinoff": "Multi-criteria smart smoke detectors that reduce false alarms in residential, mining, and industrial buildings.",
+        "summary": "Showed 0g pyrolysis smoke coagulates into larger particles (100-600 nm) at low airflow; ISS near-IR detector missed 55% of Kapton and 66.7% of Teflon tests."
+      },
+      "primary_publication_doi": "10.1016/j.firesaf.2018.04.004"
+    },
+    {
+      "id": "PSI-DAFT",
+      "code": "DAFT / DAFT-2",
+      "status": "completed",
+      "has_psi_data": true,
+      "title": "Dust and Aerosol Measurement Feasibility Test (DAFT & DAFT-2)",
+      "doi": "https://psi.nasa.gov",
+      "facility": "ISS Cabin & Microgravity Science Glovebox (MSG)",
+      "sub_hardware": "SAME P-Trak & DustTrak Aerosol Suite",
+      "pi_lead": "David L. Urban (NASA GRC), Marit E. Meyer (NASA GRC)",
+      "fuel_phase": "Solid (Pyrolysis Aerosol)",
+      "safety_pillars": ["Detection"],
+      "simulates_partial_g": false,
+      "gravity_coverage": [0],
+      "materials_tested": ["Ambient ISS Cabin Dust (0.02 to 10+ microns)", "Lint", "Bio-aerosols"],
+      "sensors": ["P-Trak Ultrafine Particle Counter", "DustTrak Aerosol Monitor", "Gravimetric Filters"],
+      "burner_geometry": "Airborne fine and coarse particulate suspensions in ISS cabin",
+      "models_buoyancy_scaling": false,
+      "scale_and_diagnostic_score": 87,
+      "atmosphere": {
+        "pressure_min_kpa": 101.3,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 21.0,
+        "o2_max_pct": 21.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 5.0,
+        "flow_velocity_max_cms": 20.0
+      },
+      "quantitative_findings": {
+        "particle_size_range_um": [0.02, 10.0],
+        "earth_spinoff": "Dust-immune fire detection and indoor air quality monitoring for hospitals, underground mines, and cleanrooms.",
+        "summary": "Reused SAME smoke instruments to baseline ordinary ISS cabin dust (0.02-10+ um), providing the reference signature needed to separate cabin/lunar dust from smoke aerosols."
+      },
+      "primary_publication_doi": "https://psi.nasa.gov"
+    },
+    {
+      "id": "PSI-FM2-LUCI",
+      "code": "FM2 & LUCI (Planned Lunar)",
+      "status": "planned",
+      "has_psi_data": false,
+      "title": "Flammability of Materials on the Moon (FM2) & Lunar-g Combustion Investigation (LUCI)",
+      "doi": "https://ntrs.nasa.gov/api/citations/20240015307/downloads/Glenn_2024_ZayacPoster.pdf",
+      "facility": "FM2 Lunar-Gravity Flammability Lab (NASA Glenn / Planned Lunar Surface Payload)",
+      "sub_hardware": "Lunar-g Upward Flammability Chamber",
+      "pi_lead": "NASA Glenn Research Center (Zayac et al. 2024)",
+      "fuel_phase": "Solid",
+      "safety_pillars": ["Prevention"],
+      "simulates_partial_g": true,
+      "gravity_coverage": [0.165],
+      "materials_tested": ["Spacecraft Habitat Solid Polymers & Fabrics (Lunar 0.165g Target)"],
+      "sensors": ["Radiometers", "High-Resolution Cameras", "O2/Pressure Sensors"],
+      "burner_geometry": "Lunar-gravity upward flammability test stand",
+      "models_buoyancy_scaling": true,
+      "scale_and_diagnostic_score": 90,
+      "atmosphere": {
+        "pressure_min_kpa": 56.5,
+        "pressure_max_kpa": 101.3,
+        "o2_min_pct": 21.0,
+        "o2_max_pct": 34.0,
+        "diluents": ["N2"],
+        "flow_velocity_min_cms": 0.0,
+        "flow_velocity_max_cms": 20.0
+      },
+      "quantitative_findings": {
+        "pressure_range_psia": [8.2, 14.7],
+        "gravity_g": 0.165,
+        "earth_spinoff": "Partial-gravity fire safety validation for extraterrestrial habitats.",
+        "summary": "Planned lunar-gravity (0.165g) flammability investigations reproducing 21% O2 at 14.7 psia and 34% O2 at 8.2 psia. Preliminary centrifuge and drop-tower tests indicate lower oxygen flammability limits at 0.165g than at 1g."
+      },
+      "primary_publication_doi": "https://ntrs.nasa.gov/api/citations/20240015307/downloads/Glenn_2024_ZayacPoster.pdf"
+    }
+  ],
+  "spacecraft_materials": [
+    {
+      "material_id": "MAT-PMMA-CAST",
+      "name": "Cast Polymethyl Methacrylate (PMMA / Acrylic)",
+      "category": "Hard Thermoplastic / Window & Reference Fuel",
+      "thermophysical": {
+        "density_kg_m3": 1190,
+        "specific_heat_j_kg_k": 1400,
+        "thermal_conductivity_w_m_k": 0.19,
+        "pyrolysis_temp_k": 579,
+        "flame_temp_air_k": 2365
+      },
+      "flammability_limits": {
+        "loc_0g_concurrent_pct": 13.6,
+        "loc_0g_opposed_pct": 17.0,
+        "loc_lunar_016g_pct": 15.1,
+        "loc_1g_upward_pct": 18.0,
+        "noms_o2_pct": 1.4,
+        "nasa_std_6001_test1_34o2_82psia": "FAIL (Burns >15 cm, bubbling melt)"
+      }
+    },
+    {
+      "material_id": "MAT-SIBAL",
+      "name": "SIBAL Composite Fabric (75% Cotton / 25% Fiberglass)",
+      "category": "Thermally Thin Charring Textile",
+      "thermophysical": {
+        "area_density_kg_m2": 0.1805,
+        "pyrolysis_temp_k": 610,
+        "flame_temp_air_k": 2150
+      },
+      "flammability_limits": {
+        "loc_0g_concurrent_pct": 16.2,
+        "loc_lunar_016g_pct": 15.8,
+        "loc_1g_upward_pct": 18.5,
+        "noms_o2_pct": 2.7,
+        "spread_rate_0g_20cms_mms": 2.03,
+        "spread_rate_lunar_downward_mms": 0.86,
+        "nasa_std_6001_test1_34o2_82psia": "FAIL (Full consumption + smolder survival)"
+      }
+    },
+    {
+      "material_id": "MAT-NOMEX-HT90",
+      "name": "Nomex HT90-40 (Meta-Aramid Fire-Resistant Fabric)",
+      "category": "Fire-Resistant Crew Habitat Partition Textile",
+      "thermophysical": {
+        "area_density_kg_m2": 0.24,
+        "pyrolysis_temp_k": 720,
+        "flame_temp_air_k": 2100
+      },
+      "flammability_limits": {
+        "loc_0g_54kpa_pct": 32.5,
+        "loc_lunar_56kpa_pct": 31.2,
+        "loc_1g_101kpa_pct": 29.0,
+        "noms_o2_pct": 1.8,
+        "saffire_vi_31_9_o2_result": "PASS (Did not ignite at 31.9% O2, 54.1 kPa)",
+        "nasa_std_6001_test1_34o2_82psia": "WARNING (Borderline at 34-37% O2 Lunar SEA; requires MUA verification)"
+      }
+    },
+    {
+      "material_id": "MAT-VELCRO-NYLON",
+      "name": "Nylon Hook-and-Loop Fastener (Velcro)",
+      "category": "Cabin Fastener / Polymeric Textile",
+      "thermophysical": {
+        "density_kg_m3": 1140,
+        "pyrolysis_temp_k": 673,
+        "flame_temp_air_k": 2250
+      },
+      "flammability_limits": {
+        "loc_0g_pct": 19.5,
+        "loc_lunar_016g_pct": 18.8,
+        "loc_1g_upward_pct": 20.5,
+        "jsc_29353d_limit": "Safe against propagation up to 36% O2 at 8.2 psia ONLY when bonded to metallic substrate with >=15 cm fire break",
+        "nasa_std_6001_test1_34o2_82psia": "FAIL (Unbacked strips burn >15 cm and drip)"
+      }
+    },
+    {
+      "material_id": "MAT-PTFE-TEFLON",
+      "name": "Polytetrafluoroethylene (PTFE / Teflon Wire Insulation & Sheet)",
+      "category": "Fluoropolymer Electrical Insulation",
+      "thermophysical": {
+        "density_kg_m3": 2150,
+        "pyrolysis_temp_k": 811,
+        "flame_temp_air_k": 2050
+      },
+      "flammability_limits": {
+        "loc_0g_pct": 85.0,
+        "loc_lunar_016g_pct": 83.0,
+        "loc_1g_upward_pct": 95.0,
+        "supercritical_o2_hazard": "Ignites at ~811 K (1000 F) in 883-1008 psia 100% O2 (Apollo 13 Tank #2); pyrolysis smoke missed 2/3 of time by ISS near-IR detector",
+        "nasa_std_6001_test1_34o2_82psia": "PASS (Certified self-extinguishing in 34% O2 at 8.2 psia)"
+      }
+    },
+    {
+      "material_id": "MAT-BETA-PBI",
+      "name": "Beta Cloth (PTFE-Coated Fiberglass) & Black PBI Max",
+      "category": "EVA Spacesuit Outer Layer & Fire Barrier",
+      "thermophysical": {
+        "density_kg_m3": 1850,
+        "pyrolysis_temp_k": 920,
+        "flame_temp_air_k": 1950
+      },
+      "flammability_limits": {
+        "loc_0g_pct": 98.0,
+        "loc_lunar_016g_pct": 96.0,
+        "loc_1g_upward_pct": 100.0,
+        "nasa_std_6001_test1_34o2_82psia": "PASS (Non-combustible fire barrier per JSC 29353D)"
+      }
+    }
+  ],
+  "historical_incidents": [
+    {
+      "incident_id": "INC-APOLLO-1",
+      "mission": "Apollo 1 (AS-204 / CM-012)",
+      "date": "1967-01-27",
+      "atmosphere": { "o2_pct": 100.0, "pressure_psia": 16.7, "pressure_kpa": 115.1, "gravity_g": 1.0 },
+      "ignition_source": "Electrical arc from abraded PTFE Teflon wire in lower-left ECU bay near CO2 absorber",
+      "primary_fuels": ["34 sq ft Nylon Velcro hook-and-loop pile", "Raschel knit nylon netting", "Uralane polyurethane foam"],
+      "telemetry": {
+        "pre_fire_motion_gmt": "23:30:21 to 23:30:59",
+        "fire_reported_gmt": "23:31:04.7",
+        "instrumentation_dropouts_gmt": "23:31:17.0",
+        "cabin_rupture_gmt": "23:31:19.4",
+        "telemetry_loss_gmt": "23:31:22.4",
+        "time_to_rupture_s": 14.7,
+        "loss_of_telemetry_s": 17.7,
+        "peak_pressure_psia_range": [29.0, 37.7],
+        "peak_gas_temp_k": 644,
+        "peak_surface_temp_k": 800,
+        "aft_heatshield_exit_flame_temp_k": 1640,
+        "hatch_opening_time_required_s": [40, 90]
+      },
+      "engineering_reforms": [
+        "60% O2 / 40% N2 launch pad atmosphere",
+        "Outward-opening unified hatch (3-10 s egress)",
+        "Replacement of nylon/Velcro with Beta cloth and PBI",
+        "Creation of NASA-STD-6001 Test 1 upward flammability screening and JSC 29353D 15-cm fire breaks"
+      ]
+    },
+    {
+      "incident_id": "INC-APOLLO-13",
+      "mission": "Apollo 13 (Service Module Oxygen Tank #2)",
+      "date": "1970-04-13",
+      "atmosphere": { "o2_pct": 100.0, "pressure_psia": 954.0, "pressure_kpa": 6577.6, "gravity_g": 0.0, "state": "Supercritical Cryogenic O2 (-151.3 F)" },
+      "ignition_source": "65V DC GSE detanking power welded 28V DC heater thermostats shut, heating assembly to ~1000 F (811 K) and damaging PTFE Teflon fan wire insulation; fan stir arc at 55:53:20 GET",
+      "primary_fuels": ["PTFE (Teflon) electrical wire insulation"],
+      "telemetry": {
+        "quantity_gauge_fail_get": "46:40:00",
+        "fan_stir_energized_get": "55:53:20",
+        "pressure_rise_start_get": "55:53:59.763",
+        "rapid_temp_rise_get": "55:54:31",
+        "pressure_plateau_psia": 954.0,
+        "combustion_duration_s": 69.0,
+        "peak_pressure_get": "55:54:45",
+        "peak_pressure_psia": 1008.3,
+        "temp_sensor_fail_get": "55:54:52.703",
+        "last_telemetry_pressure_psia": 995.7,
+        "tank_rupture_get": "55:54:53.555",
+        "telemetry_blackout_s": 1.8,
+        "tank_1_pressure_drop_psia": [883.0, 879.0]
+      },
+      "engineering_reforms": [
+        "Removal of internal destratification fans in high-pressure cryogenic O2 tanks",
+        "Strict voltage rating enforcement on thermostatic switches",
+        "High-pressure oxygen compatibility testing (ASTM G72 / G124 / NASA-STD-6001B Test 17)"
+      ]
+    },
+    {
+      "incident_id": "INC-MIR-1997",
+      "mission": "Mir Space Station (Kvant-1 Module SFOG Fire)",
+      "date": "1997-02-23",
+      "atmosphere": { "o2_pct": 21.0, "pressure_psia": 14.7, "pressure_kpa": 101.3, "gravity_g": 0.0 },
+      "ignition_source": "Latex working glove hydrocarbon contamination inside solid lithium perchlorate (LiClO4) Vika/TGK oxygen generator cartridge",
+      "primary_fuels": ["Latex glove contaminant", "Stainless steel canister casing", "Molten metal droplets"],
+      "telemetry": {
+        "nominal_candle_temp_c": [450, 500],
+        "nominal_o2_output_liters": 600,
+        "flame_jet_length_m": 0.91,
+        "actual_burn_duration_min": 14.0,
+        "official_initial_reported_duration_s": 90.0,
+        "foam_extinguishers_discharged": 3,
+        "smoke_clearance_time_hours": 4.0
+      },
+      "engineering_reforms": [
+        "Strict cleanroom QA for ISS SFOG/TGK canister manufacturing",
+        "Quick-release fire extinguisher brackets and redundant ISS Elektron/OGS electrolysis",
+        "Multi-module smoke detection and portable breathing apparatus protocols"
+      ]
+    }
+  ],
+  "earth_spinoffs": [
+    {
+      "spinoff_id": "SPIN-FWM-PFE",
+      "name": "ISS Fine Water Mist Portable Fire Extinguisher (FWM PFE) & Doering Zero-Leak Valves",
+      "nasa_origin": "STS-107 Mist Experiment (Colorado School of Mines), NASA GRC, ADA Technologies, & Doering Company LLC",
+      "technical_specs": {
+        "water_mass_lbs": 6.0,
+        "nitrogen_mass_lbs": 1.2,
+        "operating_pressure_psig_max": 250.0,
+        "gas_to_liquid_mass_ratio": 0.15,
+        "discharge_duration_s": 45.0,
+        "droplet_exit_velocity_fps": [100, 300],
+        "droplet_d10_um": 28.0,
+        "droplet_d20_um": 32.0,
+        "droplet_d30_um": 36.0,
+        "droplet_d32_smd_um": 46.0
+      },
+      "terrestrial_applications": [
+        "Cleanroom, data center, and telecom rack non-conductive mist suppression",
+        "Automotive factory pneumatic grease dispensers (Doering zero-leak poppet valves)",
+        "Industrial printing press hydraulic roll locks",
+        "U.S. Military Growler A/M32K-10 15,000-lb munitions trailer brake locks (450+ units)"
+      ]
+    },
+    {
+      "spinoff_id": "SPIN-DUST-SMOKE",
+      "name": "Polarimetric & Multi-Angle Dust-Discriminating Smoke Detector",
+      "nasa_origin": "ISS SAME / SAME-R / DAFT (PSI-101/102), NASA GRC (M.E. Meyer), NIST, & Univ. of Duisburg-Essen",
+      "technical_specs": {
+        "wavelength_nm": 650,
+        "scattering_angles_deg": [90, 145],
+        "dolomite_dust_depolarization_ratio": 0.20,
+        "smoke_depolarization_ratio": 0.0,
+        "iss_baseline_obscuration_pct_m": 3.28,
+        "legacy_shuttle_inertial_cutoff_um": 1.5,
+        "legacy_iss_near_ir_cutoff_um": 0.3
+      },
+      "terrestrial_applications": [
+        "Underground coal and mineral mine fire detection in rock-dust clouds",
+        "Industrial waste bunkers, agricultural stables, and submarine compartments"
+      ]
+    },
+    {
+      "spinoff_id": "SPIN-SCBA-PBI",
+      "name": "PBI / Beta Cloth Turnout Textiles, 4500-psi Composite SCBA, & SCAMP Cryogenic Pack",
+      "nasa_origin": "NASA JSC / KSC, Celanese (PBI), Structural Composites Industries (SCI), Scott Aviation, & Aerospace Design & Development",
+      "technical_specs": {
+        "composite_scba_pressure_psi": 4500,
+        "legacy_steel_scba_pressure_psi": 2216,
+        "pbi_gold_blend_pct": "40% PBI / 60% High-Strength Aramid",
+        "scamp_breathing_air_temp_f": [50, 60]
+      },
+      "terrestrial_applications": [
+        "Standard municipal and military firefighter SCBA air cylinders worldwide",
+        "PBI Gold, PBI Matrix, and PBI TriGuard firefighter turnout coats and motorsport suits",
+        "Beta cloth PTFE-fiberglass architectural stadium and airport tensile roofs"
+      ]
+    }
+  ],
+  "knowledge_cards": [
+    {
+      "id": "kc-0g-flame-shape",
+      "title": "Why flames look different in microgravity",
+      "text": "On Earth, hot gas rises and pulls fresh air into the base of a flame, giving the familiar teardrop. In microgravity buoyancy disappears, so flames become round and blue. Oxygen then arrives only by molecular diffusion or by ventilation airflow, which makes airflow speed a key variable for spacecraft fire safety.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://psi.nasa.gov"]
+    },
+    {
+      "id": "kc-slow-flow",
+      "title": "Slow airflow can lower flammability limits",
+      "text": "In slow microgravity ventilation (1-10 cm/s) solid materials burn at lower oxygen concentrations than on Earth (down to 13.6% O2 in BASS-II vs 18% at 1g), because gentle forced flow supplies oxygen without strong convective cooling.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://psi.nasa.gov/physci/repo/data/investigations/PSI-25"]
+    },
+    {
+      "id": "kc-cool-flames",
+      "title": "Cool flames and reignition",
+      "text": "Fuels can stop glowing visibly around 1150-1500 K yet keep reacting at 500-800 K as invisible cool flames driven by alkylperoxy chemistry (FLEX, ACME CFI-G). Unburned vapor clouds can condense and later reignite.",
+      "pillars": ["Suppression", "Prevention"],
+      "verified": true,
+      "source_urls": ["https://psi.nasa.gov/physci/repo/data/investigations/PSI-159"]
+    },
+    {
+      "id": "kc-smoke-coagulation",
+      "title": "Smoke particles grow larger in microgravity",
+      "text": "Without buoyant plume rise, smoke stays near its heat source longer and coagulates into larger aggregates (100-600 nm in SAME). ISS near-IR detectors missed 55% of Kapton and 66.7% of Teflon pyrolysis tests.",
+      "pillars": ["Detection"],
+      "verified": true,
+      "source_urls": ["https://psi.nasa.gov/physci/repo/data/investigations/PSI-102"]
+    },
+    {
+      "id": "kc-dust-baseline",
+      "title": "Dust baselines and false alarms (SAME + DAFT)",
+      "text": "DAFT reused the SAME aerosol instruments to baseline ordinary ISS cabin dust (0.02-10+ um). Combining SAME smoke signatures with DAFT dust baselines enables polarimetric dust-discriminating smoke detectors.",
+      "pillars": ["Detection"],
+      "verified": true,
+      "source_urls": ["https://psi.nasa.gov"]
+    },
+    {
+      "id": "kc-ea-atmospheres",
+      "title": "NASA exploration atmospheres",
+      "text": "NASA specifies a primary Space Exploration Atmosphere (SEA) of 8.2 psia with 34% O2, an alternate staged atmosphere of 10.2 psia with 26.5% O2, ISS air at 14.7 psia with 21% O2, and challenge reference cases at 10.2 psia with 30% O2.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://ntrs.nasa.gov/api/citations/20240005151/downloads/2024_05_06_Garbino_EA_final.pdf"]
+    },
+    {
+      "id": "kc-ppo2",
+      "title": "Oxygen partial pressure comparison (pO2)",
+      "text": "Oxygen partial pressure pO2 = X_O2 * P_total: ISS air = 3.09 psia; 26.5% at 10.2 psia = 2.70 psia; 34% at 8.2 psia = 2.79 psia; 30% at 10.2 psia = 3.06 psia; 4.3 psia 100% O2 EVA suit = 4.30 psia. Equal pO2 does NOT mean equal flammability because less N2 diluent reduces thermal heat capacity.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://ntrs.nasa.gov/api/citations/20240005151/downloads/2024_05_06_Garbino_EA_final.pdf"]
+    },
+    {
+      "id": "kc-partial-g-gap",
+      "title": "Partial-gravity data gap (Moon 0.165g & Mars 0.38g)",
+      "text": "No direct lunar or Martian surface combustion data is in PSI yet. PyroZero brackets it using 0g and 1g bounds, ACME E-FIELD electrohydrodynamic ion-wind equivalence, and ZGRF centrifuge scaling ahead of FM2 and LUCI.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://ntrs.nasa.gov/api/citations/20240015307/downloads/Glenn_2024_ZayacPoster.pdf"]
+    },
+    {
+      "id": "kc-saffire-matrix",
+      "title": "Saffire IV-VI exploration test matrix",
+      "text": "Executed at 20 cm/s flow: SIBAL at 100 kPa/22% O2; cotton jersey at 70.7 kPa/26.2% O2; SIBAL at 54.1 kPa/31.0% O2; two-sided PMMA at 54.6 kPa/30.3% O2 (497 kJ); one-sided PMMA at 55.2 kPa/28.8% O2; Nomex no-ignition at 54.1 kPa/31.9% O2.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://ntrs.nasa.gov/api/citations/20240007488/downloads/Saffire%20ICES%202024%20Saffire%20presentation072124small.pdf"]
+    },
+    {
+      "id": "kc-fm2-prelim",
+      "title": "FM2 preliminary lunar flammability result",
+      "text": "The FM2 lab at NASA Glenn reproduces 21% O2 at 14.7 psia and 34% O2 at 8.2 psia. Preliminary centrifuge and drop-tower tests indicate materials have lower limiting oxygen concentrations at Lunar gravity (0.165g) than at 1g.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://ntrs.nasa.gov/api/citations/20240015307/downloads/Glenn_2024_ZayacPoster.pdf"]
+    },
+    {
+      "id": "kc-eclss-materials",
+      "title": "2026 NASA ECLSS Study: 70% Subsystem Material Replacement",
+      "text": "A 2026 NASA ECLSS study (NTRS 20260003925) reported that material flammability is the #1 critical hurdle at 8.2 psia with 34-40% O2, and that roughly 70% of assessed spacecraft subsystems require material replacement.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://ntrs.nasa.gov/citations/20260003925"]
+    },
+    {
+      "id": "kc-ices2026-model",
+      "title": "July 2026 FDS Fire Model Validated Against Saffire",
+      "text": "A July 2026 NASA paper (ICES-2026-092 / NTRS 20260001600) validated a Fire Dynamics Simulator (FDS) model against Saffire flight telemetry to predict spacecraft enclosure fire hazards.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://ntrs.nasa.gov/citations/20260001600"]
+    },
+    {
+      "id": "kc-halon-mist",
+      "title": "From ISS FLEX research to Fine Water Mist extinguishers",
+      "text": "ISS droplet combustion and suppression research (FLEX) informed the Fine Water Mist Portable Fire Extinguishers (28-46 um droplets) deployed on the ISS to replace toxic Halon/CO2 units.",
+      "pillars": ["Suppression"],
+      "verified": true,
+      "source_urls": ["https://arc.aiaa.org/doi/pdf/10.2514/6.2010-6242"]
+    },
+    {
+      "id": "kc-artemis2-alarm",
+      "title": "Artemis II Orion smoke alarm false-alarm case",
+      "text": "During Artemis II, the crew reported an Orion smoke detector tripping on the second-to-last day (~80,000 miles from Earth). Controllers asked whether it was bumped or triggered by a camera flash; no confirmed cause was established (and not lunar dust as the mission did not land).",
+      "pillars": ["Detection"],
+      "verified": true,
+      "source_urls": ["https://aerospaceamerica.aiaa.org/artemis-ii-astronauts-praise-orion-capsule-reflect-on-mission-impact/"]
+    },
+    {
+      "id": "kc-history",
+      "title": "Historical drivers: Apollo 1, Apollo 13, and Mir",
+      "text": "Apollo 1 (1967, 100% O2 at 16.7 psia cabin fire), Apollo 13 (1970, supercritical O2 Tank #2 PTFE wire fire), and Mir (1997, Kvant-1 LiClO4 oxygen candle blowtorch) directly shaped modern prevention, detection, and suppression rules.",
+      "pillars": ["Prevention", "Detection", "Suppression"],
+      "verified": true,
+      "source_urls": ["https://www.nasa.gov/history/25-years-ago-fire-aboard-space-station-mir/"]
+    },
+    {
+      "id": "kc-hardware-sharing",
+      "title": "Shared orbital combustion hardware on ISS & Cygnus",
+      "text": "ACME and SoFIE share the Combustion Integrated Rack (CIR), while FLEX uses the MDCA inside CIR. In the Microgravity Science Glovebox (MSG), BASS, BASS-II, SPICE, and SLICE share the SPICE flow duct, and SAME and DAFT share aerosol instruments. Saffire flew on Cygnus.",
+      "pillars": ["Prevention", "Detection", "Suppression"],
+      "verified": true,
+      "source_urls": ["https://www.nasa.gov/wp-content/uploads/2016/05/np-2015-10-034-jsc_combustion_in_reduced_gravity-iss-mini-book-011116-508.pdf"]
+    },
+    {
+      "id": "kc-psi-access",
+      "title": "Where NASA PSI data lives (Portal & AWS Open Data)",
+      "text": "NASA's Physical Sciences Informatics (PSI) repository is accessible at psi.nasa.gov and mirrored publicly on the AWS Open Data Registry (registry.opendata.aws/nasa-psi).",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://psi.nasa.gov", "https://registry.opendata.aws/nasa-psi"]
+    },
+    {
+      "id": "kc-scope",
+      "title": "Scope boundary: Habitat fires vs. Rocket propellant combustion",
+      "text": "Rocket-engine propellant combustion is out of scope because extreme injector velocities make it independent of gravity. PyroZero focuses strictly on crewed habitats, pressurized rovers, and spacesuit airlocks.",
+      "pillars": ["Prevention"],
+      "verified": true,
+      "source_urls": ["https://psi.nasa.gov"]
+    }
+  ]
+}

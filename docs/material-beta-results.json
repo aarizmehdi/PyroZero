@@ -1,0 +1,262 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 320,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "light",
+      "width": 320,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "light",
+      "width": 768,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "dark",
+      "width": 320,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "dark",
+      "width": 768,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Hybrid GraphRAG"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "tab": "PSI Mission Explorer"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Flammability Lab"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Fire Forensics"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Hybrid GraphRAG"
+    }
+  ],
+  "functional": [
+    "no silent initial prediction",
+    "six material choices",
+    "material kept across missions",
+    "PTFE extinction explanation",
+    "fresh selection per scenario",
+    "single Exit without competing presets/reset",
+    "source-linked material analogues",
+    "unsupported Mir fuels labelled",
+    "scenario tour",
+    "full original state restored",
+    "SIBAL 2.030 calibration shown",
+    "evidence without implicit PMMA",
+    "materials named in question",
+    "responsive visible selector"
+  ],
+  "browserErrors": []
+}

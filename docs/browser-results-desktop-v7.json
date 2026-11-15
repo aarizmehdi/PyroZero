@@ -1,0 +1,560 @@
+{
+  "origin": "http://127.0.0.1:4181",
+  "status": "PASS",
+  "checks": [
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "module": "PSI Mission Explorer",
+      "scroll": 1430,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1430,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "module": "Fire Forensics",
+      "scroll": 1430,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "light",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1430,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1354,
+      "height": 600,
+      "theme": "light",
+      "module": "PSI Mission Explorer",
+      "scroll": 1344,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1354,
+      "height": 600,
+      "theme": "light",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1344,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1354,
+      "height": 600,
+      "theme": "light",
+      "module": "Fire Forensics",
+      "scroll": 1344,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1354,
+      "height": 600,
+      "theme": "light",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1344,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "module": "PSI Mission Explorer",
+      "scroll": 1270,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1270,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "module": "Fire Forensics",
+      "scroll": 1270,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "light",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1270,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "theme": "light",
+      "module": "PSI Mission Explorer",
+      "scroll": 1190,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "theme": "light",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1190,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "theme": "light",
+      "module": "Fire Forensics",
+      "scroll": 1190,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "theme": "light",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1190,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1100,
+      "height": 900,
+      "theme": "light",
+      "module": "PSI Mission Explorer",
+      "scroll": 1090,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1100,
+      "height": 900,
+      "theme": "light",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1090,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1100,
+      "height": 900,
+      "theme": "light",
+      "module": "Fire Forensics",
+      "scroll": 1090,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1100,
+      "height": 900,
+      "theme": "light",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1090,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "module": "PSI Mission Explorer",
+      "scroll": 1014,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1014,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "module": "Fire Forensics",
+      "scroll": 1014,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "theme": "light",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1014,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "module": "PSI Mission Explorer",
+      "scroll": 1430,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1430,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "module": "Fire Forensics",
+      "scroll": 1430,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "theme": "dark",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1430,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1354,
+      "height": 600,
+      "theme": "dark",
+      "module": "PSI Mission Explorer",
+      "scroll": 1344,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1354,
+      "height": 600,
+      "theme": "dark",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1344,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1354,
+      "height": 600,
+      "theme": "dark",
+      "module": "Fire Forensics",
+      "scroll": 1344,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1354,
+      "height": 600,
+      "theme": "dark",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1344,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "module": "PSI Mission Explorer",
+      "scroll": 1270,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1270,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "module": "Fire Forensics",
+      "scroll": 1270,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1280,
+      "height": 900,
+      "theme": "dark",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1270,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "theme": "dark",
+      "module": "PSI Mission Explorer",
+      "scroll": 1190,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "theme": "dark",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1190,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "theme": "dark",
+      "module": "Fire Forensics",
+      "scroll": 1190,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1200,
+      "height": 900,
+      "theme": "dark",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1190,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1100,
+      "height": 900,
+      "theme": "dark",
+      "module": "PSI Mission Explorer",
+      "scroll": 1090,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1100,
+      "height": 900,
+      "theme": "dark",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1090,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1100,
+      "height": 900,
+      "theme": "dark",
+      "module": "Fire Forensics",
+      "scroll": 1090,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1100,
+      "height": 900,
+      "theme": "dark",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1090,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "theme": "dark",
+      "module": "PSI Mission Explorer",
+      "scroll": 1014,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "theme": "dark",
+      "module": "Partial-g Flammability Lab",
+      "scroll": 1014,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "theme": "dark",
+      "module": "Fire Forensics",
+      "scroll": 1014,
+      "positions": [],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    },
+    {
+      "width": 1024,
+      "height": 900,
+      "theme": "dark",
+      "module": "Hybrid GraphRAG",
+      "scroll": 1014,
+      "positions": [
+        "static"
+      ],
+      "nav": "visible",
+      "workspacePadding": "32px"
+    }
+  ],
+  "browserErrors": [],
+  "liveDeepSeekVerified": false
+}

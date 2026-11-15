@@ -1,0 +1,186 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "scroll": 1430,
+      "labelGap": 10.48480224609375,
+      "belowGap": 43.30303955078125,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "light",
+      "width": 1354,
+      "scroll": 1344,
+      "labelGap": 10.484848022460938,
+      "belowGap": 43.30302429199219,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "light",
+      "width": 1100,
+      "scroll": 1090,
+      "labelGap": 10.484848022460938,
+      "belowGap": 43.30302429199219,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "scroll": 1014,
+      "labelGap": 10.484848022460938,
+      "belowGap": 43.30302429199219,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "scroll": 380,
+      "labelGap": 10.484832763671875,
+      "belowGap": 43.30303955078125,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "scroll": 415,
+      "labelGap": 10.484832763671875,
+      "belowGap": 43.30303955078125,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "scroll": 1430,
+      "labelGap": 10.484832763671875,
+      "belowGap": 43.30303955078125,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "dark",
+      "width": 1354,
+      "scroll": 1344,
+      "labelGap": 10.484848022460938,
+      "belowGap": 43.30302429199219,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "dark",
+      "width": 1100,
+      "scroll": 1090,
+      "labelGap": 10.484848022460938,
+      "belowGap": 43.30302429199219,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "scroll": 1014,
+      "labelGap": 10.484848022460938,
+      "belowGap": 43.30302429199219,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "scroll": 380,
+      "labelGap": 10.484832763671875,
+      "belowGap": 43.30303955078125,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "scroll": 415,
+      "labelGap": 10.484832763671875,
+      "belowGap": 43.30303955078125,
+      "legendGap": 25,
+      "legend": [
+        "0g",
+        "Moon",
+        "Mars",
+        "Earth"
+      ],
+      "badge": false
+    }
+  ],
+  "browserErrors": []
+}

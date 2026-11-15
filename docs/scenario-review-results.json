@@ -1,0 +1,78 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 390,
+      "incident": "Apollo 13",
+      "material": "MAT-PTFE-TEFLON"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "incident": "Apollo 1 (",
+      "material": "MAT-VELCRO-NYLON"
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "incident": "Mir Space",
+      "material": "MAT-PMMA-CAST"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "incident": "Apollo 13",
+      "material": "MAT-PTFE-TEFLON"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "incident": "Apollo 1 (",
+      "material": "MAT-VELCRO-NYLON"
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "incident": "Mir Space",
+      "material": "MAT-PMMA-CAST"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "incident": "Apollo 13",
+      "material": "MAT-PTFE-TEFLON"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "incident": "Apollo 1 (",
+      "material": "MAT-VELCRO-NYLON"
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "incident": "Mir Space",
+      "material": "MAT-PMMA-CAST"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "incident": "Apollo 13",
+      "material": "MAT-PTFE-TEFLON"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "incident": "Apollo 1 (",
+      "material": "MAT-VELCRO-NYLON"
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "incident": "Mir Space",
+      "material": "MAT-PMMA-CAST"
+    }
+  ],
+  "browserErrors": []
+}

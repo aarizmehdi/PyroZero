@@ -1,0 +1,16 @@
+node_modules/
+.next/
+out/
+*.tsbuildinfo
+.env*
+.taste-skill/
+*.tar.gz
+.browser-test/
+dist/
+.sites-runtime/
+!.env.example
+
+.vercel
+.env*
+
+.vercel/

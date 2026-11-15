@@ -1,0 +1,324 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "theme": "light",
+      "width": 1440,
+      "tab": "PSI Mission Explorer",
+      "scroll": 1430
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "tab": "Flammability Lab",
+      "scroll": 1430,
+      "controlsOpen": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "tab": "Fire Forensics",
+      "scroll": 1430
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 1430
+    },
+    {
+      "theme": "light",
+      "width": 1354,
+      "tab": "PSI Mission Explorer",
+      "scroll": 1344
+    },
+    {
+      "theme": "light",
+      "width": 1354,
+      "tab": "Flammability Lab",
+      "scroll": 1344,
+      "controlsOpen": true
+    },
+    {
+      "theme": "light",
+      "width": 1354,
+      "tab": "Fire Forensics",
+      "scroll": 1344
+    },
+    {
+      "theme": "light",
+      "width": 1354,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 1344
+    },
+    {
+      "theme": "light",
+      "width": 1100,
+      "tab": "PSI Mission Explorer",
+      "scroll": 1090
+    },
+    {
+      "theme": "light",
+      "width": 1100,
+      "tab": "Flammability Lab",
+      "scroll": 1090,
+      "controlsOpen": true
+    },
+    {
+      "theme": "light",
+      "width": 1100,
+      "tab": "Fire Forensics",
+      "scroll": 1090
+    },
+    {
+      "theme": "light",
+      "width": 1100,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 1090
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "tab": "PSI Mission Explorer",
+      "scroll": 1014
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "tab": "Flammability Lab",
+      "scroll": 1014,
+      "controlsOpen": true
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "tab": "Fire Forensics",
+      "scroll": 1014
+    },
+    {
+      "theme": "light",
+      "width": 1024,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 1014
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "tab": "PSI Mission Explorer",
+      "scroll": 380
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "tab": "Flammability Lab",
+      "scroll": 380,
+      "controlsOpen": false
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "tab": "Fire Forensics",
+      "scroll": 380
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 380
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "tab": "PSI Mission Explorer",
+      "scroll": 415
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "tab": "Flammability Lab",
+      "scroll": 415,
+      "controlsOpen": false
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "tab": "Fire Forensics",
+      "scroll": 415
+    },
+    {
+      "theme": "light",
+      "width": 425,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 415
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "tab": "PSI Mission Explorer",
+      "scroll": 1430
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Flammability Lab",
+      "scroll": 1430,
+      "controlsOpen": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Fire Forensics",
+      "scroll": 1430
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 1430
+    },
+    {
+      "theme": "dark",
+      "width": 1354,
+      "tab": "PSI Mission Explorer",
+      "scroll": 1344
+    },
+    {
+      "theme": "dark",
+      "width": 1354,
+      "tab": "Flammability Lab",
+      "scroll": 1344,
+      "controlsOpen": true
+    },
+    {
+      "theme": "dark",
+      "width": 1354,
+      "tab": "Fire Forensics",
+      "scroll": 1344
+    },
+    {
+      "theme": "dark",
+      "width": 1354,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 1344
+    },
+    {
+      "theme": "dark",
+      "width": 1100,
+      "tab": "PSI Mission Explorer",
+      "scroll": 1090
+    },
+    {
+      "theme": "dark",
+      "width": 1100,
+      "tab": "Flammability Lab",
+      "scroll": 1090,
+      "controlsOpen": true
+    },
+    {
+      "theme": "dark",
+      "width": 1100,
+      "tab": "Fire Forensics",
+      "scroll": 1090
+    },
+    {
+      "theme": "dark",
+      "width": 1100,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 1090
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "tab": "PSI Mission Explorer",
+      "scroll": 1014
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Flammability Lab",
+      "scroll": 1014,
+      "controlsOpen": true
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Fire Forensics",
+      "scroll": 1014
+    },
+    {
+      "theme": "dark",
+      "width": 1024,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 1014
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "tab": "PSI Mission Explorer",
+      "scroll": 380
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "tab": "Flammability Lab",
+      "scroll": 380,
+      "controlsOpen": false
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "tab": "Fire Forensics",
+      "scroll": 380
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 380
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "tab": "PSI Mission Explorer",
+      "scroll": 415
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "tab": "Flammability Lab",
+      "scroll": 415,
+      "controlsOpen": false
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "tab": "Fire Forensics",
+      "scroll": 415
+    },
+    {
+      "theme": "dark",
+      "width": 425,
+      "tab": "Hybrid GraphRAG",
+      "scroll": 415
+    }
+  ],
+  "functional": [
+    "first visit welcome",
+    "skip remembered across reload",
+    "Tools replay",
+    "six tour steps across all four modules",
+    "Escape dismissal",
+    "three initial results and show all",
+    "search across catalogue",
+    "three safety pillars on one row",
+    "collapsed mobile custom controls",
+    "four presets",
+    "gravity values paired with names",
+    "no overlapping SVG mission labels",
+    "mobile scenario button",
+    "time reference note",
+    "reference answer highlighted",
+    "evidence map before sources"
+  ],
+  "browserErrors": []
+}

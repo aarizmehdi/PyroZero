@@ -1,0 +1,1567 @@
+{
+  "start": "2026-11-14T08:11:23.106Z",
+  "round": 3,
+  "idle": 0,
+  "errors": 0,
+  "status": "open",
+  "history": [
+    {
+      "at": "2026-11-14T08:44:35.177Z",
+      "mode": "manual",
+      "status": "fail",
+      "fails": 40,
+      "round": 1,
+      "reused": false,
+      "stopHookActive": false
+    },
+    {
+      "at": "2026-11-14T08:53:28.669Z",
+      "mode": "manual",
+      "status": "fail",
+      "fails": 35,
+      "round": 2,
+      "reused": false,
+      "stopHookActive": false
+    },
+    {
+      "at": "2026-11-14T09:03:09.151Z",
+      "mode": "manual",
+      "status": "open",
+      "fails": 35,
+      "round": 3,
+      "reused": false,
+      "stopHookActive": false
+    }
+  ],
+  "max": 3,
+  "marker": {
+    "page": "out/index.html",
+    "url": null,
+    "root": "out",
+    "kind": "software",
+    "category": "microgravity combustion research",
+    "primary": "Compare mission evidence",
+    "rounds": 3,
+    "start": "2026-11-14T08:11:23.106Z",
+    "by": "gate.mjs --start"
+  },
+  "manual": true,
+  "roundKey": "a20821d3f522bc79:da39a3ee",
+  "roundFree": false,
+  "idleFree": false,
+  "blockKey": null,
+  "fp": "a20821d3f522bc79",
+  "page": "out/index.html",
+  "found": {
+    "fails": [
+      {
+        "check": "hero-fill",
+        "where": "main#workspace > div.mission-bar \"MISSION PROFILE ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a \"",
+        "msg": "the next section shows on the first screen: it starts at 316px on a 900px screen (the hero ends at 247px)",
+        "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "hero-fill"
+        ],
+        "wheres": [
+          "main#workspace > div.mission-bar \"MISSION PROFILE ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a \""
+        ]
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel \"01 / INVESTIGATION TRADE STUDY Mission e\"",
+        "msg": "its first line sits 0px under the top edge of div.explorer-grid.view-enter, where the ground changes",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          1440,
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "flush"
+        ],
+        "wheres": [
+          "main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel \"01 / INVESTIGATION TRADE STUDY Mission e\""
+        ]
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > div.explorer-grid.view-enter > div.evidence-column > div.insight-banner \"The 1g test can miss the risk. Lower buo\"",
+        "msg": "its last line sits 0px above the lower edge of div.explorer-grid.view-enter, where the ground changes to the footer",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "flush"
+        ],
+        "wheres": [
+          "main#workspace > div.explorer-grid.view-enter > div.evidence-column > div.insight-banner \"The 1g test can miss the risk. Lower buo\""
+        ]
+      },
+      {
+        "check": "nav",
+        "where": "div.app-shell > header.topbar",
+        "msg": "the nav has no bar, and its pieces sit past the content's edges (29-1414px against 95-1410px)",
+        "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "nav"
+        ],
+        "wheres": [
+          "div.app-shell > header.topbar"
+        ]
+      },
+      {
+        "check": "nav",
+        "where": "div.app-shell > header.topbar > a.lab-brand \"Z L ZENTRIX LABS HACKATHON & R&D DIVISIO\"",
+        "msg": "nav link wraps to a second line",
+        "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+        "widths": [
+          1440,
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "nav"
+        ],
+        "wheres": [
+          "div.app-shell > header.topbar > a.lab-brand \"Z L ZENTRIX LABS HACKATHON & R&D DIVISIO\""
+        ]
+      },
+      {
+        "check": "no-visual",
+        "where": "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\"",
+        "msg": "pictures, effects and mocks cover 11% of this section; a feature section needs a visual (about 25% or more)",
+        "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "no-visual"
+        ],
+        "wheres": [
+          "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\""
+        ]
+      },
+      {
+        "check": "cta",
+        "where": "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\"",
+        "msg": "the last section before the footer ends with no button",
+        "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "cta"
+        ],
+        "wheres": [
+          "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\""
+        ]
+      },
+      {
+        "check": "off-grid",
+        "where": "div.app-shell > header.topbar > a.lab-brand > span:nth-of-type(2) \"ZENTRIX LABS HACKATHON & R&D DIVISION\"",
+        "msg": "left edge at 74px, 21px off the page margin at 95px (9 elements, like div.breadcrumb)",
+        "fix": "move it onto the page margin, or the column edge its section uses",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "off-grid"
+        ],
+        "wheres": [
+          "div.app-shell > header.topbar > a.lab-brand > span:nth-of-type(2) \"ZENTRIX LABS HACKATHON & R&D DIVISION\""
+        ]
+      },
+      {
+        "check": "off-grid",
+        "where": "header.topbar > a.lab-brand > span:nth-of-type(2) > small \"HACKATHON & R&D DIVISION\"",
+        "msg": "left edge at 74px, 21px off the page margin at 95px (9 elements, like div.breadcrumb)",
+        "fix": "move it onto the page margin, or the column edge its section uses",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "off-grid"
+        ],
+        "wheres": [
+          "header.topbar > a.lab-brand > span:nth-of-type(2) > small \"HACKATHON & R&D DIVISION\""
+        ]
+      },
+      {
+        "check": "section-gaps",
+        "where": "main#workspace > div.page-heading / main#workspace > div.mission-bar",
+        "msg": "112px between these sections, +149% against the median 45px",
+        "fix": "use one gap between sections (all within 25% of each other)",
+        "widths": [
+          1440,
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "section-gaps"
+        ],
+        "wheres": [
+          "main#workspace > div.page-heading / main#workspace > div.mission-bar"
+        ]
+      },
+      {
+        "check": "moment-none",
+        "where": "(the page)",
+        "msg": "a software page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+        "fix": "deal one (moments.mjs pick --page software) and mount it in its own section",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "moment-none"
+        ],
+        "wheres": [
+          "(the page)"
+        ]
+      },
+      {
+        "check": "hero-screen",
+        "where": "main#workspace > div.breadcrumb \"Workspace Flame in Freefall NASA SPACE A\"",
+        "msg": "the hero ends at 109px on a 900px screen, 792px above the fold: it ends at the fold, 1px either way (SR-1)",
+        "fix": "make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "hero-screen"
+        ],
+        "wheres": [
+          "main#workspace > div.breadcrumb \"Workspace Flame in Freefall NASA SPACE A\""
+        ]
+      },
+      {
+        "check": "hero-screen",
+        "where": "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\"",
+        "msg": "792px of the next section shows on the first screen (from 109px on a 900px screen): nothing below the hero shows at load (SR-1)",
+        "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "hero-screen"
+        ],
+        "wheres": [
+          "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\""
+        ]
+      },
+      {
+        "check": "section-height",
+        "where": "main#workspace > nav.workspace-tabs \"Orbital explorer01Flammability lab02Fire\"",
+        "msg": "the section is 46px tall (0.1 screens), 854px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+        "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "section-height"
+        ],
+        "wheres": [
+          "main#workspace > nav.workspace-tabs \"Orbital explorer01Flammability lab02Fire\"",
+          "main#workspace > footer \"PYROZERO BUILT BY ZENTRIX LABSResearch s\"",
+          "main#workspace > div.mission-bar \"MISSION PROFILEISS transit0g \u00c2\u00b7 21% O\u00e2\u201a\u201aArt\"",
+          "main#workspace > div.explorer-grid.view-enter \"01 / INVESTIGATION TRADE STUDYMission ev\"",
+          "main#workspace > div.telemetry-strip \"AMBIENT GRAVITY0.165gOXYGEN FRACTION34.0\""
+        ]
+      },
+      {
+        "check": "section-air",
+        "where": "main#workspace > div.page-heading / main#workspace > nav.workspace-tabs",
+        "msg": "30px of air between the content of these two sections: 128-480px (64-600px WARN) (every gap out of the band at 1440px, top to bottom: 30px after \"MICROGRAVITY COMBUST\", 37px after \"Orbital explorer01Fl\", 46px after \"MISSION PROFILEISS t\", 64px after \"AMBIENT GRAVITY0.165\") (SR-3)",
+        "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "section-air"
+        ],
+        "wheres": [
+          "main#workspace > div.page-heading / main#workspace > nav.workspace-tabs"
+        ]
+      },
+      {
+        "check": "section-air",
+        "where": "main#workspace > nav.workspace-tabs / main#workspace > div.mission-bar",
+        "msg": "37px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)",
+        "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "section-air"
+        ],
+        "wheres": [
+          "main#workspace > nav.workspace-tabs / main#workspace > div.mission-bar"
+        ]
+      },
+      {
+        "check": "section-air",
+        "where": "main#workspace > div.mission-bar / main#workspace > div.telemetry-strip",
+        "msg": "46px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)",
+        "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "section-air"
+        ],
+        "wheres": [
+          "main#workspace > div.mission-bar / main#workspace > div.telemetry-strip"
+        ]
+      },
+      {
+        "check": "one-section",
+        "where": "main#workspace > div.page-heading > div > h1 \"Microgravity fire intelligence.\"",
+        "msg": "the screen at scroll 0px (stride 0) shows 138px of section 2 and the heading of section 2 whole and the content of 5 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+        "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "one-section"
+        ],
+        "wheres": [
+          "main#workspace > div.page-heading > div > h1 \"Microgravity fire intelligence.\"",
+          "main#workspace > div.telemetry-strip \"AMBIENT GRAVITY0.165gOXYGEN FRACTION34.0\"",
+          "main#workspace > div.breadcrumb \"Workspace Flame in Freefall NASA SPACE A\"",
+          "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\"",
+          "main#workspace > nav.workspace-tabs \"Orbital explorer01Flammability lab02Fire\""
+        ]
+      },
+      {
+        "check": "one-heading",
+        "where": "section.panel:nth-of-type(1) > div.panel-head > div > h2 \"Trade-study weights\"",
+        "msg": "the section holds 3 h2 headings: one per section, first in its .wrap (SR-5)",
+        "fix": "give each section one h2, first in its .wrap, and the hero only its h1",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "one-heading"
+        ],
+        "wheres": [
+          "section.panel:nth-of-type(1) > div.panel-head > div > h2 \"Trade-study weights\""
+        ]
+      },
+      {
+        "check": "one-heading",
+        "where": "section.panel > div.panel-head > div > h2 \"Mission evidence matrix\"",
+        "msg": "headings of two sections show whole on one screen at 4 of 21 scroll positions (19%; at scroll 0, 50, 100, 150px), here with \"Microgravity fire intelligence.\": at most 3% on a desktop (SR-5)",
+        "fix": "make the sections one screen tall so their headings sit a screen apart and two never share one",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "one-heading"
+        ],
+        "wheres": [
+          "section.panel > div.panel-head > div > h2 \"Mission evidence matrix\""
+        ]
+      },
+      {
+        "check": "container-edges",
+        "where": "div.app-shell > header.topbar \"ZLZENTRIX LABSHACKATHON & R&D DIVISIONPY\"",
+        "msg": "the nav's content runs 26px from the left and 26px from the right (read from its outermost blocks: no .wrap): the page's container starts at 95px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+        "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "container-edges"
+        ],
+        "wheres": [
+          "div.app-shell > header.topbar \"ZLZENTRIX LABSHACKATHON & R&D DIVISIONPY\""
+        ]
+      },
+      {
+        "check": "container-edges",
+        "where": "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\"",
+        "msg": "the content of section 2 runs 95px from the left and 30px from the right (read from its outermost blocks: no .wrap): 95 and 30px are not one margin (one container, equal margins, 2px either way) (and 5 more like it: \"Orbital explorer01Flamma\", \"MISSION PROFILEISS trans\", \"AMBIENT GRAVITY0.165gOXY\") (SR-6)",
+        "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "container-edges"
+        ],
+        "wheres": [
+          "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\""
+        ]
+      },
+      {
+        "check": "container-edges",
+        "where": "a.skip-link \"Skip to workspace\"",
+        "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+        "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "container-edges"
+        ],
+        "wheres": [
+          "a.skip-link \"Skip to workspace\""
+        ]
+      },
+      {
+        "check": "container-edges",
+        "where": "div.app-shell \"ZLZENTRIX LABSHACKATHON & R&D DIVISIONPY\"",
+        "msg": "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 7 more like it: \"Workspace Flame in Freef\", \"MICROGRAVITY COMBUSTION \", \"Orbital explorer01Flamma\") (SR-6)",
+        "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "container-edges"
+        ],
+        "wheres": [
+          "div.app-shell \"ZLZENTRIX LABSHACKATHON & R&D DIVISIONPY\""
+        ]
+      },
+      {
+        "check": "container-edges",
+        "where": "div.app-shell > header.topbar > a.lab-brand > span.zl-mark \"ZL\"",
+        "msg": "a box runs 23-65px, outside the container lines of the nav at 95-1410px: full width is for background layers and grounds only (SR-6)",
+        "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "container-edges"
+        ],
+        "wheres": [
+          "div.app-shell > header.topbar > a.lab-brand > span.zl-mark \"ZL\""
+        ]
+      },
+      {
+        "check": "container-edges",
+        "where": "div.app-shell > header.topbar > a.lab-brand \"ZLZENTRIX LABSHACKATHON & R&D DIVISION\"",
+        "msg": "\"ZLZENTRIX LABSHACKATHON & R&D DI\" runs 26-220px, outside the container lines of the nav at 95-1410px: full width is for background layers and grounds only (and 6 more like it: \"ZL\", \"L\", \"ZENTRIX LABSHACKATHON & \") (SR-6)",
+        "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "container-edges"
+        ],
+        "wheres": [
+          "div.app-shell > header.topbar > a.lab-brand \"ZLZENTRIX LABSHACKATHON & R&D DIVISION\""
+        ]
+      },
+      {
+        "check": "container-edges",
+        "where": "main#workspace > div.breadcrumb > span.challenge-tag \"NASA SPACE APPS 2026\"",
+        "msg": "1 text block starts on a left line at x 1286, 1191px from the container's left: text starts on the container's left, or on one split line (x 653, 765, 876) (and 6 more like it: \"Trade-study weights\", \"Live combustion preview\", x 165) (SR-6)",
+        "fix": "start the text on the container's left, or on the one split line every split shares",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "container-edges"
+        ],
+        "wheres": [
+          "main#workspace > div.breadcrumb > span.challenge-tag \"NASA SPACE APPS 2026\""
+        ]
+      },
+      {
+        "check": "container-edges",
+        "where": "main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel \"01 / INVESTIGATION TRADE STUDYMission ev\"",
+        "msg": "a box over half the container wide runs 95-1106px, not on the container's lines at 95-1410px (and 1 more like it: \"The 1g test can miss the\") (SR-6)",
+        "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+        "widths": [
+          1440
+        ],
+        "from": "consistency",
+        "ids": [
+          "container-edges"
+        ],
+        "wheres": [
+          "main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel \"01 / INVESTIGATION TRADE STUDYMission ev\""
+        ]
+      },
+      {
+        "check": "hero-fill",
+        "where": "main#workspace > div.mission-bar \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a Artemis lunar 0.\"",
+        "msg": "the next section shows on the first screen: it starts at 407px on a 844px screen (the hero ends at 328px)",
+        "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+        "widths": [
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "hero-fill"
+        ],
+        "wheres": [
+          "main#workspace > div.mission-bar \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a Artemis lunar 0.\""
+        ]
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(1) \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\"",
+        "msg": "its first line sits 10px under the top edge of div.mission-bar, where the ground changes",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "flush"
+        ],
+        "wheres": [
+          "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(1) \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\""
+        ]
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(3) \"Mars habitat 0.38g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"",
+        "msg": "its button sits 10px above the lower edge of div.mission-bar, where the ground changes to div.telemetry-strip",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "flush"
+        ],
+        "wheres": [
+          "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(3) \"Mars habitat 0.38g \u00c2\u00b7 34% O\u00e2\u201a\u201a\""
+        ]
+      },
+      {
+        "check": "cut-text",
+        "where": "table.matrix > thead > tr > th:nth-of-type(4) \"PRESSURE ENVELOPE\"",
+        "msg": "cut 82px at the right by the overflow of main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel (and 12 more like it: \"54.1\u00e2\u20ac\u201c100 kPa\", \"56.5\u00e2\u20ac\u201c101.3 kPa\", \"40\u00e2\u20ac\u201c101.3 kPa\", \"50.7\u00e2\u20ac\u201c304 kPa\", ...)",
+        "fix": "give the text room: no overflow clipping a line, no line past its box",
+        "widths": [
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "cut-text"
+        ],
+        "wheres": [
+          "table.matrix > thead > tr > th:nth-of-type(4) \"PRESSURE ENVELOPE\""
+        ]
+      },
+      {
+        "check": "button-styles",
+        "where": "(one screen)",
+        "msg": "3 button styles on one screen: soft, outline #272935 (\"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\"); soft, fill #101018, outline #2b2d3b (\"Export trade study\"); soft, fill #10233a, outline #1c629d (\"Artemis lunar 0.165g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"); the odd one out: \"Artemis lunar 0.165g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"",
+        "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+        "widths": [
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "button-styles"
+        ],
+        "wheres": [
+          "(one screen)"
+        ]
+      },
+      {
+        "check": "button-styles",
+        "where": "(the page)",
+        "msg": "5 button styles on the page: soft, fill #101018, outline #2b2d3b x1 (\"Export trade study\"); soft, outline #272935 x3 (\"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\"); soft, fill #10233a, outline #1c629d x1 (\"Artemis lunar 0.165g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"); soft, fill #242a37 x1 (\"All fuels\"); soft, fill #142236, outline #233e5d x12 (\"SAFFIRE-IV-VI\")",
+        "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+        "widths": [
+          390
+        ],
+        "from": "consistency",
+        "ids": [
+          "button-styles"
+        ],
+        "wheres": [
+          "(the page)"
+        ]
+      },
+      {
+        "check": "container",
+        "where": "page",
+        "msg": "no .wrap",
+        "fix": "put the content in one .wrap",
+        "widths": [
+          1440,
+          390
+        ],
+        "from": "layout",
+        "ids": [
+          "container"
+        ],
+        "wheres": [
+          "page"
+        ]
+      }
+    ],
+    "warns": [
+      {
+        "check": "flush",
+        "where": "main#workspace > div.page-heading > div > p \"Explore the evidence. Model the atmosphe\"",
+        "msg": "its last line sits 30px above the rule on top of div.mission-bar",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(1) \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\"",
+        "msg": "its first line sits 13px under the top edge of div.mission-bar, where the ground changes",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > div.telemetry-strip > div.telemetry-item:nth-of-type(1) > div \"AMBIENT GRAVITY\"",
+        "msg": "its first line sits 17px under the top edge of div.telemetry-strip, where the ground changes",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          1440,
+          390
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > div.telemetry-strip > div.telemetry-item:nth-of-type(1) > strong.mono \"0.165g\"",
+        "msg": "its last line sits 20px above the lower edge of div.telemetry-strip, where the ground changes to div.explorer-grid.view-enter",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > footer > span:nth-of-type(2) > button \"Read model notes\"",
+        "msg": "its first line sits 24px under the top edge of footer, where the ground changes",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "fold-card",
+        "where": "main#workspace > div.explorer-grid.view-enter > div.side-column > section.panel:nth-of-type(1) \"AHP / NORMALIZED CRITERIA Trade-study we\"",
+        "msg": "the 284x414 card starts on the first screen and runs 19px past its bottom",
+        "fix": "end the card inside the first screen, or start it lower, so its whole edge shows",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "copy-buttons",
+        "where": "div.app-shell > header.topbar > div.topbar-right > button.brief-button \"Judge walkthrough\"",
+        "msg": "\"Judge walkthrough\" does not start with a verb (book, buy, try, start, get, see...) (and 5 more like it: \"Export trade study\", \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\", \"Artemis lunar 0.165g \u00c2\u00b7 3\", \"Mars habitat 0.38g \u00c2\u00b7 34%\", ...)",
+        "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "copy-buttons",
+        "where": "main#workspace > div.mission-bar > div.mission-options > button.active \"Artemis lunar 0.165g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"",
+        "msg": "\"Artemis lunar 0.165g \u00c2\u00b7 34% O\u00e2\u201a\u201a\" is 6 words (1 to 5) (and 2 more like it: \"Mars habitat 0.38g \u00c2\u00b7 34%\", \"EVA spacesuit 0.165g \u00c2\u00b7 8\")",
+        "fix": "label buttons with a verb and what the visitor gets (\"Book a room\", \"Start free trial\")",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "copy-actions",
+        "where": "(the page)",
+        "msg": "the main action \"Compare mission evidence\" does not read word for word the same in the nav or hero and the closing section",
+        "fix": "few actions, one wording: at most 2 in the hero, the main action word for word in nav, hero and close",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "section-gaps",
+        "where": "main#workspace > div.explorer-grid.view-enter / main#workspace > footer",
+        "msg": "24px between these sections, -47% against the median 45px",
+        "fix": "use one gap between sections (all within 25% of each other)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "stranded-action",
+        "where": "main#workspace > div.page-heading > button.outline \"Export trade study\"",
+        "msg": "stands 758px across from the nearest text of its block (\"Microgravity fire intelligence\")",
+        "fix": "put the button under or beside the text it belongs to",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "copy-length",
+        "where": "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\"",
+        "msg": "1 section over 90 words a screen outside the UI mocks (\"Mission evidence matrix\" 251); 119 words a screen across the page (417 words in 3.5 screens): a tech page says it in about 80 or fewer",
+        "fix": "cut every section to its heading, one line and the product UI: the UI says the rest; no second paragraph, no list of feature sentences",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "visual-caption",
+        "where": "section.panel:nth-of-type(2) > div.preview-readings > div:nth-of-type(1) > span \"Limiting oxygen\"",
+        "msg": "a muted 8px line of 1 row sits 13px under the drawing (svg): it reads as a caption: \"Limiting oxygen\"; no caption or description under any image, render or visual (house rule)",
+        "fix": "take the line away: no caption or description under, over or on any image, render or visual; a licence credit goes in one footer line",
+        "widths": [
+          1440,
+          390
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "share-meta",
+        "where": "head",
+        "msg": "the head lacks og:image: a shared link shows no picture or title of its own",
+        "fix": "copy the head block of starter.html: og tags, twitter:card, the icon and theme-color (references/system.md, Head)",
+        "widths": [
+          1440
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "flush",
+        "where": "main#workspace > div.telemetry-strip > div.telemetry-item:nth-of-type(4) > strong.mono \"10.0cm/s\"",
+        "msg": "its last line sits 17px above the lower edge of div.telemetry-strip, where the ground changes to div.explorer-grid.view-enter",
+        "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+        "widths": [
+          390
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "div.app-shell > header.topbar > a.lab-brand \"Z L ZENTRIX LABS HACKATHON & R&D DIVISIO\"",
+        "msg": "a 138x40px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "div.app-shell > header.topbar > div.topbar-right > button.brief-button \"Judge walkthrough\"",
+        "msg": "a 32x40px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "main#workspace > div.page-heading > button.outline \"Export trade study\"",
+        "msg": "a 136x40px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "section.panel > div.matrix-tools > label.search-box > input",
+        "msg": "a 268x24px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "tbody > tr:nth-of-type(1) > td:nth-of-type(2) > button.investigation-name \"SAFFIRE-IV-VI\"",
+        "msg": "a 167x20px tap target (and 4 more like it on this screen): under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "tr:nth-of-type(1) > td:nth-of-type(2) > div.facility > a.doi \"SAFFIRE-IV-VI\"",
+        "msg": "a 89x28px tap target (and 4 more like it on this screen): under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "div.explorer-grid.view-enter > div.evidence-column > div.insight-banner > button \"Open flammability lab\"",
+        "msg": "a 128x38px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "div.side-column > section.panel:nth-of-type(1) > div.panel-head > button.icon-button",
+        "msg": "a 36x36px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "div.side-column > section.panel:nth-of-type(1) > label.weight-slider:nth-of-type(1) > input",
+        "msg": "a 320x3px tap target (and 3 more like it on this screen): under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "div.side-column > div.source-note > span > button \"View provenance & model limits\"",
+        "msg": "a 155x36px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "main#workspace > footer > span:nth-of-type(2) > button \"Read model notes\"",
+        "msg": "a 360x36px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "tap-size",
+        "where": "main#workspace > footer > a \"Flame in Freefall\"",
+        "msg": "a 86x36px tap target: under the 44px a phone needs",
+        "fix": "make every link and control outside running text 44px tall on a phone: display: inline-flex; align-items: center; min-height: 44px (a footer list then needs no gap), a 44px small button, or a transparent ::before laid past the box",
+        "widths": [
+          390,
+          320
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "no-visual",
+        "where": "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\"",
+        "msg": "pictures, effects and mocks cover 16% of this section; a feature section needs a visual (about 25% or more)",
+        "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+        "widths": [
+          390
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "off-grid",
+        "where": "div.app-shell > header.topbar > a.lab-brand > span.zl-mark \"Z L\"",
+        "msg": "left edge at 13px, 2px off the page margin at 15px (14 elements, like div.breadcrumb)",
+        "fix": "move it onto the page margin, or the column edge its section uses",
+        "widths": [
+          390
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "label-centre",
+        "where": "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(1) \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\"",
+        "msg": "its label sits 39px off-centre (8px of room at the left, 47px at the right) (and 3 more like it: \"Artemis lunar 0.165g \u00c2\u00b7 3\", \"Mars habitat 0.38g \u00c2\u00b7 34%\", \"EVA spacesuit 0.165g \u00c2\u00b7 8\")",
+        "fix": "centre the label in its button, or fill the empty side with an icon",
+        "widths": [
+          390
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "button-contrast",
+        "where": "section.panel > div.matrix-tools > div.segmented > button.active \"All fuels\"",
+        "msg": "the button \"All fuels\" (#242a37) stands only 1.27:1 off the ground around it: it reads as part of the ground, or as switched off",
+        "fix": "give the button a fill that stands at least 1.5:1 off what is around it, or an outline in the ink",
+        "widths": [
+          390
+        ],
+        "from": "consistency"
+      },
+      {
+        "check": "copy-stat-strip",
+        "msg": "stat strip x5",
+        "fix": "a strip only of figures the brief gives (a price, hours, a count); otherwise put each number in the sentence it proves, or leave it out (references/copy-tells.md)",
+        "widths": [],
+        "from": "copy",
+        "where": "copy x5: \"0.165 / 34.0 / 56.5 /...\", \"99.7 / 99.4 / 90.8 / ...\", \"21 / 62.4 /...",
+        "exact": false
+      },
+      {
+        "check": "copy-numbered",
+        "msg": "9 step numbers",
+        "fix": "number only steps that happen in order (references/copy-tells.md)",
+        "widths": [],
+        "from": "copy",
+        "where": "(the copy)",
+        "exact": false
+      },
+      {
+        "check": "copy-footer-signoff",
+        "msg": "a sign-off line in the footer",
+        "fix": "the footer holds facts: the brand, the year, Privacy, Terms, the credits line (references/copy-tells.md)",
+        "widths": [],
+        "from": "copy",
+        "where": "copy x1: \"BUILT BY ZENTRIX LABS\"",
+        "exact": false
+      }
+    ],
+    "crashed": [],
+    "seconds": {
+      "consistency": 240,
+      "layout": 37
+    }
+  },
+  "open": [
+    {
+      "check": "hero-fill",
+      "where": "main#workspace > div.mission-bar \"MISSION PROFILE ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a \"",
+      "msg": "the next section shows on the first screen: it starts at 316px on a 900px screen (the hero ends at 247px)",
+      "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-fill"
+      ],
+      "wheres": [
+        "main#workspace > div.mission-bar \"MISSION PROFILE ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a \""
+      ]
+    },
+    {
+      "check": "flush",
+      "where": "main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel \"01 / INVESTIGATION TRADE STUDY Mission e\"",
+      "msg": "its first line sits 0px under the top edge of div.explorer-grid.view-enter, where the ground changes",
+      "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "flush"
+      ],
+      "wheres": [
+        "main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel \"01 / INVESTIGATION TRADE STUDY Mission e\""
+      ]
+    },
+    {
+      "check": "flush",
+      "where": "main#workspace > div.explorer-grid.view-enter > div.evidence-column > div.insight-banner \"The 1g test can miss the risk. Lower buo\"",
+      "msg": "its last line sits 0px above the lower edge of div.explorer-grid.view-enter, where the ground changes to the footer",
+      "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "flush"
+      ],
+      "wheres": [
+        "main#workspace > div.explorer-grid.view-enter > div.evidence-column > div.insight-banner \"The 1g test can miss the risk. Lower buo\""
+      ]
+    },
+    {
+      "check": "nav",
+      "where": "div.app-shell > header.topbar",
+      "msg": "the nav has no bar, and its pieces sit past the content's edges (29-1414px against 95-1410px)",
+      "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "nav"
+      ],
+      "wheres": [
+        "div.app-shell > header.topbar"
+      ]
+    },
+    {
+      "check": "nav",
+      "where": "div.app-shell > header.topbar > a.lab-brand \"Z L ZENTRIX LABS HACKATHON & R&D DIVISIO\"",
+      "msg": "nav link wraps to a second line",
+      "fix": "make the nav one bar from the content's left edge to its right edge, with every link and action inside it",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "nav"
+      ],
+      "wheres": [
+        "div.app-shell > header.topbar > a.lab-brand \"Z L ZENTRIX LABS HACKATHON & R&D DIVISIO\""
+      ]
+    },
+    {
+      "check": "no-visual",
+      "where": "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\"",
+      "msg": "pictures, effects and mocks cover 11% of this section; a feature section needs a visual (about 25% or more)",
+      "fix": "give the section a visual: a UI fragment on a ground, real icons, or a photograph that fits",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "no-visual"
+      ],
+      "wheres": [
+        "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\""
+      ]
+    },
+    {
+      "check": "cta",
+      "where": "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\"",
+      "msg": "the last section before the footer ends with no button",
+      "fix": "add the action: a button in the hero, one on every priced item, one in the closing section",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "cta"
+      ],
+      "wheres": [
+        "main#workspace > div.explorer-grid.view-enter \"Mission evidence matrix\""
+      ]
+    },
+    {
+      "check": "off-grid",
+      "where": "div.app-shell > header.topbar > a.lab-brand > span:nth-of-type(2) \"ZENTRIX LABS HACKATHON & R&D DIVISION\"",
+      "msg": "left edge at 74px, 21px off the page margin at 95px (9 elements, like div.breadcrumb)",
+      "fix": "move it onto the page margin, or the column edge its section uses",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "off-grid"
+      ],
+      "wheres": [
+        "div.app-shell > header.topbar > a.lab-brand > span:nth-of-type(2) \"ZENTRIX LABS HACKATHON & R&D DIVISION\""
+      ]
+    },
+    {
+      "check": "off-grid",
+      "where": "header.topbar > a.lab-brand > span:nth-of-type(2) > small \"HACKATHON & R&D DIVISION\"",
+      "msg": "left edge at 74px, 21px off the page margin at 95px (9 elements, like div.breadcrumb)",
+      "fix": "move it onto the page margin, or the column edge its section uses",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "off-grid"
+      ],
+      "wheres": [
+        "header.topbar > a.lab-brand > span:nth-of-type(2) > small \"HACKATHON & R&D DIVISION\""
+      ]
+    },
+    {
+      "check": "section-gaps",
+      "where": "main#workspace > div.page-heading / main#workspace > div.mission-bar",
+      "msg": "112px between these sections, +149% against the median 45px",
+      "fix": "use one gap between sections (all within 25% of each other)",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-gaps"
+      ],
+      "wheres": [
+        "main#workspace > div.page-heading / main#workspace > div.mission-bar"
+      ]
+    },
+    {
+      "check": "moment-none",
+      "where": "(the page)",
+      "msg": "a software page (--type) deals no moment: every kind carries one, two on a long page (moments.md)",
+      "fix": "deal one (moments.mjs pick --page software) and mount it in its own section",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "moment-none"
+      ],
+      "wheres": [
+        "(the page)"
+      ]
+    },
+    {
+      "check": "hero-screen",
+      "where": "main#workspace > div.breadcrumb \"Workspace Flame in Freefall NASA SPACE A\"",
+      "msg": "the hero ends at 109px on a 900px screen, 792px above the fold: it ends at the fold, 1px either way (SR-1)",
+      "fix": "make the hero exactly one screen (height: 100svh, its content fitted inside), never taller or shorter",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-screen"
+      ],
+      "wheres": [
+        "main#workspace > div.breadcrumb \"Workspace Flame in Freefall NASA SPACE A\""
+      ]
+    },
+    {
+      "check": "hero-screen",
+      "where": "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\"",
+      "msg": "792px of the next section shows on the first screen (from 109px on a 900px screen): nothing below the hero shows at load (SR-1)",
+      "fix": "end the hero at the fold so nothing of the next section shows at load (hero height: 100svh)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-screen"
+      ],
+      "wheres": [
+        "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\""
+      ]
+    },
+    {
+      "check": "section-height",
+      "where": "main#workspace > nav.workspace-tabs \"Orbital explorer01Flammability lab02Fire\"",
+      "msg": "the section is 46px tall (0.1 screens), 854px short of one screen (900px): every section after the hero is one screen or two, 2px either way (SR-2)",
+      "fix": "set the section to one screen or two (height: calc(var(--h,1) * 100vh), --h 1 or 2) and cut or split its content to fit",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-height"
+      ],
+      "wheres": [
+        "main#workspace > nav.workspace-tabs \"Orbital explorer01Flammability lab02Fire\"",
+        "main#workspace > footer \"PYROZERO BUILT BY ZENTRIX LABSResearch s\"",
+        "main#workspace > div.mission-bar \"MISSION PROFILEISS transit0g \u00c2\u00b7 21% O\u00e2\u201a\u201aArt\"",
+        "main#workspace > div.explorer-grid.view-enter \"01 / INVESTIGATION TRADE STUDYMission ev\"",
+        "main#workspace > div.telemetry-strip \"AMBIENT GRAVITY0.165gOXYGEN FRACTION34.0\""
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "main#workspace > div.page-heading / main#workspace > nav.workspace-tabs",
+      "msg": "30px of air between the content of these two sections: 128-480px (64-600px WARN) (every gap out of the band at 1440px, top to bottom: 30px after \"MICROGRAVITY COMBUST\", 37px after \"Orbital explorer01Fl\", 46px after \"MISSION PROFILEISS t\", 64px after \"AMBIENT GRAVITY0.165\") (SR-3)",
+      "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "main#workspace > div.page-heading / main#workspace > nav.workspace-tabs"
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "main#workspace > nav.workspace-tabs / main#workspace > div.mission-bar",
+      "msg": "37px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)",
+      "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "main#workspace > nav.workspace-tabs / main#workspace > div.mission-bar"
+      ]
+    },
+    {
+      "check": "section-air",
+      "where": "main#workspace > div.mission-bar / main#workspace > div.telemetry-strip",
+      "msg": "46px of air between the content of these two sections: 128-480px (64-600px WARN) (SR-3)",
+      "fix": "keep 128-480px of air between the content of neighbouring sections (112-420px on a phone): the sections' padding (--padt, --padb)",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "section-air"
+      ],
+      "wheres": [
+        "main#workspace > div.mission-bar / main#workspace > div.telemetry-strip"
+      ]
+    },
+    {
+      "check": "one-section",
+      "where": "main#workspace > div.page-heading > div > h1 \"Microgravity fire intelligence.\"",
+      "msg": "the screen at scroll 0px (stride 0) shows 138px of section 2 and the heading of section 2 whole and the content of 5 sections, over 24px each beside section 6: a screen shows one section (another may peek 8px, 24px WARN) (SR-4)",
+      "fix": "make each section exactly one screen or two, so a screen shows one section and no neighbour peeks",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-section"
+      ],
+      "wheres": [
+        "main#workspace > div.page-heading > div > h1 \"Microgravity fire intelligence.\"",
+        "main#workspace > div.telemetry-strip \"AMBIENT GRAVITY0.165gOXYGEN FRACTION34.0\"",
+        "main#workspace > div.breadcrumb \"Workspace Flame in Freefall NASA SPACE A\"",
+        "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\"",
+        "main#workspace > nav.workspace-tabs \"Orbital explorer01Flammability lab02Fire\""
+      ]
+    },
+    {
+      "check": "one-heading",
+      "where": "section.panel:nth-of-type(1) > div.panel-head > div > h2 \"Trade-study weights\"",
+      "msg": "the section holds 3 h2 headings: one per section, first in its .wrap (SR-5)",
+      "fix": "give each section one h2, first in its .wrap, and the hero only its h1",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-heading"
+      ],
+      "wheres": [
+        "section.panel:nth-of-type(1) > div.panel-head > div > h2 \"Trade-study weights\""
+      ]
+    },
+    {
+      "check": "one-heading",
+      "where": "section.panel > div.panel-head > div > h2 \"Mission evidence matrix\"",
+      "msg": "headings of two sections show whole on one screen at 4 of 21 scroll positions (19%; at scroll 0, 50, 100, 150px), here with \"Microgravity fire intelligence.\": at most 3% on a desktop (SR-5)",
+      "fix": "make the sections one screen tall so their headings sit a screen apart and two never share one",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "one-heading"
+      ],
+      "wheres": [
+        "section.panel > div.panel-head > div > h2 \"Mission evidence matrix\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "div.app-shell > header.topbar \"ZLZENTRIX LABSHACKATHON & R&D DIVISIONPY\"",
+      "msg": "the nav's content runs 26px from the left and 26px from the right (read from its outermost blocks: no .wrap): the page's container starts at 95px; the margin is 64-120px at 1440px (one container, equal margins, 2px either way) (SR-6)",
+      "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "div.app-shell > header.topbar \"ZLZENTRIX LABSHACKATHON & R&D DIVISIONPY\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\"",
+      "msg": "the content of section 2 runs 95px from the left and 30px from the right (read from its outermost blocks: no .wrap): 95 and 30px are not one margin (one container, equal margins, 2px either way) (and 5 more like it: \"Orbital explorer01Flamma\", \"MISSION PROFILEISS trans\", \"AMBIENT GRAVITY0.165gOXY\") (SR-6)",
+      "fix": "use one container on every section and the nav (.wrap): one margin left and right, 64-120px on a desktop, 16-24px on a phone",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "main#workspace > div.page-heading \"MICROGRAVITY COMBUSTION INTELLIGENCEMicr\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "a.skip-link \"Skip to workspace\"",
+      "msg": "a <a> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "a.skip-link \"Skip to workspace\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "div.app-shell \"ZLZENTRIX LABSHACKATHON & R&D DIVISIONPY\"",
+      "msg": "a <div> at the top of the page, outside header.nav, main, footer.closing and nav.actionbar (and 7 more like it: \"Workspace Flame in Freef\", \"MICROGRAVITY COMBUSTION \", \"Orbital explorer01Flamma\") (SR-6)",
+      "fix": "build the page as header.nav, a main of sections (each one in-flow .wrap plus background layers) and footer.closing",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "div.app-shell \"ZLZENTRIX LABSHACKATHON & R&D DIVISIONPY\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "div.app-shell > header.topbar > a.lab-brand > span.zl-mark \"ZL\"",
+      "msg": "a box runs 23-65px, outside the container lines of the nav at 95-1410px: full width is for background layers and grounds only (SR-6)",
+      "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "div.app-shell > header.topbar > a.lab-brand > span.zl-mark \"ZL\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "div.app-shell > header.topbar > a.lab-brand \"ZLZENTRIX LABSHACKATHON & R&D DIVISION\"",
+      "msg": "\"ZLZENTRIX LABSHACKATHON & R&D DI\" runs 26-220px, outside the container lines of the nav at 95-1410px: full width is for background layers and grounds only (and 6 more like it: \"ZL\", \"L\", \"ZENTRIX LABSHACKATHON & \") (SR-6)",
+      "fix": "keep it inside the container lines (.wrap): full width is for background layers and grounds only",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "div.app-shell > header.topbar > a.lab-brand \"ZLZENTRIX LABSHACKATHON & R&D DIVISION\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "main#workspace > div.breadcrumb > span.challenge-tag \"NASA SPACE APPS 2026\"",
+      "msg": "1 text block starts on a left line at x 1286, 1191px from the container's left: text starts on the container's left, or on one split line (x 653, 765, 876) (and 6 more like it: \"Trade-study weights\", \"Live combustion preview\", x 165) (SR-6)",
+      "fix": "start the text on the container's left, or on the one split line every split shares",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "main#workspace > div.breadcrumb > span.challenge-tag \"NASA SPACE APPS 2026\""
+      ]
+    },
+    {
+      "check": "container-edges",
+      "where": "main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel \"01 / INVESTIGATION TRADE STUDYMission ev\"",
+      "msg": "a box over half the container wide runs 95-1106px, not on the container's lines at 95-1410px (and 1 more like it: \"The 1g test can miss the\") (SR-6)",
+      "fix": "run the picture or box from the container's left line to its right line, or put it in a row or a split",
+      "widths": [
+        1440
+      ],
+      "from": "consistency",
+      "ids": [
+        "container-edges"
+      ],
+      "wheres": [
+        "main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel \"01 / INVESTIGATION TRADE STUDYMission ev\""
+      ]
+    },
+    {
+      "check": "hero-fill",
+      "where": "main#workspace > div.mission-bar \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a Artemis lunar 0.\"",
+      "msg": "the next section shows on the first screen: it starts at 407px on a 844px screen (the hero ends at 328px)",
+      "fix": "let the hero fill the first screen alone (min-height: 100svh, less above it): nothing of the next section on load",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "hero-fill"
+      ],
+      "wheres": [
+        "main#workspace > div.mission-bar \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a Artemis lunar 0.\""
+      ]
+    },
+    {
+      "check": "flush",
+      "where": "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(1) \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\"",
+      "msg": "its first line sits 10px under the top edge of div.mission-bar, where the ground changes",
+      "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "flush"
+      ],
+      "wheres": [
+        "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(1) \"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\""
+      ]
+    },
+    {
+      "check": "flush",
+      "where": "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(3) \"Mars habitat 0.38g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"",
+      "msg": "its button sits 10px above the lower edge of div.mission-bar, where the ground changes to div.telemetry-strip",
+      "fix": "give the section its padding at the edge where the ground changes (the closing call keeps a clear gap above the footer)",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "flush"
+      ],
+      "wheres": [
+        "main#workspace > div.mission-bar > div.mission-options > button:nth-of-type(3) \"Mars habitat 0.38g \u00c2\u00b7 34% O\u00e2\u201a\u201a\""
+      ]
+    },
+    {
+      "check": "cut-text",
+      "where": "table.matrix > thead > tr > th:nth-of-type(4) \"PRESSURE ENVELOPE\"",
+      "msg": "cut 82px at the right by the overflow of main#workspace > div.explorer-grid.view-enter > div.evidence-column > section.panel (and 12 more like it: \"54.1\u00e2\u20ac\u201c100 kPa\", \"56.5\u00e2\u20ac\u201c101.3 kPa\", \"40\u00e2\u20ac\u201c101.3 kPa\", \"50.7\u00e2\u20ac\u201c304 kPa\", ...)",
+      "fix": "give the text room: no overflow clipping a line, no line past its box",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "cut-text"
+      ],
+      "wheres": [
+        "table.matrix > thead > tr > th:nth-of-type(4) \"PRESSURE ENVELOPE\""
+      ]
+    },
+    {
+      "check": "button-styles",
+      "where": "(one screen)",
+      "msg": "3 button styles on one screen: soft, outline #272935 (\"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\"); soft, fill #101018, outline #2b2d3b (\"Export trade study\"); soft, fill #10233a, outline #1c629d (\"Artemis lunar 0.165g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"); the odd one out: \"Artemis lunar 0.165g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"",
+      "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "button-styles"
+      ],
+      "wheres": [
+        "(one screen)"
+      ]
+    },
+    {
+      "check": "button-styles",
+      "where": "(the page)",
+      "msg": "5 button styles on the page: soft, fill #101018, outline #2b2d3b x1 (\"Export trade study\"); soft, outline #272935 x3 (\"ISS transit 0g \u00c2\u00b7 21% O\u00e2\u201a\u201a\"); soft, fill #10233a, outline #1c629d x1 (\"Artemis lunar 0.165g \u00c2\u00b7 34% O\u00e2\u201a\u201a\"); soft, fill #242a37 x1 (\"All fuels\"); soft, fill #142236, outline #233e5d x12 (\"SAFFIRE-IV-VI\")",
+      "fix": "one primary and one secondary button: one shape, one height per size, one label size",
+      "widths": [
+        390
+      ],
+      "from": "consistency",
+      "ids": [
+        "button-styles"
+      ],
+      "wheres": [
+        "(the page)"
+      ]
+    },
+    {
+      "check": "container",
+      "where": "page",
+      "msg": "no .wrap",
+      "fix": "put the content in one .wrap",
+      "widths": [
+        1440,
+        390
+      ],
+      "from": "layout",
+      "ids": [
+        "container"
+      ],
+      "wheres": [
+        "page"
+      ]
+    }
+  ],
+  "waived": [],
+  "warnCount": 34,
+  "at": "2026-11-14T09:03:09.153Z",
+  "openTold": true
+}

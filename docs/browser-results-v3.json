@@ -1,0 +1,120 @@
+{
+  "origin": "http://127.0.0.1:4173",
+  "checks": [
+    {
+      "width": 1440,
+      "module": "Mission Explorer",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "module": "Flammability Simulator",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "module": "Forensics & Spinoffs",
+      "overflow": false
+    },
+    {
+      "width": 1440,
+      "module": "GraphRAG Copilot",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "module": "Mission Explorer",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "module": "Flammability Simulator",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "module": "Forensics & Spinoffs",
+      "overflow": false
+    },
+    {
+      "width": 1024,
+      "module": "GraphRAG Copilot",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "Mission Explorer",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "Flammability Simulator",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "Forensics & Spinoffs",
+      "overflow": false
+    },
+    {
+      "width": 768,
+      "module": "GraphRAG Copilot",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "Mission Explorer",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "Flammability Simulator",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "Forensics & Spinoffs",
+      "overflow": false
+    },
+    {
+      "width": 390,
+      "module": "GraphRAG Copilot",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "Mission Explorer",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "Flammability Simulator",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "Forensics & Spinoffs",
+      "overflow": false
+    },
+    {
+      "width": 320,
+      "module": "GraphRAG Copilot",
+      "overflow": false
+    }
+  ],
+  "status": "PASS",
+  "functional": [
+    "mission/pO2",
+    "pillars",
+    "planned campaigns",
+    "weight normalization",
+    "18-card library",
+    "persistent light/dark theme",
+    "server two-material SSE",
+    "invalid API query",
+    "knowledge-card SSE",
+    "Artemis II case",
+    "forensics/spinoffs",
+    "walkthrough"
+  ]
+}
