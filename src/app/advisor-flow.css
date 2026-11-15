@@ -39,3 +39,6 @@
   .skeleton-row { gap: 12px; }
 }
 @media (prefers-reduced-motion: reduce) { .skeleton-block { animation: none; opacity: .5; } }
+
+.ai-connected{display:inline-flex;align-items:center;gap:8px;color:var(--green);font-size:13px;font-weight:600;line-height:1.5;max-width:100%;flex-wrap:wrap}.ai-connected span{font-size:10px}
+@media(max-width:600px){.advisor-composer .panel-head{align-items:flex-start;gap:12px;flex-wrap:wrap}.ai-connected{font-size:12px}}

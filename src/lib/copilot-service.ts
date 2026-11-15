@@ -1,13 +1,14 @@
 import { queryKnowledgeGraph, type GraphQueryResult } from './graphrag-engine';
 import { MATERIAL_PARAMS, type SimulationInput } from './pyrozero-engine';
 import { knowledgeBase } from './knowledge-base';
+import { resolveDeepSeekKey } from './shared-access';
 
 export interface CopilotEnvironment {
   DEEPSEEK_API_KEY?: string; DEEPSEEK_MODEL?: string;
   GEMINI_API_KEY?: string; GEMINI_MODEL?: string;
   OPENAI_API_KEY?: string; OPENAI_MODEL?: string;
 }
-export interface CopilotOptions { env?: CopilotEnvironment; fetcher?: typeof fetch; timeoutMs?: number }
+export interface CopilotOptions { env?: CopilotEnvironment; fetcher?: typeof fetch; timeoutMs?: number; nowMs?: number }
 export interface NarrativeParagraph { text: string; citationIds: string[] }
 type ProviderMode = 'openai' | 'gemini';
 type Mode = 'deterministic' | ProviderMode;
@@ -166,7 +167,7 @@ export async function handleCopilotRequest(request: Request, options: CopilotOpt
   }catch(error){return Response.json({error:error instanceof RequestSizeError?'Request is too large.':error instanceof RangeError?error.message:'The query or JSON request could not be evaluated.'},{status:error instanceof RequestSizeError?413:400})}
   const suppliedKey=request.headers.get('x-deepseek-key')?.trim();
   if(suppliedKey&&(suppliedKey.length<10||suppliedKey.length>512||!/^[!-~]+$/.test(suppliedKey)))return Response.json({error:'Invalid DeepSeek API key format.'},{status:400});
-  const env={...options.env,...(suppliedKey?{DEEPSEEK_API_KEY:suppliedKey}:{})};
+  const env={...options.env,DEEPSEEK_API_KEY:resolveDeepSeekKey(options.env?.DEEPSEEK_API_KEY,suppliedKey,options.nowMs)};
   const modes:ProviderMode[]=[];
   if(env.GEMINI_API_KEY?.trim())modes.push('gemini');if(env.OPENAI_API_KEY?.trim())modes.push('openai');
   const abort=new AbortController();

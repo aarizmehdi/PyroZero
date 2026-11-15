@@ -1,0 +1,73 @@
+{
+  "origin": "http://127.0.0.1:4201",
+  "status": "PASS",
+  "checks": [
+    {
+      "slide": 1,
+      "desktopFit": true
+    },
+    {
+      "slide": 2,
+      "desktopFit": true
+    },
+    {
+      "slide": 3,
+      "desktopFit": true
+    },
+    {
+      "slide": 4,
+      "desktopFit": true
+    },
+    {
+      "slide": 5,
+      "desktopFit": true
+    },
+    {
+      "slide": 6,
+      "desktopFit": true
+    },
+    {
+      "slide": 7,
+      "desktopFit": true
+    },
+    {
+      "mobileDeckReading": true
+    },
+    {
+      "theme": "light",
+      "width": 1440,
+      "sharedStatus": true,
+      "settingsHidden": true
+    },
+    {
+      "theme": "light",
+      "width": 390,
+      "sharedStatus": true,
+      "settingsHidden": true
+    },
+    {
+      "theme": "dark",
+      "width": 1440,
+      "sharedStatus": true,
+      "settingsHidden": true
+    },
+    {
+      "theme": "dark",
+      "width": 390,
+      "sharedStatus": true,
+      "settingsHidden": true
+    },
+    {
+      "sharedFailureRecovery": true
+    },
+    {
+      "automaticExpiryWhileOpen": true
+    },
+    {
+      "missingKeyDoesNotClaimConnected": true
+    }
+  ],
+  "statusCalls": 7,
+  "browserErrors": [],
+  "providerCallsMocked": true
+}

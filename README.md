@@ -2,7 +2,9 @@
   <img src="public/pyrozero-wordmark.svg" width="540" alt="PyroZero — by Zentrix Labs" />
 </p>
 
-<h1 align="center">Fire behaves differently when gravity changes.</h1>
+<h1 align="center">PyroZero v2.6</h1>
+
+<p align="center"><strong>Super-Intelligent Microgravity Combustion Telemetry,<br/>Partial-Gravity Surrogate Modeling &amp; Hybrid GraphRAG Platform</strong></p>
 
 <p align="center">A spacecraft fire research workspace connecting NASA combustion evidence,<br/>partial-gravity material screens, historical incidents, and cited engineering answers.</p>
 
@@ -21,6 +23,23 @@
 </p>
 
 > **Built by Zentrix Labs** for the 2026 NASA International Space Apps Challenge context, *Flame in Freefall*. This is an independent project, not NASA software or an endorsed material qualification tool. Research citations, supplied model parameters, and computed estimates have different evidentiary roles.
+
+## Submission kit
+
+- **[Seven-slide judging deck](https://pyrozero.vercel.app/pyrozero-pitch-deck.html)** — 16:9, keyboard navigation, and one-click PDF printing.
+- [Deck narrative and presenter notes](docs/PITCH_DECK_7_SLIDES.md)
+- [Copy-ready portal answers and complete catalogue source list](docs/NASA_SUBMISSION_ANSWERS.md)
+- [Submission claim checks](docs/SUBMISSION_SOURCE_NOTES.md)
+
+## The problem: the lunar 0.165g trap
+
+At **8.2 psia / 34% O₂**, the oxygen mole fraction is about **62% higher than 21% air**, despite lower total pressure. Equal oxygen partial pressure does not imply identical flammability. A terrestrial screen can miss a reduced-gravity burning regime; NASA's FM2 poster describes a SIBAL example that burns at simulated lunar gravity but extinguishes at Earth gravity. [NASA FM2 source](https://ntrs.nasa.gov/citations/20240015307)
+
+NASA's ECLSS assessment identifies material replacement needs in **70% of the subsystems assessed** at 8.2 psia / 34–40% O₂. That is a study-specific result, not a claim that 70% of all spacecraft materials fail. [NASA assessment](https://ntrs.nasa.gov/citations/20260003925)
+
+The data challenge is turning a large archive into an answer with the right fuel, atmosphere, flow, and evidence scope. NASA reported approximately **30 TB across PSI's physical-science archive in July 2025**; the brief's 12 TB combustion figure is not independently established here. PyroZero curates records and models, rather than claiming to ingest that entire archive. [NASA repository update](https://science.data.nasa.gov/features-events/physical-sciences-informatics-updates)
+
+The gap is **sparse condition-matched partial-gravity coverage**, especially for mission-specific materials and Martian conditions—not an absence of all lunar-gravity research. NASA has reported simulated-lunar LUCI tests. The bundled FM2/LUCI grouping retains its earlier supplied snapshot; newer evidence is identified in the submission source notes. [NASA LUCI research](https://www.nasa.gov/stmd-flight-opportunities/flight-summaries/lunar-gravity-simulation-via-suborbital-rocket/)
 
 ## Why PyroZero exists
 
@@ -101,6 +120,12 @@ The deterministic TypeScript engine lives in [`src/lib/pyrozero-engine.ts`](src/
 
 **Use a DeepSeek API key.** The app's visitor-key field is designed for DeepSeek, not an OpenAI or Gemini key.
 
+### Seven-day shared judging access
+
+During the published shared-access window, **AI settings** is replaced by **AI connected · Ready to answer** only if the server has a configured DeepSeek key. The current deadline is published by `GET /api/copilot` and stored in `src/data/shared-access.json`. The interface refreshes status while open. At the deadline, the server stops using its shared DeepSeek key and the same AI settings button returns; saved visitor keys continue to work. Provider errors expose key recovery earlier. No scheduled job or browser cookie controls the deadline.
+
+The app cannot revoke a key at DeepSeek. The owner should still revoke it after the shared period. A missing server key immediately exposes AI settings instead of advertising shared access.
+
 ### For visitors
 
 1. Open **Hybrid GraphRAG Copilot → AI settings**.
@@ -145,7 +170,7 @@ npm ci
 npm run dev
 ```
 
-Open [localhost:3000](http://localhost:3000). For optional local server credentials, copy `.env.example` to `.env.local` and fill in only what you need. `.env.local` is ignored by Git. Do not commit real credentials.
+Open [localhost:3000](http://localhost:3000). For optional local server credentials, copy `.env.example` to `.env.local` and fill in only what you need. `.env` and `.env.local` are both strictly ignored by `.gitignore` (`.env*`, with only the empty `.env.example` template allowed). Do not commit real credentials.
 
 ```sh
 npm run typecheck
@@ -213,9 +238,15 @@ const response = await fetch('/api/copilot', {
 
 The stream includes computed `result`, provider `mode`, generated `token`, completion `done`, and error information as applicable. Requests are bounded to 32 KiB and questions to 8,000 characters. Disconnects cancel provider work. Send `x-deepseek-key` only over HTTPS to a deployment you trust; never put a key in a URL.
 
+## MCDA and the evidence boundary
+
+The Explorer uses supplied AHP-style priority vectors with a Gaussian multi-criteria scoring model across oxygen, pressure, flow, fuel phase, and experimental scale/diagnostics. It does not infer a NASA-approved score or claim to perform a new expert pairwise AHP elicitation. Its 15 rows are curated **investigation groups**, not 15 individually downloaded raw datasets. In the canonical snapshot, 14 groups are marked completed and the combined FM2/LUCI group is marked planned; current LUCI findings qualify that snapshot.
+
+The Lab exposes mixed convection (`Uₘ`, `Gr`, `Re_eff`, `Da`), the E-FIELD Chattock ion-drag equivalent (`g_eff`), a check-mark LOC boundary, two-dimensional morphology, and a virtual NASA-STD-6001B / JSC 29353D-inspired screen. Supplied correlations are transparent engineering closures, not a validated partial-gravity solver. `NOMS` is a percentage-point difference between modeled oxygen limits, not the ambient oxygen margin.
+
 ## Verification you can inspect
 
-The material-flow release passed **138 unit tests in 12 files**, including a **4,608-combination** parameter sweep. Browser reports cover all four workspaces on desktop/mobile in Light and Dark modes, material empty states, scenario restoration, exports, graph controls, onboarding, and Three.js interactions.
+The material-flow release passed **138 unit tests in 12 files**, including a **4,608-combination** parameter sweep. The submission release now passes **145 tests in 13 files**, adding seven checks for shared-key expiry, visitor-key precedence, status secrecy, and reference-mode recovery. Browser reports cover all four workspaces on desktop/mobile in Light and Dark modes, material empty states, scenario restoration, exports, graph controls, onboarding, and Three.js interactions.
 
 Three live DeepSeek questions were reviewed against the computed values and supplied evidence. A real browser check confirmed the calibrated SIBAL result, generated text, calculation links, and mobile containment. Intermittent provider failures were also observed and recorded. These are scoped test results, not a promise that every future provider response is correct.
 

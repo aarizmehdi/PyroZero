@@ -1,4 +1,5 @@
 import { handleCopilotRequest } from '@/lib/copilot-service';
+import { sharedAccessStatus } from '@/lib/shared-access';
 
 export const runtime = 'nodejs';
 export const dynamic = 'force-dynamic';
@@ -13,5 +14,5 @@ export async function POST(request: Request) {
 }
 
 export async function GET() {
-  return Response.json({service:'PyroZero copilot',method:'POST',stages:['retrieve','compute','synthesize']});
+  return Response.json({service:'PyroZero copilot',method:'POST',stages:['retrieve','compute','synthesize'],...sharedAccessStatus(process.env.DEEPSEEK_API_KEY)}, {headers:{'Cache-Control':'no-store'}});
 }

@@ -20,7 +20,7 @@ describe('advisor material-selection scope',()=>{
  });
  it('does not leak an unchosen default specimen into the provider grounding',async()=>{
   const fetcher=vi.fn<typeof fetch>(async()=>new Response('data: {"choices":[{"delta":{"content":"Evidence review."},"finish_reason":"stop"}]}\n\ndata: [DONE]\n\n'));
-  const response=await handleCopilotRequest(request({query:'Explain lunar gravity',requireExplicitMaterial:true}),{env:{DEEPSEEK_API_KEY:'test-key-not-real'},fetcher});
+  const response=await handleCopilotRequest(request({query:'Explain lunar gravity',requireExplicitMaterial:true}),{nowMs:0,env:{DEEPSEEK_API_KEY:'test-key-not-real'},fetcher});
   await response.text();const body=JSON.parse(String(fetcher.mock.calls[0][1]?.body)),context=JSON.parse(body.messages[1].content);
   expect(context.conditions.materialId).toBeNull();expect(context.simulations).toEqual([]);expect(context.materialScope).toContain('No material was chosen');
  });

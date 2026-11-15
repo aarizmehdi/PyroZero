@@ -1,0 +1,1031 @@
+[
+  {
+    "name": "Lunar PMMA",
+    "input": {
+      "materialId": "MAT-PMMA-CAST",
+      "gravityG": 0.165,
+      "pressureKpa": 56.5,
+      "oxygenPct": 34,
+      "forcedFlowCms": 10,
+      "electricFieldKvCm": 0
+    },
+    "result": {
+      "input": {
+        "materialId": "MAT-PMMA-CAST",
+        "gravityG": 0.165,
+        "pressureKpa": 56.5,
+        "oxygenPct": 34,
+        "forcedFlowCms": 10,
+        "electricFieldKvCm": 0
+      },
+      "flameTemperatureK": 2576,
+      "effectiveGravityG": 0.165,
+      "ionDragEquivalentGravityG": 0,
+      "ionCurrentDensityAm2": 0,
+      "oxygenPartialPressurePsia": 2.79,
+      "grashofNumber": 1949000,
+      "buoyantVelocityCms": 8.77,
+      "mixedConvectionVelocityCms": 13.3,
+      "reynoldsNumber": 236.3,
+      "damkohlerNumber": 18.34,
+      "flowTimeS": 0.07502910129295812,
+      "chemicalTimeS": 0.004090552914930145,
+      "forcedReynoldsNumber": 177.6,
+      "diffusionVelocityCms": 2.6900442477876108,
+      "predictionAvailable": true,
+      "locPredictionAvailable": true,
+      "missingParameters": [],
+      "limitingOxygenConcentrationPct": 17.19,
+      "negativeOxygenMarginPct": 1.54,
+      "earthReferenceLocPct": 18.73,
+      "flameSpreadRateMms": 1.573,
+      "predictedBurnLengthCm": 30,
+      "status": "FAIL",
+      "test4Status": "NOT EVALUATED — Test 4 is an electrical-wire insulation physical test; this bulk-material surrogate cannot establish its result.",
+      "jsc29353dPrescription": "Virtual model FAIL: computed LOC 17.19% O₂. Predicted burn length 30 cm; melting/dripping material carries potential flaming-debris transfer risk. Enclose or replace exposed flammable material, interrupt propagation paths, and test the representative configuration. Consult NASA-STD-6001B and JSC 29353D; this recommendation is not NASA approval or a quotation of the standard.",
+      "flameAspectRatio": 2.5,
+      "colorSootIndex": 0.84,
+      "flameColor": "#FA903E",
+      "ehdEquivalentG": 0,
+      "effectiveReynoldsNumber": 236.3,
+      "flameTempK": 2576,
+      "loc1gReferencePct": 18.73,
+      "negativeOxygenMarginOfSafetyPct": 1.54,
+      "dominantColorHex": "#FA903E",
+      "nasaStd6001Status": "FAIL",
+      "locCurvePoints": [
+        {
+          "vEff": 0,
+          "vEffCms": 0,
+          "locPct": 18.66
+        },
+        {
+          "vEff": 1,
+          "vEffCms": 1,
+          "locPct": 16.86
+        },
+        {
+          "vEff": 2,
+          "vEffCms": 2,
+          "locPct": 16.07
+        },
+        {
+          "vEff": 3,
+          "vEffCms": 3,
+          "locPct": 15.81
+        },
+        {
+          "vEff": 4,
+          "vEffCms": 4,
+          "locPct": 15.82
+        },
+        {
+          "vEff": 5,
+          "vEffCms": 5,
+          "locPct": 15.91
+        },
+        {
+          "vEff": 6,
+          "vEffCms": 6,
+          "locPct": 16.05
+        },
+        {
+          "vEff": 7,
+          "vEffCms": 7,
+          "locPct": 16.19
+        },
+        {
+          "vEff": 8,
+          "vEffCms": 8,
+          "locPct": 16.35
+        },
+        {
+          "vEff": 9,
+          "vEffCms": 9,
+          "locPct": 16.51
+        },
+        {
+          "vEff": 10,
+          "vEffCms": 10,
+          "locPct": 16.67
+        },
+        {
+          "vEff": 11,
+          "vEffCms": 11,
+          "locPct": 16.83
+        },
+        {
+          "vEff": 12,
+          "vEffCms": 12,
+          "locPct": 16.99
+        },
+        {
+          "vEff": 13,
+          "vEffCms": 13,
+          "locPct": 17.14
+        },
+        {
+          "vEff": 14,
+          "vEffCms": 14,
+          "locPct": 17.3
+        },
+        {
+          "vEff": 15,
+          "vEffCms": 15,
+          "locPct": 17.46
+        },
+        {
+          "vEff": 16,
+          "vEffCms": 16,
+          "locPct": 17.62
+        },
+        {
+          "vEff": 17,
+          "vEffCms": 17,
+          "locPct": 17.78
+        },
+        {
+          "vEff": 18,
+          "vEffCms": 18,
+          "locPct": 17.94
+        },
+        {
+          "vEff": 19,
+          "vEffCms": 19,
+          "locPct": 18.1
+        },
+        {
+          "vEff": 20,
+          "vEffCms": 20,
+          "locPct": 18.26
+        },
+        {
+          "vEff": 21,
+          "vEffCms": 21,
+          "locPct": 18.42
+        },
+        {
+          "vEff": 22,
+          "vEffCms": 22,
+          "locPct": 18.58
+        },
+        {
+          "vEff": 23,
+          "vEffCms": 23,
+          "locPct": 18.74
+        },
+        {
+          "vEff": 24,
+          "vEffCms": 24,
+          "locPct": 18.9
+        },
+        {
+          "vEff": 25,
+          "vEffCms": 25,
+          "locPct": 19.06
+        },
+        {
+          "vEff": 26,
+          "vEffCms": 26,
+          "locPct": 19.22
+        },
+        {
+          "vEff": 27,
+          "vEffCms": 27,
+          "locPct": 19.38
+        },
+        {
+          "vEff": 28,
+          "vEffCms": 28,
+          "locPct": 19.54
+        },
+        {
+          "vEff": 29,
+          "vEffCms": 29,
+          "locPct": 19.7
+        },
+        {
+          "vEff": 30,
+          "vEffCms": 30,
+          "locPct": 19.86
+        },
+        {
+          "vEff": 31,
+          "vEffCms": 31,
+          "locPct": 20.02
+        },
+        {
+          "vEff": 32,
+          "vEffCms": 32,
+          "locPct": 20.18
+        },
+        {
+          "vEff": 33,
+          "vEffCms": 33,
+          "locPct": 20.34
+        },
+        {
+          "vEff": 34,
+          "vEffCms": 34,
+          "locPct": 20.5
+        },
+        {
+          "vEff": 35,
+          "vEffCms": 35,
+          "locPct": 20.66
+        },
+        {
+          "vEff": 36,
+          "vEffCms": 36,
+          "locPct": 20.82
+        },
+        {
+          "vEff": 37,
+          "vEffCms": 37,
+          "locPct": 20.98
+        },
+        {
+          "vEff": 38,
+          "vEffCms": 38,
+          "locPct": 21.14
+        },
+        {
+          "vEff": 39,
+          "vEffCms": 39,
+          "locPct": 21.3
+        },
+        {
+          "vEff": 40,
+          "vEffCms": 40,
+          "locPct": 21.46
+        },
+        {
+          "vEff": 41,
+          "vEffCms": 41,
+          "locPct": 21.62
+        },
+        {
+          "vEff": 42,
+          "vEffCms": 42,
+          "locPct": 21.78
+        },
+        {
+          "vEff": 43,
+          "vEffCms": 43,
+          "locPct": 21.94
+        },
+        {
+          "vEff": 44,
+          "vEffCms": 44,
+          "locPct": 22.1
+        },
+        {
+          "vEff": 45,
+          "vEffCms": 45,
+          "locPct": 22.26
+        },
+        {
+          "vEff": 46,
+          "vEffCms": 46,
+          "locPct": 22.42
+        },
+        {
+          "vEff": 47,
+          "vEffCms": 47,
+          "locPct": 22.58
+        },
+        {
+          "vEff": 48,
+          "vEffCms": 48,
+          "locPct": 22.74
+        },
+        {
+          "vEff": 49,
+          "vEffCms": 49,
+          "locPct": 22.9
+        },
+        {
+          "vEff": 50,
+          "vEffCms": 50,
+          "locPct": 23.06
+        }
+      ],
+      "gravityMarkers": [
+        {
+          "label": "0g",
+          "gravityG": 0,
+          "vEff": 10,
+          "locPct": 16.67
+        },
+        {
+          "label": "Moon",
+          "gravityG": 0.165,
+          "vEff": 13.3,
+          "locPct": 17.19
+        },
+        {
+          "label": "Mars",
+          "gravityG": 0.38,
+          "vEff": 16.65,
+          "locPct": 17.73
+        },
+        {
+          "label": "Earth",
+          "gravityG": 1,
+          "vEff": 23.8,
+          "locPct": 18.87
+        }
+      ],
+      "warnings": [
+        "Virtual research-model result. PASS does not establish NASA qualification; representative physical testing and configuration review are required.",
+        "All coefficients and executable closures are user-supplied; independent evidence verification is tracked separately."
+      ]
+    }
+  },
+  {
+    "name": "Nomex reference",
+    "input": {
+      "materialId": "MAT-NOMEX-HT90",
+      "gravityG": 0,
+      "pressureKpa": 54.1,
+      "oxygenPct": 31.9,
+      "forcedFlowCms": 20,
+      "electricFieldKvCm": 0
+    },
+    "result": {
+      "input": {
+        "materialId": "MAT-NOMEX-HT90",
+        "gravityG": 0,
+        "pressureKpa": 54.1,
+        "oxygenPct": 31.9,
+        "forcedFlowCms": 20,
+        "electricFieldKvCm": 0
+      },
+      "flameTemperatureK": 2262,
+      "effectiveGravityG": 0,
+      "ionDragEquivalentGravityG": 0,
+      "ionCurrentDensityAm2": 0,
+      "oxygenPartialPressurePsia": 2.5,
+      "grashofNumber": 0,
+      "buoyantVelocityCms": 0,
+      "mixedConvectionVelocityCms": 20,
+      "reynoldsNumber": 340.1,
+      "damkohlerNumber": 5.92,
+      "flowTimeS": 0.05260993324486674,
+      "chemicalTimeS": 0.008884975752799859,
+      "forcedReynoldsNumber": 340.1,
+      "diffusionVelocityCms": 2.809380776340111,
+      "predictionAvailable": true,
+      "locPredictionAvailable": true,
+      "missingParameters": [],
+      "limitingOxygenConcentrationPct": 34.82,
+      "negativeOxygenMarginPct": 1.19,
+      "earthReferenceLocPct": 36.01,
+      "flameSpreadRateMms": 0,
+      "predictedBurnLengthCm": 0,
+      "status": "PASS",
+      "test4Status": "NOT EVALUATED — Test 4 is an electrical-wire insulation physical test; this bulk-material surrogate cannot establish its result.",
+      "jsc29353dPrescription": "Virtual model PASS: computed LOC 34.82% O₂. Predicted burn length 0 cm is within the 15 cm (6 in) model limit, with no modeled flaming-debris transfer risk. Retain representative physical testing and configuration review; actual debris behavior is not measured by this model. Consult NASA-STD-6001B and JSC 29353D; this recommendation is not NASA approval or a quotation of the standard.",
+      "flameAspectRatio": 2.89,
+      "colorSootIndex": 0.53,
+      "flameColor": "#38BDF8",
+      "ehdEquivalentG": 0,
+      "effectiveReynoldsNumber": 340.1,
+      "flameTempK": 2262,
+      "loc1gReferencePct": 36.01,
+      "negativeOxygenMarginOfSafetyPct": 1.19,
+      "dominantColorHex": "#38BDF8",
+      "nasaStd6001Status": "PASS",
+      "locCurvePoints": [
+        {
+          "vEff": 0,
+          "vEffCms": 0,
+          "locPct": 36.22
+        },
+        {
+          "vEff": 1,
+          "vEffCms": 1,
+          "locPct": 34.84
+        },
+        {
+          "vEff": 2,
+          "vEffCms": 2,
+          "locPct": 34.01
+        },
+        {
+          "vEff": 3,
+          "vEffCms": 3,
+          "locPct": 33.5
+        },
+        {
+          "vEff": 4,
+          "vEffCms": 4,
+          "locPct": 33.19
+        },
+        {
+          "vEff": 5,
+          "vEffCms": 5,
+          "locPct": 33.01
+        },
+        {
+          "vEff": 6,
+          "vEffCms": 6,
+          "locPct": 33.03
+        },
+        {
+          "vEff": 7,
+          "vEffCms": 7,
+          "locPct": 33.1
+        },
+        {
+          "vEff": 8,
+          "vEffCms": 8,
+          "locPct": 33.2
+        },
+        {
+          "vEff": 9,
+          "vEffCms": 9,
+          "locPct": 33.32
+        },
+        {
+          "vEff": 10,
+          "vEffCms": 10,
+          "locPct": 33.44
+        },
+        {
+          "vEff": 11,
+          "vEffCms": 11,
+          "locPct": 33.57
+        },
+        {
+          "vEff": 12,
+          "vEffCms": 12,
+          "locPct": 33.71
+        },
+        {
+          "vEff": 13,
+          "vEffCms": 13,
+          "locPct": 33.84
+        },
+        {
+          "vEff": 14,
+          "vEffCms": 14,
+          "locPct": 33.98
+        },
+        {
+          "vEff": 15,
+          "vEffCms": 15,
+          "locPct": 34.12
+        },
+        {
+          "vEff": 16,
+          "vEffCms": 16,
+          "locPct": 34.26
+        },
+        {
+          "vEff": 17,
+          "vEffCms": 17,
+          "locPct": 34.4
+        },
+        {
+          "vEff": 18,
+          "vEffCms": 18,
+          "locPct": 34.54
+        },
+        {
+          "vEff": 19,
+          "vEffCms": 19,
+          "locPct": 34.68
+        },
+        {
+          "vEff": 20,
+          "vEffCms": 20,
+          "locPct": 34.82
+        },
+        {
+          "vEff": 21,
+          "vEffCms": 21,
+          "locPct": 34.96
+        },
+        {
+          "vEff": 22,
+          "vEffCms": 22,
+          "locPct": 35.1
+        },
+        {
+          "vEff": 23,
+          "vEffCms": 23,
+          "locPct": 35.24
+        },
+        {
+          "vEff": 24,
+          "vEffCms": 24,
+          "locPct": 35.38
+        },
+        {
+          "vEff": 25,
+          "vEffCms": 25,
+          "locPct": 35.52
+        },
+        {
+          "vEff": 26,
+          "vEffCms": 26,
+          "locPct": 35.66
+        },
+        {
+          "vEff": 27,
+          "vEffCms": 27,
+          "locPct": 35.8
+        },
+        {
+          "vEff": 28,
+          "vEffCms": 28,
+          "locPct": 35.94
+        },
+        {
+          "vEff": 29,
+          "vEffCms": 29,
+          "locPct": 36.08
+        },
+        {
+          "vEff": 30,
+          "vEffCms": 30,
+          "locPct": 36.22
+        },
+        {
+          "vEff": 31,
+          "vEffCms": 31,
+          "locPct": 36.36
+        },
+        {
+          "vEff": 32,
+          "vEffCms": 32,
+          "locPct": 36.5
+        },
+        {
+          "vEff": 33,
+          "vEffCms": 33,
+          "locPct": 36.64
+        },
+        {
+          "vEff": 34,
+          "vEffCms": 34,
+          "locPct": 36.78
+        },
+        {
+          "vEff": 35,
+          "vEffCms": 35,
+          "locPct": 36.92
+        },
+        {
+          "vEff": 36,
+          "vEffCms": 36,
+          "locPct": 37.06
+        },
+        {
+          "vEff": 37,
+          "vEffCms": 37,
+          "locPct": 37.2
+        },
+        {
+          "vEff": 38,
+          "vEffCms": 38,
+          "locPct": 37.34
+        },
+        {
+          "vEff": 39,
+          "vEffCms": 39,
+          "locPct": 37.48
+        },
+        {
+          "vEff": 40,
+          "vEffCms": 40,
+          "locPct": 37.62
+        },
+        {
+          "vEff": 41,
+          "vEffCms": 41,
+          "locPct": 37.76
+        },
+        {
+          "vEff": 42,
+          "vEffCms": 42,
+          "locPct": 37.9
+        },
+        {
+          "vEff": 43,
+          "vEffCms": 43,
+          "locPct": 38.04
+        },
+        {
+          "vEff": 44,
+          "vEffCms": 44,
+          "locPct": 38.18
+        },
+        {
+          "vEff": 45,
+          "vEffCms": 45,
+          "locPct": 38.32
+        },
+        {
+          "vEff": 46,
+          "vEffCms": 46,
+          "locPct": 38.46
+        },
+        {
+          "vEff": 47,
+          "vEffCms": 47,
+          "locPct": 38.6
+        },
+        {
+          "vEff": 48,
+          "vEffCms": 48,
+          "locPct": 38.74
+        },
+        {
+          "vEff": 49,
+          "vEffCms": 49,
+          "locPct": 38.88
+        },
+        {
+          "vEff": 50,
+          "vEffCms": 50,
+          "locPct": 39.02
+        }
+      ],
+      "gravityMarkers": [
+        {
+          "label": "0g",
+          "gravityG": 0,
+          "vEff": 20,
+          "locPct": 34.82
+        },
+        {
+          "label": "Moon",
+          "gravityG": 0.165,
+          "vEff": 21.55,
+          "locPct": 35.04
+        },
+        {
+          "label": "Mars",
+          "gravityG": 0.38,
+          "vEff": 23.42,
+          "locPct": 35.3
+        },
+        {
+          "label": "Earth",
+          "gravityG": 1,
+          "vEff": 28.12,
+          "locPct": 35.96
+        }
+      ],
+      "warnings": [
+        "Virtual research-model result. PASS does not establish NASA qualification; representative physical testing and configuration review are required.",
+        "All coefficients and executable closures are user-supplied; independent evidence verification is tracked separately."
+      ]
+    }
+  },
+  {
+    "name": "SIBAL calibration",
+    "input": {
+      "materialId": "MAT-SIBAL",
+      "gravityG": 0,
+      "pressureKpa": 100,
+      "oxygenPct": 21,
+      "forcedFlowCms": 20,
+      "electricFieldKvCm": 0
+    },
+    "result": {
+      "input": {
+        "materialId": "MAT-SIBAL",
+        "gravityG": 0,
+        "pressureKpa": 100,
+        "oxygenPct": 21,
+        "forcedFlowCms": 20,
+        "electricFieldKvCm": 0
+      },
+      "flameTemperatureK": 2150,
+      "effectiveGravityG": 0,
+      "ionDragEquivalentGravityG": 0,
+      "ionCurrentDensityAm2": 0,
+      "oxygenPartialPressurePsia": 3.05,
+      "grashofNumber": 0,
+      "buoyantVelocityCms": 0,
+      "mixedConvectionVelocityCms": 20,
+      "reynoldsNumber": 628.6,
+      "damkohlerNumber": 4.15,
+      "flowTimeS": 0.055762405683118514,
+      "chemicalTimeS": 0.013428395177756633,
+      "forcedReynoldsNumber": 628.6,
+      "diffusionVelocityCms": 1.519875,
+      "predictionAvailable": true,
+      "locPredictionAvailable": true,
+      "missingParameters": [],
+      "limitingOxygenConcentrationPct": 18.01,
+      "negativeOxygenMarginPct": 1.31,
+      "earthReferenceLocPct": 19.32,
+      "flameSpreadRateMms": 2.03,
+      "predictedBurnLengthCm": 18.3,
+      "status": "FAIL",
+      "test4Status": "NOT EVALUATED — Test 4 is an electrical-wire insulation physical test; this bulk-material surrogate cannot establish its result.",
+      "jsc29353dPrescription": "Virtual model FAIL: computed LOC 18.01% O₂. Predicted burn length 18.3 cm. Enclose or replace exposed flammable material, interrupt propagation paths, and test the representative configuration. Consult NASA-STD-6001B and JSC 29353D; this recommendation is not NASA approval or a quotation of the standard.",
+      "flameAspectRatio": 3.42,
+      "colorSootIndex": 0.38,
+      "flameColor": "#38BDF8",
+      "ehdEquivalentG": 0,
+      "effectiveReynoldsNumber": 628.6,
+      "flameTempK": 2150,
+      "loc1gReferencePct": 19.32,
+      "negativeOxygenMarginOfSafetyPct": 1.31,
+      "dominantColorHex": "#38BDF8",
+      "nasaStd6001Status": "FAIL",
+      "locCurvePoints": [
+        {
+          "vEff": 0,
+          "vEffCms": 0,
+          "locPct": 19.05
+        },
+        {
+          "vEff": 1,
+          "vEffCms": 1,
+          "locPct": 17.68
+        },
+        {
+          "vEff": 2,
+          "vEffCms": 2,
+          "locPct": 16.99
+        },
+        {
+          "vEff": 3,
+          "vEffCms": 3,
+          "locPct": 16.63
+        },
+        {
+          "vEff": 4,
+          "vEffCms": 4,
+          "locPct": 16.44
+        },
+        {
+          "vEff": 5,
+          "vEffCms": 5,
+          "locPct": 16.46
+        },
+        {
+          "vEff": 6,
+          "vEffCms": 6,
+          "locPct": 16.52
+        },
+        {
+          "vEff": 7,
+          "vEffCms": 7,
+          "locPct": 16.6
+        },
+        {
+          "vEff": 8,
+          "vEffCms": 8,
+          "locPct": 16.7
+        },
+        {
+          "vEff": 9,
+          "vEffCms": 9,
+          "locPct": 16.8
+        },
+        {
+          "vEff": 10,
+          "vEffCms": 10,
+          "locPct": 16.91
+        },
+        {
+          "vEff": 11,
+          "vEffCms": 11,
+          "locPct": 17.02
+        },
+        {
+          "vEff": 12,
+          "vEffCms": 12,
+          "locPct": 17.13
+        },
+        {
+          "vEff": 13,
+          "vEffCms": 13,
+          "locPct": 17.24
+        },
+        {
+          "vEff": 14,
+          "vEffCms": 14,
+          "locPct": 17.35
+        },
+        {
+          "vEff": 15,
+          "vEffCms": 15,
+          "locPct": 17.46
+        },
+        {
+          "vEff": 16,
+          "vEffCms": 16,
+          "locPct": 17.57
+        },
+        {
+          "vEff": 17,
+          "vEffCms": 17,
+          "locPct": 17.68
+        },
+        {
+          "vEff": 18,
+          "vEffCms": 18,
+          "locPct": 17.79
+        },
+        {
+          "vEff": 19,
+          "vEffCms": 19,
+          "locPct": 17.9
+        },
+        {
+          "vEff": 20,
+          "vEffCms": 20,
+          "locPct": 18.01
+        },
+        {
+          "vEff": 21,
+          "vEffCms": 21,
+          "locPct": 18.12
+        },
+        {
+          "vEff": 22,
+          "vEffCms": 22,
+          "locPct": 18.23
+        },
+        {
+          "vEff": 23,
+          "vEffCms": 23,
+          "locPct": 18.34
+        },
+        {
+          "vEff": 24,
+          "vEffCms": 24,
+          "locPct": 18.45
+        },
+        {
+          "vEff": 25,
+          "vEffCms": 25,
+          "locPct": 18.56
+        },
+        {
+          "vEff": 26,
+          "vEffCms": 26,
+          "locPct": 18.67
+        },
+        {
+          "vEff": 27,
+          "vEffCms": 27,
+          "locPct": 18.78
+        },
+        {
+          "vEff": 28,
+          "vEffCms": 28,
+          "locPct": 18.89
+        },
+        {
+          "vEff": 29,
+          "vEffCms": 29,
+          "locPct": 19
+        },
+        {
+          "vEff": 30,
+          "vEffCms": 30,
+          "locPct": 19.11
+        },
+        {
+          "vEff": 31,
+          "vEffCms": 31,
+          "locPct": 19.22
+        },
+        {
+          "vEff": 32,
+          "vEffCms": 32,
+          "locPct": 19.33
+        },
+        {
+          "vEff": 33,
+          "vEffCms": 33,
+          "locPct": 19.44
+        },
+        {
+          "vEff": 34,
+          "vEffCms": 34,
+          "locPct": 19.55
+        },
+        {
+          "vEff": 35,
+          "vEffCms": 35,
+          "locPct": 19.66
+        },
+        {
+          "vEff": 36,
+          "vEffCms": 36,
+          "locPct": 19.77
+        },
+        {
+          "vEff": 37,
+          "vEffCms": 37,
+          "locPct": 19.88
+        },
+        {
+          "vEff": 38,
+          "vEffCms": 38,
+          "locPct": 19.99
+        },
+        {
+          "vEff": 39,
+          "vEffCms": 39,
+          "locPct": 20.1
+        },
+        {
+          "vEff": 40,
+          "vEffCms": 40,
+          "locPct": 20.21
+        },
+        {
+          "vEff": 41,
+          "vEffCms": 41,
+          "locPct": 20.32
+        },
+        {
+          "vEff": 42,
+          "vEffCms": 42,
+          "locPct": 20.43
+        },
+        {
+          "vEff": 43,
+          "vEffCms": 43,
+          "locPct": 20.54
+        },
+        {
+          "vEff": 44,
+          "vEffCms": 44,
+          "locPct": 20.65
+        },
+        {
+          "vEff": 45,
+          "vEffCms": 45,
+          "locPct": 20.76
+        },
+        {
+          "vEff": 46,
+          "vEffCms": 46,
+          "locPct": 20.87
+        },
+        {
+          "vEff": 47,
+          "vEffCms": 47,
+          "locPct": 20.98
+        },
+        {
+          "vEff": 48,
+          "vEffCms": 48,
+          "locPct": 21.09
+        },
+        {
+          "vEff": 49,
+          "vEffCms": 49,
+          "locPct": 21.2
+        },
+        {
+          "vEff": 50,
+          "vEffCms": 50,
+          "locPct": 21.31
+        }
+      ],
+      "gravityMarkers": [
+        {
+          "label": "0g",
+          "gravityG": 0,
+          "vEff": 20,
+          "locPct": 18.01
+        },
+        {
+          "label": "Moon",
+          "gravityG": 0.165,
+          "vEff": 22.17,
+          "locPct": 18.25
+        },
+        {
+          "label": "Mars",
+          "gravityG": 0.38,
+          "vEff": 24.72,
+          "locPct": 18.53
+        },
+        {
+          "label": "Earth",
+          "gravityG": 1,
+          "vEff": 30.9,
+          "locPct": 19.21
+        }
+      ],
+      "warnings": [
+        "Virtual research-model result. PASS does not establish NASA qualification; representative physical testing and configuration review are required.",
+        "All coefficients and executable closures are user-supplied; independent evidence verification is tracked separately."
+      ]
+    }
+  }
+]

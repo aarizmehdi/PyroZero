@@ -9,7 +9,7 @@ describe('DeepSeek live grounded streaming',()=>{
  it('forwards first token before upstream completion, with computed evidence and exact endpoint settings',async()=>{
   let upstream!:ReadableStreamDefaultController<Uint8Array>;
   const enc=new TextEncoder(),fetcher=vi.fn(async()=>new Response(new ReadableStream<Uint8Array>({start(controller){upstream=controller;controller.enqueue(enc.encode(frame('## Engineering analysis\n')))}})));
-  const response=await handleCopilotRequest(req('test-client-key-123'),{env:{DEEPSEEK_API_KEY:'test-server-key-456',OPENAI_API_KEY:'unused-key'},fetcher});
+  const response=await handleCopilotRequest(req('test-client-key-123'),{nowMs:0,env:{DEEPSEEK_API_KEY:'test-server-key-456',OPENAI_API_KEY:'unused-key'},fetcher});
   const reader=response.body!.getReader(),decoder=new TextDecoder();let text='';
   for(let i=0;i<3;i++){const next=await reader.read();text+=decoder.decode(next.value)}
   expect(parse(text).map(event=>event.event)).toEqual(['result','mode','token']);
@@ -25,7 +25,7 @@ describe('DeepSeek live grounded streaming',()=>{
  });
  it('uses server credential when client header is absent and retains requested default model',async()=>{
   const fetcher=vi.fn(async()=>new Response(frame('Grounded analysis [ACME-E-FIELD].','stop')+'data: [DONE]\n\n'));
-  const out=parse(await (await handleCopilotRequest(req(),{env:{DEEPSEEK_API_KEY:'test-server-key'},fetcher})).text());
+  const out=parse(await (await handleCopilotRequest(req(),{nowMs:0,env:{DEEPSEEK_API_KEY:'test-server-key'},fetcher})).text());
   expect(fetcher.mock.calls).toHaveLength(1);expect((fetcher.mock.calls[0] as unknown as [string,RequestInit])[1].headers).toMatchObject({Authorization:'Bearer test-server-key'});expect(out.at(-1)!.data.mode).toBe('deepseek');
  });
  it.each([401,429,503])('reports provider HTTP%s failures without fake deterministic synthesis or secret disclosure',async status=>{

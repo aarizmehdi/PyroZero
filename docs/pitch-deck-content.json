@@ -1,0 +1,70 @@
+[
+  {
+    "title": "PyroZero",
+    "kicker": "FLAME IN FREEFALL · ZENTRIX LABS",
+    "html": "<div class=\"cover\"><img class=\"wordmark\" src=\"/pyrozero-wordmark.svg\" alt=\"PyroZero by Zentrix Labs\"><h1>Microgravity evidence.<br><em>Exploration insight.</em></h1><p class=\"lead\">Turning decades of combustion research into inspectable fire-safety trade studies for Moon and Mars habitats.</p><div class=\"cover-links\"><a href=\"https://pyrozero.vercel.app\">pyrozero.vercel.app ↗</a><a href=\"https://github.com/aarizmehdi/PyroZero\">github.com/aarizmehdi/PyroZero ↗</a></div><p class=\"small\">PyroZero v2.6 · Engineered by Zentrix Labs, R&amp;D division of Zentrix Edge<br>2026 NASA International Space Apps Challenge · Independent research prototype</p></div>",
+    "notes": "Open with the research question: does a material behave the same way when gravity, ventilation, and oxygen change? PyroZero makes the evidence and assumptions inspectable. This is not operational flight approval.",
+    "sources": []
+  },
+  {
+    "title": "The lunar fire trap",
+    "kicker": "01 / THE PROBLEM",
+    "html": "<h2>The lunar fire trap</h2><p class=\"lead\">Earth-test behavior can change in a reduced-gravity, oxygen-enriched environment.</p><div class=\"metrics\"><div><strong>34<span>% O₂</span></strong><p>At 8.2 psia / 56.5 kPa.<br>About 62% higher oxygen fraction than 21% air.</p></div><div><strong>0.165<span>g</span></strong><p>Enough buoyant flow to replenish oxygen, with less convective heat loss.</p></div><div><strong>70<span>%</span></strong><p>Of subsystems assessed in one NASA ECLSS study require material replacement.</p></div></div><div class=\"problem-bottom\"><h3>The research bottleneck</h3><p>Terabytes of PSI research must be matched to fuel, atmosphere, flow, and scale. Partial-gravity coverage remains sparse; simulated-lunar LUCI evidence already exists.</p></div><p class=\"footnote\">NASA NTRS 20260003925; 20240015307; NASA PSI update (July 2025); LUCI flight summary. Some cool-flame regimes in the supplied records are near 800 K; flame appearance alone is not a safety test.</p>",
+    "notes": "The 70% finding is limited to assessed ECLSS subsystems. The brief’s 12 TB figure is not independently established; NASA reported about 30 TB across the wider PSI archive in July 2025. Do not claim zero lunar-gravity experiments: LUCI has simulated-lunar results. Atmospheric oxygen fraction and oxygen partial pressure are different quantities.",
+    "sources": [
+      "https://ntrs.nasa.gov/citations/20260003925",
+      "https://ntrs.nasa.gov/citations/20240015307",
+      "https://science.data.nasa.gov/features-events/physical-sciences-informatics-updates",
+      "https://www.nasa.gov/stmd-flight-opportunities/flight-summaries/lunar-gravity-simulation-via-suborbital-rocket/"
+    ]
+  },
+  {
+    "title": "Four modules. One inspectable workflow.",
+    "kicker": "02 / THE SYSTEM",
+    "html": "<h2>Four modules. One inspectable workflow.</h2><div class=\"system\"><div class=\"module-list\"><div><b>01</b><p><strong>Mission Explorer</strong><span>Rank 15 research groups with explicit priorities.</span></p></div><div><b>02</b><p><strong>Partial-g Lab</strong><span>Compare six materials using supplied equations.</span></p></div><div><b>03</b><p><strong>Forensics &amp; Spinoffs</strong><span>Connect incident records and engineering lessons.</span></p></div><div><b>04</b><p><strong>GraphRAG Copilot</strong><span>Ask questions and inspect cited explanations.</span></p></div></div><img class=\"product\" src=\"/deck/explorer.png\" alt=\"Actual PyroZero Mission Explorer\"></div><div class=\"pipeline\" aria-label=\"Three-stage copilot pipeline\"><div><b>Retrieve</b><span>Two-hop evidence graph</span></div><span aria-hidden=\"true\">→</span><div><b>Compute</b><span>Deterministic physics and ranking</span></div><span aria-hidden=\"true\">→</span><div><b>Explain</b><span>DeepSeek streaming + completion checks</span></div></div><p class=\"footnote\">Numerical tables come from code. Citation and numerical checks constrain generated prose; they do not guarantee correctness.</p>",
+    "notes": "Show that the copilot never asks the LLM to supply the material table. Retrieval, deterministic computation, and optional explanation have separate roles. The ranking uses supplied AHP-style priority vectors and Gaussian MCDA; it is not a NASA-approved score. The graph is in-memory and the catalogue is curated, not a full raw-data ingestion.",
+    "sources": [
+      "https://github.com/aarizmehdi/PyroZero/tree/main/src/lib"
+    ]
+  },
+  {
+    "title": "Bridging the partial-gravity gap",
+    "kicker": "03 / THE PHYSICS",
+    "html": "<h2>Bridging the partial-gravity gap</h2><p class=\"lead\">Change a condition. Inspect the modeled boundary. See where evidence is still missing.</p><div class=\"physics\"><div><div class=\"equation\">Uₘ = √(V²<sub>forced</sub> + V²<sub>buoyant</sub>)</div><p>Track <strong>Gr, Re<sub>eff</sub>, Da</strong> and an E-FIELD ion-drag equivalent <strong>g<sub>eff</sub></strong>.</p><div class=\"equation compact\">NOMS = max(0, LOC₁g − LOC<sub>mission</sub>)</div><p><strong>1.54 oxygen percentage points</strong><br>Modeled lunar PMMA example: 0.165g, 56.5 kPa, 34% O₂, 10 cm/s, zero field.</p></div><div><img class=\"boundary\" src=\"/deck/boundary.png\" alt=\"Actual model check-mark LOC plot with quench, trough and blowoff regions\"><p class=\"small\">The supplied quench and blowoff closures form a check-mark LOC boundary.</p></div></div><p class=\"statement\">A transparent surrogate helps prioritize questions.<br>Qualification still requires representative physical tests.</p><p class=\"footnote\">Inputs, constants, and outputs: src/lib/pyrozero-engine.ts and docs/submission-benchmarks.json. E-FIELD analogy is a supplied engineering closure, not measured replacement gravity.</p>",
+    "notes": "NOMS is the difference between modeled LOC values, not ambient O2 minus LOC. It varies with material and conditions; the brief’s 1.4–2.7 range is not universal. Electric body-force mapping is an equivalent-flow comparison. The model does not reconstruct all direction, geometry, or chemistry effects of a real partial-gravity experiment.",
+    "sources": [
+      "https://github.com/aarizmehdi/PyroZero/blob/main/src/lib/pyrozero-engine.ts",
+      "https://ntrs.nasa.gov/citations/20240015307"
+    ]
+  },
+  {
+    "title": "A reproducible product walkthrough",
+    "kicker": "04 / THE DEMO",
+    "html": "<h2>A reproducible product walkthrough</h2><p class=\"lead\">Choose a mission and material, inspect the screen, then ask why.</p><table class=\"benchmarks\"><thead><tr><th>Material and complete input</th><th>Model output</th><th>What it establishes</th></tr></thead><tbody><tr><td><b>Cast PMMA</b><span>0.165g · 56.5 kPa · 34% O₂ · 10 cm/s</span></td><td><b class=\"fail\">FAIL</b><span>1.573 mm/s · 30.0 cm burn</span></td><td>Scenario calculation;<br>not material-use approval.</td></tr><tr><td><b>Nomex HT90</b><span>0g · 54.1 kPa · 31.9% O₂ · 20 cm/s</span></td><td><b class=\"pass\">PASS</b><span>0.000 mm/s · LOC 34.82%</span></td><td>Consistent with the supplied<br>Saffire-VI observation.</td></tr><tr><td><b>SIBAL fabric</b><span>0g · 100 kPa · 21% O₂ · 20 cm/s</span></td><td><b>2.030 mm/s</b><span>18.3 cm burn · model FAIL</span></td><td>One-point calibration<br>with spreadCoeff = 0.3147.</td></tr></tbody></table><div class=\"demo-line\"><b>Copilot</b><p>“Compare PMMA and Nomex on the Moon.”<br>Read computed values, source links, and an optional generated explanation.</p></div><p class=\"footnote\">All examples use zero electric field. Results generated from the current engine; calibration and agreement with a supplied observation are not independent experimental validation.</p>",
+    "notes": "Suggested live demo: Explorer lunar profile; choose PMMA in the visible selector; inspect the Lab; ask a named-material question in the Copilot; open a citation and its calculation link. SIBAL calibration locks one reported point only. Nomex is below the modeled LOC at this input, which explains the inactive flame. PASS is a virtual screen label.",
+    "sources": [
+      "https://github.com/aarizmehdi/PyroZero/blob/main/docs/submission-benchmarks.json",
+      "https://pyrozero.vercel.app"
+    ]
+  },
+  {
+    "title": "Space lessons, Earth applications",
+    "kicker": "05 / THE IMPACT",
+    "html": "<h2>Space lessons, Earth applications</h2><div class=\"impact\"><div><p class=\"lead\">Apollo 1 · Apollo 13 · Mir</p><p>Trace discrete report anchors, fuel context, containment, ignition, and detection lessons.</p><p class=\"small\">Artemis II appears separately as an annotated smoke-alarm case. It is not treated as a confirmed spacecraft fire.</p><img class=\"spinoffs\" src=\"/deck/spinoffs.png\" alt=\"Actual PyroZero water mist, optical detector, and SCBA interactive demonstrations\"></div><div class=\"application-list\"><div><strong>Fine water mist</strong><p>Supplied D₁₀ = 28 μm and D₃₂ = 46 μm references. Explore surface area and droplet diameter.</p><span>Potential: compact suppression systems.</span></div><div><strong>650 nm particle optics</strong><p>Polarization and multiple scattering angles help explain dust, smoke, and mist discrimination.</p><span>Potential: demanding industrial environments.</span></div><div><strong>4,500 psi composite SCBA</strong><p>Compare stored air with legacy cylinders; distinguish PBI turnout fabrics from Beta cloth.</p><span>Potential: firefighter protection research.</span></div></div></div><p class=\"footnote\">Demonstrations and potential applications—not CFD, certified detectors, fire-extinguisher approval, or SCBA service-duration guarantees. Li-ion/data-center and mine use require dedicated testing.</p>",
+    "notes": "Avoid claiming all technologies were directly caused by each accident. The workbench compares engineering principles and source context. Water-mist moments do not uniquely define a droplet distribution. Optical depolarization examples are not a calibrated classifier. Ideal free-air estimates do not determine actual breathing duration. New terrestrial products and commercialization are future research, not completed deployments.",
+    "sources": [
+      "https://github.com/aarizmehdi/PyroZero/blob/main/src/data/psi_combustion_knowledge_base.json",
+      "https://github.com/aarizmehdi/PyroZero/blob/main/src/data/evidence-provenance.json"
+    ]
+  },
+  {
+    "title": "Verified software. A clear next step.",
+    "kicker": "06 / VERIFICATION & ROADMAP",
+    "html": "<h2>Verified software. A clear next step.</h2><div class=\"closing-metrics\"><div><strong>145</strong><span>automated tests<br>including expiry boundaries</span></div><div><strong>4,608</strong><span>bounded model combinations<br>checked for consistency</span></div><div><strong>4 × 2</strong><span>workspaces and themes<br>with desktop/mobile QA</span></div></div><div class=\"roadmap\"><div><b>Available now</b><p>Public GitHub source, Vercel deployment, 15-group catalogue, transparent equations, and optional DeepSeek answers.</p></div><div><b>Next: evidence coverage</b><p>Separate and update FM2/LUCI records; ingest published data with unit, geometry, and uncertainty checks.</p></div><div><b>Next: independent validation</b><p>Compare against withheld experiments and obtain combustion-specialist review before operational use.</p></div></div><div class=\"closing\"><p>Explore the evidence.<br><em>Inspect the assumptions.</em></p><a href=\"https://pyrozero.vercel.app\">pyrozero.vercel.app ↗</a></div><p class=\"footnote\">Zentrix Labs · Research prototype. Potential audiences include agency and commercial habitat teams; no NASA, SpaceX, or Blue Origin customer relationship is claimed.</p>",
+    "notes": "Software verification means equation conformance, bounds, API behavior, and UI function—not independent physical validation. This release adds 7 expiry tests to the prior 138. Shared demo access has a fixed server deadline, after which visitors can use their own DeepSeek key. Future hosted service scaling needs authentication, quotas, observability, and independent scientific review; do not present it as an existing enterprise SaaS capability.",
+    "sources": [
+      "https://github.com/aarizmehdi/PyroZero/blob/main/docs/release-verification-material-flow.md",
+      "https://github.com/aarizmehdi/PyroZero/blob/main/tests/shared-access.test.ts"
+    ]
+  }
+]

@@ -18,7 +18,7 @@ describe('live narrative evidence and calculated-value grounding',()=>{
  });
  it('provides both oxygen margins with distinct definitions and the actual relevant investigation findings',async()=>{
   const fetcher=vi.fn<typeof fetch>(async()=>new Response('data: {"choices":[{"delta":{"content":"Compare the modeled screens [MODEL]."},"finish_reason":"stop"}]}\n\ndata: [DONE]\n\n'));
-  const response=await handleCopilotRequest(new Request('http://localhost/api/copilot',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query})}),{env:{DEEPSEEK_API_KEY:'test-key'},fetcher});
+  const response=await handleCopilotRequest(new Request('http://localhost/api/copilot',{method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify({query})}),{nowMs:0,env:{DEEPSEEK_API_KEY:'test-key'},fetcher});
   await response.text();const context=JSON.parse(JSON.parse(String(fetcher.mock.calls[0][1]?.body)).messages[1].content);
   expect(context.definitions.noms).toContain('NOT ambient oxygen');expect(context.modelSummary.map((s:{ambientAboveLoc:boolean})=>s.ambientAboveLoc)).toEqual([true,true]);
   expect(context.modelSummary[1].ambientMinusLocPercentagePoints).toBe(.92);
