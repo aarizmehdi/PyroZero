@@ -7,7 +7,7 @@
 <p align="center">A spacecraft fire research workspace connecting NASA combustion evidence,<br/>partial-gravity material screens, historical incidents, and cited engineering answers.</p>
 
 <p align="center">
-  <a href="https://pyrozero-zentrix.vercel.app">Live workspace</a> ·
+  <a href="https://pyrozero.vercel.app">Live workspace</a> ·
   <a href="#get-started">Run locally</a> ·
   <a href="#deepseek-generated-answers">DeepSeek setup</a> ·
   <a href="docs/release-verification-material-flow.md">QA evidence</a>
@@ -139,8 +139,8 @@ DeepSeek receives retrieved findings and deterministic calculations. Completion 
 Requires **Node.js 22.12+** and npm. No API key is needed to explore the application.
 
 ```sh
-git clone https://github.com/aarizmehdi/PyroZero-.git
-cd PyroZero-
+git clone https://github.com/aarizmehdi/PyroZero.git
+cd PyroZero
 npm ci
 npm run dev
 ```
@@ -256,7 +256,7 @@ Self-hosted font licenses are included in `public/fonts/`. The PyroZero globe-an
 
 **PyroZero is engineered by Zentrix Labs, the R&D division of Zentrix Edge.** It brings research discovery, explicit assumptions, computational transparency, and approachable interaction into one spacecraft-fire workspace.
 
-For bugs or suggestions, [open an issue](https://github.com/aarizmehdi/PyroZero-/issues). Include the affected tab, device/viewport, theme, material, atmosphere, expected behavior, and observed behavior. **Never attach API keys or unredacted credentials.**
+For bugs or suggestions, [open an issue](https://github.com/aarizmehdi/PyroZero/issues). Include the affected tab, device/viewport, theme, material, atmosphere, expected behavior, and observed behavior. **Never attach API keys or unredacted credentials.**
 
 ### Repository use and attribution
 
